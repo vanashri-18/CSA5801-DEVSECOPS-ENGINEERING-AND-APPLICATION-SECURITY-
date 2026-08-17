@@ -1,0 +1,1201 @@
+ID,File_Name,Language,Component,Vulnerability,CWE,Line_Number,CVSS,Severity,Risk_Score,Detection_Status,Remediation
+V0001,auth.py,PHP,Configuration,Command Injection,CWE-78,267,6.9,Medium,6.9,Missed,Fixed
+V0002,session.java,Java,File Upload,Command Injection,CWE-78,1153,2.4,Low,1.68,Detected,Fixed
+V0003,admin.js,JavaScript,API,Sensitive Data Exposure,CWE-200,815,6.5,Medium,6.5,Missed,Fixed
+V0004,checkout.php,Java,API,Cross-Site Scripting,CWE-79,1309,6.7,Medium,6.7,Detected,Pending
+V0005,login.cpp,Python,Authentication,Insecure API,CWE-639,634,7,High,8.4,Detected,Pending
+V0006,login.py,C,Authentication,Weak Authentication,CWE-287,523,7,High,8.4,Detected,Fixed
+V0007,upload.js,Python,Session Management,Hardcoded Credentials,CWE-798,1206,2.7,Low,1.89,Detected,Pending
+V0008,auth.py,C++,Session Management,Insecure API,CWE-639,470,2.6,Low,1.82,Missed,Fixed
+V0009,download.cpp,C++,Configuration,Insecure Cryptography,CWE-327,1241,7.5,High,9,Detected,Pending
+V0010,database.php,C++,Authentication,Sensitive Data Exposure,CWE-200,1471,8.6,High,10.32,Missed,Pending
+V0011,upload.js,JavaScript,File Upload,Weak Authentication,CWE-287,977,3.2,Low,2.24,Detected,Pending
+V0012,upload.cpp,C,User Management,Command Injection,CWE-78,35,8.3,High,9.96,Missed,Fixed
+V0013,download.java,Python,Authentication,Insecure Cryptography,CWE-327,708,5.9,Medium,5.9,Detected,Fixed
+V0014,config.php,Java,API,Insecure Cryptography,CWE-327,230,9.9,Critical,14.85,Detected,Pending
+V0015,auth.cpp,C++,API,Insecure Cryptography,CWE-327,1464,6,Medium,6,Missed,Pending
+V0016,config.java,Python,Database,Command Injection,CWE-78,1191,6.5,Medium,6.5,Detected,Pending
+V0017,checkout.py,JavaScript,Authentication,Buffer Overflow,CWE-120,504,5,Medium,5,Detected,Pending
+V0018,user.cpp,Java,User Management,Sensitive Data Exposure,CWE-200,1020,6.1,Medium,6.1,Detected,Pending
+V0019,upload.cpp,C,Database,Path Traversal,CWE-22,935,2.6,Low,1.82,Detected,Pending
+V0020,profile.py,C++,User Management,Sensitive Data Exposure,CWE-200,406,6.3,Medium,6.3,Detected,Fixed
+V0021,server.php,C,Payment,Insecure Cryptography,CWE-327,712,9.7,Critical,14.55,Detected,Pending
+V0022,api.c,Python,Database,Command Injection,CWE-78,246,6.2,Medium,6.2,Detected,Fixed
+V0023,session.py,PHP,Session Management,Hardcoded Credentials,CWE-798,633,5.5,Medium,5.5,Detected,Pending
+V0024,user.java,C++,File Upload,SQL Injection,CWE-89,647,2.3,Low,1.61,Missed,Pending
+V0025,session.cpp,C,Database,Path Traversal,CWE-22,161,2.3,Low,1.61,Detected,Fixed
+V0026,auth.cpp,JavaScript,File Upload,Weak Authentication,CWE-287,1063,2.4,Low,1.68,Detected,Pending
+V0027,user.js,JavaScript,User Management,Sensitive Data Exposure,CWE-200,1428,3.3,Low,2.31,Detected,Fixed
+V0028,search.js,Java,API,Path Traversal,CWE-22,293,5.8,Medium,5.8,Detected,Fixed
+V0029,auth.cpp,C,File Upload,Insecure Cryptography,CWE-327,604,8.4,High,10.08,Detected,Fixed
+V0030,download.py,C,API,Insecure Cryptography,CWE-327,316,4.2,Medium,4.2,Detected,Pending
+V0031,auth.js,C,Payment,Sensitive Data Exposure,CWE-200,764,8,High,9.6,Detected,Pending
+V0032,login.py,C,API,Path Traversal,CWE-22,1001,6.2,Medium,6.2,Detected,Pending
+V0033,user.c,C,Database,Weak Authentication,CWE-287,56,4.3,Medium,4.3,Detected,Fixed
+V0034,server.c,Java,API,Path Traversal,CWE-22,168,2.1,Low,1.47,Detected,Fixed
+V0035,checkout.js,Java,API,Weak Authentication,CWE-287,304,7.3,High,8.76,Detected,Fixed
+V0036,admin.php,C,User Management,Insecure API,CWE-639,669,2.5,Low,1.75,Detected,Fixed
+V0037,config.js,JavaScript,API,Insecure Cryptography,CWE-327,1431,8.7,High,10.44,Detected,Fixed
+V0038,user.c,Java,Authentication,Cross-Site Scripting,CWE-79,882,3.1,Low,2.17,Detected,Fixed
+V0039,database.c,C,File Upload,Weak Authentication,CWE-287,949,7.2,High,8.64,Detected,Pending
+V0040,payment.cpp,JavaScript,Session Management,Buffer Overflow,CWE-120,1204,8.7,High,10.44,Detected,Fixed
+V0041,admin.java,Python,API,Cross-Site Scripting,CWE-79,469,4.1,Medium,4.1,Missed,Pending
+V0042,upload.java,C++,Session Management,SQL Injection,CWE-89,148,3.1,Low,2.17,Detected,Pending
+V0043,admin.c,PHP,Authentication,Insecure Cryptography,CWE-327,1035,8.1,High,9.72,Detected,Pending
+V0044,api.php,Python,User Management,Insecure Cryptography,CWE-327,1145,3.7,Low,2.59,Detected,Pending
+V0045,login.cpp,C++,Configuration,Insecure API,CWE-639,308,4.1,Medium,4.1,Detected,Fixed
+V0046,auth.php,C++,Authentication,Weak Authentication,CWE-287,895,6.3,Medium,6.3,Missed,Pending
+V0047,upload.c,JavaScript,Payment,Insecure Cryptography,CWE-327,1461,5.8,Medium,5.8,Missed,Fixed
+V0048,search.py,C++,User Management,Sensitive Data Exposure,CWE-200,784,5,Medium,5,Missed,Pending
+V0049,user.js,JavaScript,Session Management,Hardcoded Credentials,CWE-798,229,8.2,High,9.84,Detected,Fixed
+V0050,search.php,PHP,Authentication,Insecure API,CWE-639,159,6.5,Medium,6.5,Detected,Fixed
+V0051,session.java,C,Session Management,Buffer Overflow,CWE-120,707,3.2,Low,2.24,Detected,Pending
+V0052,payment.py,C++,Payment,Insecure API,CWE-639,1475,9.9,Critical,14.85,Detected,Fixed
+V0053,admin.js,C,Authentication,Insecure API,CWE-639,1290,4,Medium,4,Detected,Fixed
+V0054,download.c,C++,Configuration,Path Traversal,CWE-22,867,3,Low,2.1,Detected,Pending
+V0055,profile.cpp,JavaScript,Database,SQL Injection,CWE-89,78,3.7,Low,2.59,Detected,Fixed
+V0056,user.py,PHP,API,Insecure API,CWE-639,547,5,Medium,5,Detected,Fixed
+V0057,session.java,C,Database,Cross-Site Scripting,CWE-79,453,4.9,Medium,4.9,Detected,Pending
+V0058,checkout.cpp,Python,Payment,SQL Injection,CWE-89,1152,4.4,Medium,4.4,Missed,Pending
+V0059,login.php,C++,User Management,Cross-Site Scripting,CWE-79,936,2.4,Low,1.68,Detected,Pending
+V0060,admin.php,Python,Payment,Hardcoded Credentials,CWE-798,444,9.5,Critical,14.25,Detected,Fixed
+V0061,download.c,Python,Database,Weak Authentication,CWE-287,552,6.5,Medium,6.5,Missed,Fixed
+V0062,login.cpp,Java,Authentication,Insecure API,CWE-639,498,3.8,Low,2.66,Missed,Pending
+V0063,database.c,Python,Configuration,Command Injection,CWE-78,1343,9,Critical,13.5,Detected,Fixed
+V0064,payment.cpp,Java,Configuration,Insecure Cryptography,CWE-327,728,5.7,Medium,5.7,Detected,Fixed
+V0065,auth.py,C,Session Management,Hardcoded Credentials,CWE-798,760,6.3,Medium,6.3,Detected,Pending
+V0066,api.c,Java,Authentication,Insecure API,CWE-639,1210,8.3,High,9.96,Detected,Fixed
+V0067,server.c,PHP,API,Insecure Cryptography,CWE-327,1296,7.2,High,8.64,Missed,Fixed
+V0068,profile.py,Python,Configuration,Insecure Cryptography,CWE-327,671,3.2,Low,2.24,Detected,Pending
+V0069,checkout.py,JavaScript,API,Path Traversal,CWE-22,604,4.6,Medium,4.6,Detected,Fixed
+V0070,profile.c,Java,User Management,Command Injection,CWE-78,353,9.6,Critical,14.4,Detected,Fixed
+V0071,download.py,C++,Session Management,Buffer Overflow,CWE-120,502,3.5,Low,2.45,Detected,Pending
+V0072,server.js,PHP,Session Management,Insecure Cryptography,CWE-327,945,8,High,9.6,Missed,Fixed
+V0073,checkout.js,JavaScript,User Management,Command Injection,CWE-78,597,5.7,Medium,5.7,Detected,Pending
+V0074,api.php,Java,User Management,Path Traversal,CWE-22,790,3.1,Low,2.17,Detected,Pending
+V0075,session.cpp,PHP,Session Management,Command Injection,CWE-78,665,3.6,Low,2.52,Detected,Pending
+V0076,admin.php,Java,Payment,Path Traversal,CWE-22,926,7.4,High,8.88,Detected,Fixed
+V0077,admin.cpp,C++,Payment,Insecure API,CWE-639,1195,3.1,Low,2.17,Detected,Pending
+V0078,config.php,Python,File Upload,Sensitive Data Exposure,CWE-200,395,5.3,Medium,5.3,Missed,Fixed
+V0079,config.js,Java,Payment,Weak Authentication,CWE-287,130,5.6,Medium,5.6,Missed,Fixed
+V0080,login.java,Java,Configuration,Weak Authentication,CWE-287,461,7,High,8.4,Detected,Fixed
+V0081,download.php,Java,Authentication,Buffer Overflow,CWE-120,430,4,Medium,4,Missed,Pending
+V0082,checkout.py,Python,File Upload,Command Injection,CWE-78,1015,5.7,Medium,5.7,Detected,Pending
+V0083,search.js,C,User Management,Sensitive Data Exposure,CWE-200,169,3.3,Low,2.31,Missed,Pending
+V0084,admin.php,Java,Configuration,Cross-Site Scripting,CWE-79,1007,8.9,High,10.68,Detected,Fixed
+V0085,upload.java,Java,Authentication,Sensitive Data Exposure,CWE-200,381,3.3,Low,2.31,Detected,Pending
+V0086,profile.c,PHP,API,Cross-Site Scripting,CWE-79,639,2.7,Low,1.89,Detected,Pending
+V0087,database.cpp,C++,File Upload,Sensitive Data Exposure,CWE-200,1183,9.1,Critical,13.65,Detected,Pending
+V0088,login.java,JavaScript,File Upload,Insecure API,CWE-639,424,4.4,Medium,4.4,Detected,Fixed
+V0089,session.java,C,Database,Hardcoded Credentials,CWE-798,60,8,High,9.6,Detected,Fixed
+V0090,api.c,C++,File Upload,SQL Injection,CWE-89,170,5.2,Medium,5.2,Detected,Pending
+V0091,search.cpp,C++,Configuration,Insecure API,CWE-639,202,5.6,Medium,5.6,Missed,Fixed
+V0092,login.cpp,Python,Payment,Command Injection,CWE-78,934,3.3,Low,2.31,Detected,Pending
+V0093,user.js,C,Database,Buffer Overflow,CWE-120,821,3.2,Low,2.24,Detected,Pending
+V0094,database.js,C,File Upload,Command Injection,CWE-78,328,3.2,Low,2.24,Detected,Pending
+V0095,upload.c,Python,Configuration,Buffer Overflow,CWE-120,583,6.1,Medium,6.1,Detected,Fixed
+V0096,session.cpp,Java,File Upload,SQL Injection,CWE-89,121,5.9,Medium,5.9,Detected,Fixed
+V0097,auth.cpp,C++,Session Management,Path Traversal,CWE-22,1395,6.9,Medium,6.9,Missed,Fixed
+V0098,upload.py,JavaScript,API,Path Traversal,CWE-22,869,5.6,Medium,5.6,Detected,Fixed
+V0099,server.py,C++,Database,Path Traversal,CWE-22,639,2.4,Low,1.68,Detected,Pending
+V0100,auth.c,JavaScript,File Upload,Sensitive Data Exposure,CWE-200,1146,2,Low,1.4,Detected,Fixed
+V0101,checkout.py,C++,User Management,Insecure API,CWE-639,1043,3.8,Low,2.66,Detected,Pending
+V0102,admin.java,JavaScript,User Management,Path Traversal,CWE-22,1060,8.8,High,10.56,Detected,Fixed
+V0103,login.c,Java,Payment,Sensitive Data Exposure,CWE-200,840,4.1,Medium,4.1,Detected,Fixed
+V0104,database.cpp,C,Payment,Weak Authentication,CWE-287,498,6.8,Medium,6.8,Detected,Pending
+V0105,admin.c,C,Configuration,Insecure API,CWE-639,566,6.9,Medium,6.9,Detected,Pending
+V0106,upload.py,JavaScript,File Upload,Buffer Overflow,CWE-120,177,9.9,Critical,14.85,Detected,Pending
+V0107,api.java,PHP,Configuration,Weak Authentication,CWE-287,437,3.5,Low,2.45,Detected,Pending
+V0108,config.c,PHP,Session Management,Path Traversal,CWE-22,805,8,High,9.6,Detected,Pending
+V0109,server.java,Python,Payment,Hardcoded Credentials,CWE-798,702,3.9,Low,2.73,Detected,Pending
+V0110,search.js,C,API,Command Injection,CWE-78,606,4.6,Medium,4.6,Missed,Pending
+V0111,config.cpp,Java,Database,Insecure Cryptography,CWE-327,1250,2,Low,1.4,Detected,Fixed
+V0112,auth.php,JavaScript,Payment,Path Traversal,CWE-22,407,10,Critical,15,Detected,Pending
+V0113,payment.c,Python,Configuration,Insecure API,CWE-639,338,5.5,Medium,5.5,Detected,Fixed
+V0114,auth.js,PHP,User Management,Sensitive Data Exposure,CWE-200,457,10,Critical,15,Detected,Pending
+V0115,admin.java,PHP,File Upload,Insecure Cryptography,CWE-327,606,3.6,Low,2.52,Detected,Pending
+V0116,upload.py,Python,Authentication,Path Traversal,CWE-22,71,2.9,Low,2.03,Detected,Pending
+V0117,login.php,PHP,File Upload,Cross-Site Scripting,CWE-79,769,4,Medium,4,Detected,Pending
+V0118,database.py,JavaScript,Configuration,Command Injection,CWE-78,233,7.4,High,8.88,Detected,Fixed
+V0119,upload.php,Java,Database,Buffer Overflow,CWE-120,1153,6.6,Medium,6.6,Detected,Pending
+V0120,user.cpp,PHP,Configuration,Hardcoded Credentials,CWE-798,427,5.3,Medium,5.3,Detected,Fixed
+V0121,database.php,PHP,API,Path Traversal,CWE-22,953,7.8,High,9.36,Detected,Fixed
+V0122,profile.py,PHP,Session Management,Hardcoded Credentials,CWE-798,895,6.6,Medium,6.6,Detected,Fixed
+V0123,database.php,PHP,API,SQL Injection,CWE-89,1489,6.6,Medium,6.6,Detected,Fixed
+V0124,auth.java,PHP,File Upload,Buffer Overflow,CWE-120,165,6.7,Medium,6.7,Missed,Pending
+V0125,checkout.py,PHP,File Upload,Hardcoded Credentials,CWE-798,1044,3.8,Low,2.66,Detected,Pending
+V0126,profile.js,C++,Session Management,Insecure Cryptography,CWE-327,447,2.8,Low,1.96,Missed,Pending
+V0127,database.c,JavaScript,Payment,Buffer Overflow,CWE-120,975,7.9,High,9.48,Missed,Fixed
+V0128,api.c,Python,Session Management,Insecure API,CWE-639,165,6.9,Medium,6.9,Detected,Pending
+V0129,payment.c,JavaScript,File Upload,Hardcoded Credentials,CWE-798,746,9.6,Critical,14.4,Detected,Fixed
+V0130,login.js,C++,Database,Buffer Overflow,CWE-120,969,9.7,Critical,14.55,Detected,Fixed
+V0131,database.py,PHP,User Management,Command Injection,CWE-78,231,8,High,9.6,Missed,Pending
+V0132,admin.java,Python,File Upload,Hardcoded Credentials,CWE-798,1144,5.5,Medium,5.5,Detected,Fixed
+V0133,profile.cpp,C,Payment,Hardcoded Credentials,CWE-798,330,3.4,Low,2.38,Detected,Pending
+V0134,profile.java,PHP,Authentication,Insecure API,CWE-639,1500,5.5,Medium,5.5,Missed,Pending
+V0135,server.c,C,Database,SQL Injection,CWE-89,1057,8.1,High,9.72,Detected,Pending
+V0136,checkout.c,Python,Session Management,Sensitive Data Exposure,CWE-200,1325,9.4,Critical,14.1,Detected,Pending
+V0137,checkout.java,Java,Session Management,Hardcoded Credentials,CWE-798,134,9.3,Critical,13.95,Missed,Pending
+V0138,auth.js,JavaScript,Authentication,Insecure Cryptography,CWE-327,744,8.5,High,10.2,Detected,Pending
+V0139,admin.c,Java,API,Path Traversal,CWE-22,577,3.6,Low,2.52,Missed,Pending
+V0140,admin.js,C,Payment,Buffer Overflow,CWE-120,1104,2.4,Low,1.68,Detected,Pending
+V0141,login.cpp,JavaScript,Authentication,Weak Authentication,CWE-287,388,5.8,Medium,5.8,Detected,Pending
+V0142,config.js,PHP,Database,Cross-Site Scripting,CWE-79,912,6.7,Medium,6.7,Detected,Pending
+V0143,session.js,JavaScript,File Upload,Insecure API,CWE-639,1274,2.8,Low,1.96,Detected,Fixed
+V0144,database.py,Python,Authentication,Insecure Cryptography,CWE-327,70,9.6,Critical,14.4,Detected,Fixed
+V0145,download.java,C,Configuration,Buffer Overflow,CWE-120,19,3.3,Low,2.31,Detected,Pending
+V0146,checkout.js,JavaScript,Configuration,Sensitive Data Exposure,CWE-200,1325,9.4,Critical,14.1,Detected,Pending
+V0147,login.js,JavaScript,API,Hardcoded Credentials,CWE-798,79,3,Low,2.1,Detected,Fixed
+V0148,auth.js,Java,User Management,Weak Authentication,CWE-287,740,7.3,High,8.76,Detected,Fixed
+V0149,api.cpp,PHP,Configuration,Path Traversal,CWE-22,112,8.3,High,9.96,Detected,Pending
+V0150,profile.c,JavaScript,Database,SQL Injection,CWE-89,556,8.1,High,9.72,Missed,Pending
+V0151,database.java,Python,Payment,Buffer Overflow,CWE-120,568,7.4,High,8.88,Detected,Fixed
+V0152,api.c,C++,File Upload,Buffer Overflow,CWE-120,464,2.9,Low,2.03,Missed,Fixed
+V0153,search.cpp,PHP,Payment,Sensitive Data Exposure,CWE-200,1345,8.8,High,10.56,Detected,Fixed
+V0154,checkout.py,C,API,Insecure Cryptography,CWE-327,681,6.9,Medium,6.9,Detected,Fixed
+V0155,profile.java,Python,Database,Buffer Overflow,CWE-120,1316,8.7,High,10.44,Detected,Pending
+V0156,auth.c,Python,Database,Cross-Site Scripting,CWE-79,244,3.4,Low,2.38,Detected,Fixed
+V0157,search.java,Java,Database,Weak Authentication,CWE-287,1101,2.1,Low,1.47,Detected,Pending
+V0158,payment.java,PHP,Configuration,Insecure Cryptography,CWE-327,784,4.6,Medium,4.6,Detected,Pending
+V0159,database.js,JavaScript,Database,Path Traversal,CWE-22,661,4.2,Medium,4.2,Missed,Fixed
+V0160,config.php,JavaScript,API,Path Traversal,CWE-22,1424,8.6,High,10.32,Detected,Fixed
+V0161,checkout.php,JavaScript,Session Management,Sensitive Data Exposure,CWE-200,220,9.5,Critical,14.25,Detected,Fixed
+V0162,session.js,PHP,Session Management,Sensitive Data Exposure,CWE-200,1413,3,Low,2.1,Detected,Pending
+V0163,upload.java,Python,API,Buffer Overflow,CWE-120,154,9.3,Critical,13.95,Detected,Fixed
+V0164,api.py,Python,File Upload,Insecure API,CWE-639,989,6.8,Medium,6.8,Detected,Pending
+V0165,database.cpp,Java,Payment,Path Traversal,CWE-22,292,5.2,Medium,5.2,Missed,Fixed
+V0166,admin.php,Java,API,Sensitive Data Exposure,CWE-200,748,7.3,High,8.76,Missed,Pending
+V0167,login.java,JavaScript,File Upload,SQL Injection,CWE-89,286,8.1,High,9.72,Detected,Pending
+V0168,auth.cpp,JavaScript,File Upload,Insecure Cryptography,CWE-327,1196,6.2,Medium,6.2,Detected,Fixed
+V0169,login.java,Python,Session Management,Command Injection,CWE-78,253,5.2,Medium,5.2,Detected,Fixed
+V0170,payment.js,JavaScript,Configuration,Sensitive Data Exposure,CWE-200,522,9.7,Critical,14.55,Detected,Fixed
+V0171,profile.cpp,C++,User Management,Weak Authentication,CWE-287,22,2.4,Low,1.68,Detected,Pending
+V0172,upload.c,PHP,API,Insecure API,CWE-639,644,3.2,Low,2.24,Detected,Fixed
+V0173,download.py,Java,User Management,Insecure Cryptography,CWE-327,404,7.6,High,9.12,Missed,Fixed
+V0174,search.c,Python,Authentication,Hardcoded Credentials,CWE-798,573,7.8,High,9.36,Detected,Fixed
+V0175,login.php,Java,Configuration,Sensitive Data Exposure,CWE-200,332,2.9,Low,2.03,Missed,Pending
+V0176,checkout.js,Java,API,Path Traversal,CWE-22,628,5.7,Medium,5.7,Missed,Pending
+V0177,profile.js,JavaScript,Authentication,Insecure Cryptography,CWE-327,303,7.1,High,8.52,Detected,Fixed
+V0178,login.py,JavaScript,Authentication,Path Traversal,CWE-22,720,5.2,Medium,5.2,Missed,Pending
+V0179,config.js,C,API,Sensitive Data Exposure,CWE-200,832,9.9,Critical,14.85,Detected,Fixed
+V0180,config.py,Java,Session Management,Hardcoded Credentials,CWE-798,321,7.4,High,8.88,Detected,Pending
+V0181,auth.js,C++,Configuration,Buffer Overflow,CWE-120,187,4.5,Medium,4.5,Detected,Fixed
+V0182,checkout.php,PHP,Authentication,Insecure Cryptography,CWE-327,723,3.2,Low,2.24,Detected,Fixed
+V0183,session.js,PHP,Session Management,Insecure Cryptography,CWE-327,1047,4.4,Medium,4.4,Detected,Fixed
+V0184,download.java,C++,Configuration,Insecure Cryptography,CWE-327,973,2.8,Low,1.96,Detected,Fixed
+V0185,admin.c,C,Database,Weak Authentication,CWE-287,798,2.2,Low,1.54,Detected,Fixed
+V0186,download.py,Python,Session Management,Path Traversal,CWE-22,42,4.5,Medium,4.5,Detected,Fixed
+V0187,login.php,C++,API,Insecure API,CWE-639,531,7.9,High,9.48,Detected,Fixed
+V0188,profile.java,C++,User Management,SQL Injection,CWE-89,470,9.7,Critical,14.55,Missed,Pending
+V0189,session.java,Python,File Upload,Sensitive Data Exposure,CWE-200,281,5.3,Medium,5.3,Detected,Fixed
+V0190,profile.java,Java,Payment,Sensitive Data Exposure,CWE-200,933,6.2,Medium,6.2,Detected,Fixed
+V0191,profile.java,JavaScript,Database,SQL Injection,CWE-89,39,2.5,Low,1.75,Missed,Pending
+V0192,admin.java,C,Database,Sensitive Data Exposure,CWE-200,144,7,High,8.4,Detected,Fixed
+V0193,download.js,JavaScript,API,SQL Injection,CWE-89,763,4.8,Medium,4.8,Detected,Fixed
+V0194,auth.c,Python,Authentication,Sensitive Data Exposure,CWE-200,1150,5.4,Medium,5.4,Detected,Fixed
+V0195,login.cpp,C++,User Management,Weak Authentication,CWE-287,550,9.7,Critical,14.55,Detected,Fixed
+V0196,session.cpp,C++,Database,Path Traversal,CWE-22,1143,7.4,High,8.88,Detected,Pending
+V0197,download.py,JavaScript,Payment,Weak Authentication,CWE-287,871,7.7,High,9.24,Detected,Fixed
+V0198,checkout.cpp,C,Database,Sensitive Data Exposure,CWE-200,307,3.4,Low,2.38,Detected,Pending
+V0199,session.js,C,Authentication,Insecure Cryptography,CWE-327,1024,3.6,Low,2.52,Detected,Pending
+V0200,session.js,PHP,Session Management,Hardcoded Credentials,CWE-798,333,9,Critical,13.5,Missed,Fixed
+V0201,session.java,C,Authentication,Insecure API,CWE-639,846,8.7,High,10.44,Detected,Fixed
+V0202,search.c,JavaScript,Database,Cross-Site Scripting,CWE-79,1136,7.8,High,9.36,Detected,Fixed
+V0203,api.cpp,C,API,SQL Injection,CWE-89,1223,4.2,Medium,4.2,Detected,Pending
+V0204,database.php,Java,Database,Weak Authentication,CWE-287,1054,3.7,Low,2.59,Detected,Fixed
+V0205,user.py,PHP,User Management,Insecure Cryptography,CWE-327,1413,6,Medium,6,Detected,Pending
+V0206,api.cpp,C,Authentication,Hardcoded Credentials,CWE-798,1181,6.2,Medium,6.2,Detected,Pending
+V0207,profile.c,JavaScript,Authentication,Command Injection,CWE-78,1092,3.8,Low,2.66,Detected,Fixed
+V0208,session.php,JavaScript,Database,Insecure Cryptography,CWE-327,33,8.1,High,9.72,Detected,Pending
+V0209,upload.cpp,C++,File Upload,SQL Injection,CWE-89,1459,2.2,Low,1.54,Detected,Fixed
+V0210,admin.java,PHP,User Management,Cross-Site Scripting,CWE-79,654,7.7,High,9.24,Detected,Fixed
+V0211,login.cpp,Python,File Upload,Hardcoded Credentials,CWE-798,1479,8.7,High,10.44,Detected,Fixed
+V0212,profile.cpp,C++,User Management,Sensitive Data Exposure,CWE-200,528,9.4,Critical,14.1,Detected,Pending
+V0213,login.java,PHP,Payment,SQL Injection,CWE-89,1348,7.3,High,8.76,Detected,Fixed
+V0214,download.java,C++,User Management,Weak Authentication,CWE-287,313,4.2,Medium,4.2,Detected,Pending
+V0215,admin.php,Java,Configuration,Weak Authentication,CWE-287,1415,3.7,Low,2.59,Detected,Fixed
+V0216,payment.py,Python,File Upload,Insecure Cryptography,CWE-327,953,8.9,High,10.68,Missed,Pending
+V0217,user.cpp,C,File Upload,Buffer Overflow,CWE-120,1218,2.2,Low,1.54,Detected,Pending
+V0218,server.cpp,Java,Session Management,Path Traversal,CWE-22,476,8.8,High,10.56,Detected,Fixed
+V0219,download.java,Java,File Upload,Insecure Cryptography,CWE-327,382,6.2,Medium,6.2,Detected,Pending
+V0220,upload.py,C++,Session Management,Weak Authentication,CWE-287,492,5.5,Medium,5.5,Detected,Fixed
+V0221,search.java,Java,Configuration,Cross-Site Scripting,CWE-79,269,9.5,Critical,14.25,Detected,Fixed
+V0222,login.c,PHP,Session Management,Sensitive Data Exposure,CWE-200,1053,3.3,Low,2.31,Missed,Pending
+V0223,database.java,Java,File Upload,Insecure API,CWE-639,1311,5,Medium,5,Detected,Fixed
+V0224,payment.py,Java,File Upload,Path Traversal,CWE-22,1072,3.1,Low,2.17,Detected,Pending
+V0225,checkout.cpp,C++,Configuration,Insecure Cryptography,CWE-327,760,3.2,Low,2.24,Detected,Pending
+V0226,download.js,C,Session Management,SQL Injection,CWE-89,143,7.4,High,8.88,Detected,Pending
+V0227,config.js,C++,API,Weak Authentication,CWE-287,511,6.5,Medium,6.5,Detected,Fixed
+V0228,search.js,Java,Payment,Weak Authentication,CWE-287,1431,5.8,Medium,5.8,Detected,Pending
+V0229,download.c,Python,Authentication,Buffer Overflow,CWE-120,1219,8.5,High,10.2,Detected,Pending
+V0230,payment.java,C++,File Upload,Weak Authentication,CWE-287,915,9.7,Critical,14.55,Missed,Pending
+V0231,login.php,PHP,Configuration,Path Traversal,CWE-22,756,6.1,Medium,6.1,Detected,Pending
+V0232,admin.java,C,Payment,Hardcoded Credentials,CWE-798,1197,7.6,High,9.12,Detected,Fixed
+V0233,session.cpp,C,User Management,Cross-Site Scripting,CWE-79,893,3.4,Low,2.38,Detected,Pending
+V0234,admin.c,C++,Database,SQL Injection,CWE-89,787,4.8,Medium,4.8,Detected,Pending
+V0235,server.cpp,PHP,API,SQL Injection,CWE-89,1280,2.4,Low,1.68,Detected,Pending
+V0236,search.c,C,Database,Cross-Site Scripting,CWE-79,1202,3.2,Low,2.24,Missed,Pending
+V0237,checkout.java,Python,Session Management,SQL Injection,CWE-89,25,2.8,Low,1.96,Detected,Pending
+V0238,auth.cpp,Java,Session Management,Cross-Site Scripting,CWE-79,700,4.2,Medium,4.2,Missed,Fixed
+V0239,config.py,Python,Payment,Buffer Overflow,CWE-120,816,5.1,Medium,5.1,Missed,Pending
+V0240,checkout.cpp,C,Session Management,SQL Injection,CWE-89,1421,7.1,High,8.52,Detected,Pending
+V0241,payment.java,C,Database,Command Injection,CWE-78,633,7.7,High,9.24,Detected,Fixed
+V0242,user.js,JavaScript,Authentication,Cross-Site Scripting,CWE-79,742,4.6,Medium,4.6,Detected,Pending
+V0243,payment.cpp,PHP,User Management,Cross-Site Scripting,CWE-79,1462,9.7,Critical,14.55,Detected,Fixed
+V0244,search.c,Java,User Management,Weak Authentication,CWE-287,260,7.6,High,9.12,Missed,Pending
+V0245,search.cpp,Python,Payment,Insecure Cryptography,CWE-327,1312,3.3,Low,2.31,Detected,Pending
+V0246,server.py,C,Database,Sensitive Data Exposure,CWE-200,946,5,Medium,5,Detected,Fixed
+V0247,database.c,Java,API,Insecure API,CWE-639,907,4.4,Medium,4.4,Detected,Pending
+V0248,login.php,Python,User Management,Sensitive Data Exposure,CWE-200,615,5.7,Medium,5.7,Detected,Fixed
+V0249,config.js,Python,Payment,Sensitive Data Exposure,CWE-200,995,8.6,High,10.32,Detected,Pending
+V0250,api.java,C,Authentication,Insecure API,CWE-639,1296,3.9,Low,2.73,Detected,Pending
+V0251,auth.js,PHP,Session Management,Command Injection,CWE-78,258,5.2,Medium,5.2,Missed,Pending
+V0252,download.js,C++,Database,Hardcoded Credentials,CWE-798,488,9.8,Critical,14.7,Detected,Fixed
+V0253,profile.php,Java,User Management,Command Injection,CWE-78,1118,3,Low,2.1,Detected,Pending
+V0254,admin.py,C,Payment,Path Traversal,CWE-22,706,7,High,8.4,Missed,Pending
+V0255,auth.js,C++,Payment,Command Injection,CWE-78,563,7.6,High,9.12,Detected,Pending
+V0256,server.java,Python,File Upload,Cross-Site Scripting,CWE-79,199,6.7,Medium,6.7,Detected,Fixed
+V0257,config.c,JavaScript,Payment,Path Traversal,CWE-22,911,10,Critical,15,Detected,Fixed
+V0258,api.php,JavaScript,API,Command Injection,CWE-78,1180,2.4,Low,1.68,Detected,Pending
+V0259,user.py,Python,Session Management,Insecure Cryptography,CWE-327,976,9.9,Critical,14.85,Detected,Fixed
+V0260,upload.java,C,API,Path Traversal,CWE-22,1384,8,High,9.6,Missed,Fixed
+V0261,search.js,C,Configuration,Insecure Cryptography,CWE-327,24,5.5,Medium,5.5,Detected,Pending
+V0262,user.py,Python,Session Management,Hardcoded Credentials,CWE-798,1308,3.2,Low,2.24,Detected,Pending
+V0263,payment.cpp,C++,Payment,Cross-Site Scripting,CWE-79,682,5.6,Medium,5.6,Missed,Pending
+V0264,server.js,JavaScript,Authentication,Insecure API,CWE-639,252,3.5,Low,2.45,Detected,Fixed
+V0265,user.java,Python,Payment,Sensitive Data Exposure,CWE-200,99,5.4,Medium,5.4,Detected,Pending
+V0266,database.java,C++,Configuration,Insecure Cryptography,CWE-327,532,8.6,High,10.32,Detected,Fixed
+V0267,api.c,JavaScript,File Upload,Path Traversal,CWE-22,831,2.4,Low,1.68,Detected,Pending
+V0268,session.java,Java,Authentication,Weak Authentication,CWE-287,970,4.6,Medium,4.6,Missed,Fixed
+V0269,payment.js,Python,Payment,SQL Injection,CWE-89,1233,8.7,High,10.44,Detected,Pending
+V0270,upload.c,C,Configuration,Command Injection,CWE-78,859,2.3,Low,1.61,Detected,Pending
+V0271,upload.py,Java,File Upload,Cross-Site Scripting,CWE-79,940,8.3,High,9.96,Detected,Pending
+V0272,user.php,JavaScript,API,Weak Authentication,CWE-287,1085,9.7,Critical,14.55,Detected,Pending
+V0273,config.py,C++,Payment,SQL Injection,CWE-89,561,7.3,High,8.76,Detected,Fixed
+V0274,login.cpp,C,Database,Command Injection,CWE-78,927,2.1,Low,1.47,Detected,Fixed
+V0275,admin.php,C++,Database,Insecure Cryptography,CWE-327,561,5.7,Medium,5.7,Missed,Fixed
+V0276,admin.c,JavaScript,API,Cross-Site Scripting,CWE-79,992,7.7,High,9.24,Missed,Fixed
+V0277,profile.js,PHP,User Management,Insecure API,CWE-639,1110,2.2,Low,1.54,Detected,Fixed
+V0278,server.java,Java,Database,Command Injection,CWE-78,1220,8.8,High,10.56,Missed,Pending
+V0279,admin.js,PHP,User Management,Command Injection,CWE-78,838,8,High,9.6,Missed,Fixed
+V0280,download.php,JavaScript,Configuration,Insecure Cryptography,CWE-327,415,4.1,Medium,4.1,Detected,Fixed
+V0281,payment.js,C++,Session Management,Cross-Site Scripting,CWE-79,944,8,High,9.6,Detected,Pending
+V0282,api.py,C++,User Management,SQL Injection,CWE-89,681,7.4,High,8.88,Detected,Pending
+V0283,payment.js,PHP,API,Insecure API,CWE-639,126,3.4,Low,2.38,Detected,Fixed
+V0284,login.c,Java,API,Sensitive Data Exposure,CWE-200,193,7.4,High,8.88,Detected,Fixed
+V0285,admin.js,PHP,Payment,Buffer Overflow,CWE-120,120,9.4,Critical,14.1,Detected,Fixed
+V0286,auth.cpp,Python,API,Sensitive Data Exposure,CWE-200,1101,8.8,High,10.56,Detected,Fixed
+V0287,profile.c,Python,Session Management,Sensitive Data Exposure,CWE-200,679,8.2,High,9.84,Detected,Pending
+V0288,login.cpp,C,API,Hardcoded Credentials,CWE-798,1350,7.5,High,9,Detected,Fixed
+V0289,search.js,C,Session Management,Insecure API,CWE-639,1191,6.7,Medium,6.7,Detected,Pending
+V0290,server.php,C++,Configuration,Hardcoded Credentials,CWE-798,27,5.2,Medium,5.2,Missed,Pending
+V0291,config.cpp,C,Configuration,Hardcoded Credentials,CWE-798,73,3,Low,2.1,Missed,Pending
+V0292,auth.c,Java,Session Management,Insecure Cryptography,CWE-327,297,8.6,High,10.32,Detected,Fixed
+V0293,admin.php,Python,File Upload,Buffer Overflow,CWE-120,1346,7.7,High,9.24,Detected,Fixed
+V0294,admin.c,PHP,Database,Path Traversal,CWE-22,1188,8.3,High,9.96,Detected,Fixed
+V0295,config.c,JavaScript,Database,Sensitive Data Exposure,CWE-200,1406,2.1,Low,1.47,Missed,Fixed
+V0296,auth.py,C,Payment,SQL Injection,CWE-89,797,3.4,Low,2.38,Detected,Fixed
+V0297,session.java,C,File Upload,Cross-Site Scripting,CWE-79,954,6.8,Medium,6.8,Detected,Fixed
+V0298,upload.php,PHP,File Upload,Buffer Overflow,CWE-120,113,2.6,Low,1.82,Detected,Pending
+V0299,search.java,PHP,User Management,Command Injection,CWE-78,783,7.7,High,9.24,Detected,Fixed
+V0300,database.c,Java,Authentication,Sensitive Data Exposure,CWE-200,883,6.5,Medium,6.5,Detected,Pending
+V0301,user.cpp,Python,File Upload,Path Traversal,CWE-22,1245,4.3,Medium,4.3,Detected,Fixed
+V0302,admin.js,Python,Configuration,SQL Injection,CWE-89,1140,5.1,Medium,5.1,Missed,Fixed
+V0303,auth.c,Python,API,Cross-Site Scripting,CWE-79,905,7.4,High,8.88,Missed,Fixed
+V0304,profile.py,C++,Configuration,Command Injection,CWE-78,896,3.3,Low,2.31,Detected,Pending
+V0305,login.js,C,Authentication,Command Injection,CWE-78,842,2.9,Low,2.03,Detected,Pending
+V0306,auth.c,Java,File Upload,Insecure API,CWE-639,1299,6.3,Medium,6.3,Detected,Pending
+V0307,upload.py,Python,Configuration,Sensitive Data Exposure,CWE-200,911,2.8,Low,1.96,Detected,Pending
+V0308,payment.c,Java,API,Weak Authentication,CWE-287,392,2.7,Low,1.89,Detected,Pending
+V0309,session.py,PHP,User Management,Hardcoded Credentials,CWE-798,1454,7.1,High,8.52,Detected,Fixed
+V0310,profile.py,Python,API,Cross-Site Scripting,CWE-79,212,6.5,Medium,6.5,Detected,Pending
+V0311,server.java,C++,Authentication,SQL Injection,CWE-89,944,4.4,Medium,4.4,Detected,Fixed
+V0312,server.py,C++,Database,SQL Injection,CWE-89,1333,4.1,Medium,4.1,Detected,Fixed
+V0313,api.py,C,Payment,Weak Authentication,CWE-287,222,7.1,High,8.52,Detected,Fixed
+V0314,auth.js,Python,Configuration,Cross-Site Scripting,CWE-79,667,8.6,High,10.32,Detected,Pending
+V0315,server.js,Java,Payment,Cross-Site Scripting,CWE-79,1445,2.4,Low,1.68,Detected,Pending
+V0316,payment.js,C,Authentication,Command Injection,CWE-78,1035,9.9,Critical,14.85,Detected,Fixed
+V0317,download.c,C,Configuration,Weak Authentication,CWE-287,939,2.2,Low,1.54,Missed,Fixed
+V0318,server.c,C,API,Insecure API,CWE-639,1378,3.4,Low,2.38,Missed,Pending
+V0319,api.java,Java,Session Management,Sensitive Data Exposure,CWE-200,1098,4.6,Medium,4.6,Detected,Pending
+V0320,download.cpp,C,Session Management,Command Injection,CWE-78,1311,8.8,High,10.56,Detected,Fixed
+V0321,upload.php,Java,Session Management,Command Injection,CWE-78,685,3.5,Low,2.45,Missed,Pending
+V0322,download.py,C++,User Management,SQL Injection,CWE-89,1413,8.4,High,10.08,Detected,Fixed
+V0323,profile.cpp,JavaScript,Authentication,Buffer Overflow,CWE-120,915,8.9,High,10.68,Detected,Fixed
+V0324,config.php,Python,Payment,SQL Injection,CWE-89,102,5.8,Medium,5.8,Detected,Fixed
+V0325,login.js,JavaScript,Payment,Hardcoded Credentials,CWE-798,1494,7.2,High,8.64,Detected,Pending
+V0326,config.js,PHP,Session Management,Buffer Overflow,CWE-120,224,4.6,Medium,4.6,Detected,Fixed
+V0327,server.py,C++,Session Management,Sensitive Data Exposure,CWE-200,189,5.7,Medium,5.7,Missed,Fixed
+V0328,api.cpp,Python,API,Sensitive Data Exposure,CWE-200,1206,9.5,Critical,14.25,Missed,Pending
+V0329,session.js,C,Configuration,Buffer Overflow,CWE-120,936,4,Medium,4,Detected,Pending
+V0330,login.c,C,API,Path Traversal,CWE-22,1095,2.2,Low,1.54,Detected,Pending
+V0331,session.cpp,JavaScript,Configuration,Cross-Site Scripting,CWE-79,931,9.7,Critical,14.55,Detected,Fixed
+V0332,payment.js,C,Configuration,SQL Injection,CWE-89,1246,4.1,Medium,4.1,Detected,Pending
+V0333,user.cpp,Python,Payment,Hardcoded Credentials,CWE-798,918,7.2,High,8.64,Missed,Pending
+V0334,auth.js,PHP,Payment,Insecure Cryptography,CWE-327,35,2.6,Low,1.82,Detected,Pending
+V0335,checkout.js,Python,User Management,Weak Authentication,CWE-287,380,9.8,Critical,14.7,Missed,Fixed
+V0336,search.php,JavaScript,Database,Buffer Overflow,CWE-120,911,9.3,Critical,13.95,Detected,Fixed
+V0337,api.c,C,API,Cross-Site Scripting,CWE-79,1393,8.9,High,10.68,Detected,Fixed
+V0338,search.js,Java,Authentication,Weak Authentication,CWE-287,22,5.4,Medium,5.4,Missed,Fixed
+V0339,server.py,Python,Authentication,Cross-Site Scripting,CWE-79,42,8.2,High,9.84,Detected,Fixed
+V0340,user.c,C,Session Management,Insecure API,CWE-639,441,4.4,Medium,4.4,Detected,Pending
+V0341,auth.php,Python,File Upload,Sensitive Data Exposure,CWE-200,1162,4.3,Medium,4.3,Detected,Fixed
+V0342,download.js,Python,Database,Sensitive Data Exposure,CWE-200,1402,10,Critical,15,Detected,Fixed
+V0343,profile.cpp,PHP,File Upload,Insecure Cryptography,CWE-327,475,9.9,Critical,14.85,Missed,Fixed
+V0344,config.java,Java,Session Management,Path Traversal,CWE-22,1407,5.8,Medium,5.8,Detected,Fixed
+V0345,download.php,PHP,Database,Insecure API,CWE-639,553,8.1,High,9.72,Detected,Fixed
+V0346,download.java,Java,File Upload,Command Injection,CWE-78,1396,4.6,Medium,4.6,Detected,Fixed
+V0347,upload.cpp,Python,Database,Buffer Overflow,CWE-120,1430,3.9,Low,2.73,Missed,Pending
+V0348,admin.java,C,Session Management,Path Traversal,CWE-22,846,6.9,Medium,6.9,Detected,Fixed
+V0349,profile.py,C,User Management,Hardcoded Credentials,CWE-798,1273,4.7,Medium,4.7,Detected,Pending
+V0350,config.java,JavaScript,Database,Buffer Overflow,CWE-120,296,2.5,Low,1.75,Detected,Pending
+V0351,user.cpp,PHP,User Management,Command Injection,CWE-78,944,9.9,Critical,14.85,Detected,Fixed
+V0352,admin.c,JavaScript,Payment,Buffer Overflow,CWE-120,1487,7.5,High,9,Missed,Pending
+V0353,api.cpp,C++,Database,Insecure API,CWE-639,299,8.9,High,10.68,Detected,Pending
+V0354,config.php,C,Payment,Hardcoded Credentials,CWE-798,637,5.7,Medium,5.7,Detected,Fixed
+V0355,admin.php,Python,File Upload,Path Traversal,CWE-22,1407,3,Low,2.1,Detected,Fixed
+V0356,checkout.js,Java,Configuration,Sensitive Data Exposure,CWE-200,1084,7.4,High,8.88,Missed,Pending
+V0357,login.py,PHP,API,Buffer Overflow,CWE-120,282,2.2,Low,1.54,Detected,Pending
+V0358,payment.java,Python,User Management,Hardcoded Credentials,CWE-798,578,3.3,Low,2.31,Detected,Pending
+V0359,profile.py,C++,Payment,Sensitive Data Exposure,CWE-200,487,9.2,Critical,13.8,Detected,Fixed
+V0360,checkout.java,JavaScript,User Management,Insecure Cryptography,CWE-327,1033,3.2,Low,2.24,Detected,Fixed
+V0361,user.java,PHP,Authentication,Insecure API,CWE-639,597,4.1,Medium,4.1,Detected,Fixed
+V0362,admin.c,Python,Session Management,Command Injection,CWE-78,914,4,Medium,4,Detected,Pending
+V0363,checkout.php,Python,File Upload,Hardcoded Credentials,CWE-798,1481,4.5,Medium,4.5,Missed,Fixed
+V0364,login.c,JavaScript,File Upload,Insecure Cryptography,CWE-327,1342,3.8,Low,2.66,Detected,Pending
+V0365,payment.cpp,JavaScript,User Management,Insecure Cryptography,CWE-327,220,2.2,Low,1.54,Detected,Pending
+V0366,checkout.py,C++,API,Hardcoded Credentials,CWE-798,748,9.2,Critical,13.8,Detected,Fixed
+V0367,user.py,Java,Session Management,Hardcoded Credentials,CWE-798,1241,9.7,Critical,14.55,Detected,Fixed
+V0368,checkout.java,Java,API,Insecure API,CWE-639,634,9.5,Critical,14.25,Missed,Fixed
+V0369,login.php,PHP,Configuration,Weak Authentication,CWE-287,368,5.6,Medium,5.6,Detected,Fixed
+V0370,profile.py,Python,Database,SQL Injection,CWE-89,578,5.5,Medium,5.5,Detected,Pending
+V0371,login.c,C,Database,Buffer Overflow,CWE-120,737,2.4,Low,1.68,Detected,Pending
+V0372,download.cpp,C++,Session Management,Path Traversal,CWE-22,740,4.9,Medium,4.9,Missed,Pending
+V0373,profile.c,C,Configuration,Weak Authentication,CWE-287,1008,9.2,Critical,13.8,Detected,Fixed
+V0374,profile.c,C,Session Management,Insecure API,CWE-639,930,5,Medium,5,Detected,Fixed
+V0375,user.py,C++,Authentication,Command Injection,CWE-78,1053,6,Medium,6,Detected,Fixed
+V0376,admin.py,JavaScript,Configuration,Buffer Overflow,CWE-120,1328,6.2,Medium,6.2,Detected,Fixed
+V0377,session.py,C,Configuration,Sensitive Data Exposure,CWE-200,927,3.4,Low,2.38,Detected,Fixed
+V0378,database.java,Java,User Management,Weak Authentication,CWE-287,329,6.3,Medium,6.3,Detected,Pending
+V0379,session.java,C,Database,Path Traversal,CWE-22,19,2.9,Low,2.03,Detected,Pending
+V0380,download.c,JavaScript,File Upload,Hardcoded Credentials,CWE-798,1145,6.9,Medium,6.9,Detected,Pending
+V0381,checkout.c,Python,Payment,Insecure Cryptography,CWE-327,1066,6.4,Medium,6.4,Missed,Pending
+V0382,download.java,C,Payment,Command Injection,CWE-78,390,3.8,Low,2.66,Missed,Fixed
+V0383,server.php,PHP,Session Management,Sensitive Data Exposure,CWE-200,976,9.2,Critical,13.8,Missed,Fixed
+V0384,checkout.py,C++,Session Management,Path Traversal,CWE-22,1071,3.6,Low,2.52,Detected,Fixed
+V0385,user.cpp,JavaScript,Configuration,Cross-Site Scripting,CWE-79,1106,5.4,Medium,5.4,Detected,Pending
+V0386,upload.java,Python,Configuration,Insecure Cryptography,CWE-327,768,9.1,Critical,13.65,Detected,Fixed
+V0387,login.c,JavaScript,API,Insecure API,CWE-639,1354,3.9,Low,2.73,Detected,Pending
+V0388,config.js,JavaScript,User Management,Hardcoded Credentials,CWE-798,445,4.3,Medium,4.3,Detected,Pending
+V0389,profile.py,JavaScript,API,Insecure API,CWE-639,750,9,Critical,13.5,Detected,Fixed
+V0390,login.py,PHP,Session Management,Cross-Site Scripting,CWE-79,1282,7,High,8.4,Detected,Pending
+V0391,server.cpp,C,Database,Cross-Site Scripting,CWE-79,554,8.9,High,10.68,Detected,Fixed
+V0392,api.c,Python,Session Management,Buffer Overflow,CWE-120,251,5.8,Medium,5.8,Detected,Fixed
+V0393,search.php,JavaScript,Database,Buffer Overflow,CWE-120,1121,9.2,Critical,13.8,Detected,Fixed
+V0394,checkout.py,JavaScript,Authentication,Weak Authentication,CWE-287,1452,3.4,Low,2.38,Missed,Pending
+V0395,database.cpp,JavaScript,Database,Insecure Cryptography,CWE-327,123,7,High,8.4,Detected,Fixed
+V0396,api.java,JavaScript,Database,Path Traversal,CWE-22,431,7.8,High,9.36,Detected,Fixed
+V0397,server.js,Java,Database,Command Injection,CWE-78,132,3.5,Low,2.45,Detected,Pending
+V0398,profile.c,C,Session Management,Path Traversal,CWE-22,458,6.5,Medium,6.5,Detected,Fixed
+V0399,checkout.py,Java,API,Buffer Overflow,CWE-120,1423,7.4,High,8.88,Missed,Fixed
+V0400,payment.py,Java,Authentication,Sensitive Data Exposure,CWE-200,1431,9.4,Critical,14.1,Detected,Fixed
+V0401,server.c,Java,Configuration,Weak Authentication,CWE-287,1156,4.6,Medium,4.6,Detected,Pending
+V0402,checkout.php,PHP,User Management,SQL Injection,CWE-89,1160,6.4,Medium,6.4,Detected,Pending
+V0403,upload.c,Java,User Management,Path Traversal,CWE-22,22,2,Low,1.4,Detected,Fixed
+V0404,config.php,C++,API,Insecure API,CWE-639,946,5,Medium,5,Missed,Pending
+V0405,login.php,Java,Configuration,Buffer Overflow,CWE-120,190,7.1,High,8.52,Detected,Fixed
+V0406,login.py,C++,File Upload,Hardcoded Credentials,CWE-798,351,6.9,Medium,6.9,Detected,Pending
+V0407,config.c,C,Authentication,Insecure API,CWE-639,1185,8.5,High,10.2,Detected,Fixed
+V0408,upload.c,Python,Configuration,SQL Injection,CWE-89,230,2.9,Low,2.03,Detected,Fixed
+V0409,user.php,PHP,Database,Command Injection,CWE-78,234,7.3,High,8.76,Missed,Fixed
+V0410,admin.java,C++,Authentication,Hardcoded Credentials,CWE-798,447,3.6,Low,2.52,Detected,Pending
+V0411,upload.java,C++,Session Management,SQL Injection,CWE-89,1275,6.7,Medium,6.7,Detected,Fixed
+V0412,payment.php,C,Database,Weak Authentication,CWE-287,1042,7.6,High,9.12,Missed,Fixed
+V0413,checkout.py,C++,Authentication,Hardcoded Credentials,CWE-798,739,6.2,Medium,6.2,Missed,Pending
+V0414,profile.java,JavaScript,Authentication,Cross-Site Scripting,CWE-79,1333,5,Medium,5,Missed,Fixed
+V0415,user.cpp,PHP,Authentication,Path Traversal,CWE-22,214,7.6,High,9.12,Detected,Fixed
+V0416,checkout.c,Java,File Upload,Command Injection,CWE-78,106,5.8,Medium,5.8,Detected,Pending
+V0417,config.php,C++,Session Management,Sensitive Data Exposure,CWE-200,194,3.8,Low,2.66,Detected,Pending
+V0418,login.java,C++,Payment,Command Injection,CWE-78,196,5.6,Medium,5.6,Detected,Pending
+V0419,server.c,JavaScript,Authentication,SQL Injection,CWE-89,284,2.6,Low,1.82,Detected,Pending
+V0420,server.java,JavaScript,Session Management,Path Traversal,CWE-22,721,4.1,Medium,4.1,Detected,Pending
+V0421,login.php,Python,Database,Insecure API,CWE-639,731,6.4,Medium,6.4,Detected,Pending
+V0422,search.php,PHP,Authentication,Hardcoded Credentials,CWE-798,1329,2.2,Low,1.54,Detected,Fixed
+V0423,admin.java,C++,File Upload,Weak Authentication,CWE-287,31,3.7,Low,2.59,Missed,Pending
+V0424,auth.php,Python,Configuration,Path Traversal,CWE-22,515,7.1,High,8.52,Detected,Fixed
+V0425,checkout.java,PHP,User Management,Command Injection,CWE-78,1009,7.7,High,9.24,Detected,Pending
+V0426,payment.php,C,Configuration,Cross-Site Scripting,CWE-79,126,8.2,High,9.84,Detected,Pending
+V0427,checkout.py,JavaScript,Authentication,Buffer Overflow,CWE-120,1075,2.6,Low,1.82,Detected,Pending
+V0428,download.cpp,C,File Upload,Hardcoded Credentials,CWE-798,934,2.8,Low,1.96,Detected,Pending
+V0429,upload.c,PHP,Configuration,Insecure API,CWE-639,541,9.6,Critical,14.4,Detected,Fixed
+V0430,server.js,PHP,Session Management,Sensitive Data Exposure,CWE-200,1404,9.4,Critical,14.1,Detected,Fixed
+V0431,search.php,C++,Database,Path Traversal,CWE-22,207,9.4,Critical,14.1,Detected,Fixed
+V0432,payment.js,C,User Management,Insecure API,CWE-639,1128,7.2,High,8.64,Detected,Fixed
+V0433,profile.cpp,C,File Upload,SQL Injection,CWE-89,174,3.3,Low,2.31,Detected,Pending
+V0434,auth.cpp,C,Configuration,Insecure API,CWE-639,1085,9.3,Critical,13.95,Missed,Fixed
+V0435,checkout.java,JavaScript,Configuration,Buffer Overflow,CWE-120,1158,9.4,Critical,14.1,Detected,Fixed
+V0436,search.py,Java,Database,Command Injection,CWE-78,996,3.4,Low,2.38,Missed,Pending
+V0437,profile.php,PHP,User Management,Cross-Site Scripting,CWE-79,344,2.6,Low,1.82,Detected,Pending
+V0438,session.py,C,File Upload,Command Injection,CWE-78,1168,6.5,Medium,6.5,Detected,Pending
+V0439,config.cpp,C,File Upload,SQL Injection,CWE-89,792,4.9,Medium,4.9,Detected,Pending
+V0440,search.java,Java,Authentication,Cross-Site Scripting,CWE-79,152,5.7,Medium,5.7,Detected,Fixed
+V0441,admin.php,JavaScript,User Management,Cross-Site Scripting,CWE-79,460,5.7,Medium,5.7,Detected,Pending
+V0442,auth.php,C,Configuration,Buffer Overflow,CWE-120,1146,8.2,High,9.84,Detected,Pending
+V0443,auth.php,C,Payment,Sensitive Data Exposure,CWE-200,56,8.6,High,10.32,Detected,Fixed
+V0444,server.c,JavaScript,API,Hardcoded Credentials,CWE-798,1355,4.3,Medium,4.3,Missed,Pending
+V0445,checkout.java,Python,Payment,Insecure Cryptography,CWE-327,576,7.8,High,9.36,Missed,Pending
+V0446,admin.js,PHP,Session Management,Path Traversal,CWE-22,954,6,Medium,6,Detected,Pending
+V0447,download.cpp,C++,Configuration,Buffer Overflow,CWE-120,1451,2.5,Low,1.75,Detected,Pending
+V0448,server.py,Java,File Upload,Command Injection,CWE-78,538,2.3,Low,1.61,Detected,Pending
+V0449,auth.cpp,PHP,Configuration,Insecure API,CWE-639,191,3.9,Low,2.73,Detected,Fixed
+V0450,admin.php,JavaScript,File Upload,Insecure API,CWE-639,1026,3.7,Low,2.59,Missed,Pending
+V0451,session.php,C,Authentication,Buffer Overflow,CWE-120,367,5.4,Medium,5.4,Detected,Pending
+V0452,search.py,Java,File Upload,SQL Injection,CWE-89,1235,6.4,Medium,6.4,Detected,Pending
+V0453,auth.py,C++,Configuration,Cross-Site Scripting,CWE-79,1452,7.7,High,9.24,Detected,Fixed
+V0454,profile.java,C,File Upload,Weak Authentication,CWE-287,1120,3.9,Low,2.73,Missed,Pending
+V0455,config.py,PHP,Payment,Buffer Overflow,CWE-120,382,9.2,Critical,13.8,Detected,Fixed
+V0456,api.java,Python,Session Management,Buffer Overflow,CWE-120,1206,5.9,Medium,5.9,Detected,Pending
+V0457,profile.js,C,File Upload,Path Traversal,CWE-22,1393,4.1,Medium,4.1,Detected,Pending
+V0458,checkout.java,Java,Session Management,Weak Authentication,CWE-287,1331,4.6,Medium,4.6,Missed,Fixed
+V0459,admin.js,Java,Configuration,SQL Injection,CWE-89,1250,7.3,High,8.76,Detected,Pending
+V0460,config.php,Python,Database,Sensitive Data Exposure,CWE-200,138,7.8,High,9.36,Detected,Fixed
+V0461,api.java,C++,API,Insecure Cryptography,CWE-327,1162,6.6,Medium,6.6,Detected,Pending
+V0462,session.py,PHP,API,Insecure Cryptography,CWE-327,930,9,Critical,13.5,Missed,Pending
+V0463,auth.c,Java,Configuration,Path Traversal,CWE-22,1204,5.3,Medium,5.3,Detected,Pending
+V0464,auth.php,PHP,File Upload,Sensitive Data Exposure,CWE-200,245,3.6,Low,2.52,Missed,Pending
+V0465,session.java,C,Configuration,Hardcoded Credentials,CWE-798,823,5.8,Medium,5.8,Missed,Pending
+V0466,database.cpp,PHP,Database,Buffer Overflow,CWE-120,1231,5,Medium,5,Detected,Pending
+V0467,config.php,C++,Payment,Hardcoded Credentials,CWE-798,585,4,Medium,4,Missed,Pending
+V0468,login.java,Python,Session Management,Command Injection,CWE-78,804,9.4,Critical,14.1,Detected,Fixed
+V0469,upload.js,JavaScript,Configuration,Path Traversal,CWE-22,846,5.7,Medium,5.7,Missed,Fixed
+V0470,upload.c,C,Payment,SQL Injection,CWE-89,156,2.1,Low,1.47,Detected,Pending
+V0471,api.php,PHP,Authentication,Insecure API,CWE-639,16,9.5,Critical,14.25,Detected,Fixed
+V0472,checkout.java,C,API,Sensitive Data Exposure,CWE-200,947,5,Medium,5,Detected,Pending
+V0473,profile.cpp,PHP,Authentication,Sensitive Data Exposure,CWE-200,389,2.1,Low,1.47,Missed,Pending
+V0474,config.java,C++,File Upload,SQL Injection,CWE-89,360,9.8,Critical,14.7,Detected,Fixed
+V0475,upload.js,Python,Configuration,Path Traversal,CWE-22,454,5,Medium,5,Detected,Pending
+V0476,config.java,C++,API,Weak Authentication,CWE-287,1270,9.9,Critical,14.85,Missed,Pending
+V0477,user.cpp,Java,Session Management,Insecure API,CWE-639,177,3.1,Low,2.17,Missed,Fixed
+V0478,checkout.js,C,Configuration,Sensitive Data Exposure,CWE-200,1121,6.5,Medium,6.5,Detected,Fixed
+V0479,server.php,C++,File Upload,Insecure API,CWE-639,1271,8.4,High,10.08,Detected,Pending
+V0480,profile.cpp,C++,Payment,Insecure Cryptography,CWE-327,1293,3.6,Low,2.52,Detected,Pending
+V0481,checkout.py,JavaScript,Session Management,Buffer Overflow,CWE-120,1079,7.7,High,9.24,Detected,Fixed
+V0482,config.py,PHP,File Upload,SQL Injection,CWE-89,893,6.5,Medium,6.5,Detected,Pending
+V0483,server.c,Python,Configuration,Insecure API,CWE-639,935,2.1,Low,1.47,Detected,Pending
+V0484,auth.cpp,PHP,API,Cross-Site Scripting,CWE-79,1159,4.1,Medium,4.1,Detected,Pending
+V0485,login.c,JavaScript,Payment,Buffer Overflow,CWE-120,1134,5.8,Medium,5.8,Detected,Fixed
+V0486,api.java,PHP,Session Management,Sensitive Data Exposure,CWE-200,716,9.4,Critical,14.1,Missed,Fixed
+V0487,server.cpp,PHP,File Upload,Buffer Overflow,CWE-120,1049,10,Critical,15,Detected,Pending
+V0488,database.php,PHP,File Upload,Insecure Cryptography,CWE-327,231,3.7,Low,2.59,Detected,Pending
+V0489,admin.c,Java,Configuration,Buffer Overflow,CWE-120,1393,6.4,Medium,6.4,Detected,Pending
+V0490,api.java,C,Configuration,Insecure Cryptography,CWE-327,504,7.2,High,8.64,Detected,Fixed
+V0491,search.java,C++,Configuration,Insecure Cryptography,CWE-327,852,9.2,Critical,13.8,Detected,Fixed
+V0492,checkout.py,JavaScript,API,Hardcoded Credentials,CWE-798,700,7.9,High,9.48,Detected,Fixed
+V0493,login.c,Java,API,SQL Injection,CWE-89,826,6.9,Medium,6.9,Detected,Pending
+V0494,download.py,Java,User Management,Command Injection,CWE-78,374,3.8,Low,2.66,Detected,Fixed
+V0495,download.py,C,Session Management,Buffer Overflow,CWE-120,1021,9.3,Critical,13.95,Detected,Fixed
+V0496,api.py,Java,File Upload,Cross-Site Scripting,CWE-79,251,8.4,High,10.08,Detected,Fixed
+V0497,admin.js,Java,User Management,SQL Injection,CWE-89,1457,4.5,Medium,4.5,Detected,Pending
+V0498,api.py,C++,Configuration,Insecure Cryptography,CWE-327,1494,3.8,Low,2.66,Detected,Pending
+V0499,auth.py,Python,Payment,Path Traversal,CWE-22,973,7.3,High,8.76,Detected,Fixed
+V0500,config.java,Java,API,Path Traversal,CWE-22,1308,7.9,High,9.48,Detected,Pending
+V0501,admin.cpp,C++,Payment,Hardcoded Credentials,CWE-798,65,5.7,Medium,5.7,Detected,Fixed
+V0502,session.java,Python,Session Management,Path Traversal,CWE-22,972,8.9,High,10.68,Missed,Pending
+V0503,search.js,PHP,Payment,Hardcoded Credentials,CWE-798,973,7.4,High,8.88,Detected,Pending
+V0504,admin.js,PHP,Payment,Insecure Cryptography,CWE-327,891,3.3,Low,2.31,Detected,Pending
+V0505,profile.php,C++,User Management,Hardcoded Credentials,CWE-798,1391,2.1,Low,1.47,Detected,Fixed
+V0506,login.cpp,PHP,Payment,Sensitive Data Exposure,CWE-200,618,8.9,High,10.68,Detected,Fixed
+V0507,api.cpp,PHP,File Upload,Insecure Cryptography,CWE-327,602,2.8,Low,1.96,Detected,Fixed
+V0508,auth.java,JavaScript,Database,Buffer Overflow,CWE-120,1288,4.5,Medium,4.5,Missed,Pending
+V0509,database.cpp,C++,Authentication,Path Traversal,CWE-22,1155,5.5,Medium,5.5,Detected,Pending
+V0510,search.c,C,User Management,Insecure Cryptography,CWE-327,30,6.9,Medium,6.9,Detected,Fixed
+V0511,api.c,C,Database,Command Injection,CWE-78,1426,4.7,Medium,4.7,Detected,Pending
+V0512,upload.js,PHP,Authentication,SQL Injection,CWE-89,923,6.6,Medium,6.6,Detected,Pending
+V0513,admin.php,Java,Database,Path Traversal,CWE-22,1493,8.6,High,10.32,Missed,Pending
+V0514,checkout.cpp,C,User Management,Command Injection,CWE-78,1180,4.7,Medium,4.7,Detected,Fixed
+V0515,user.py,C++,Authentication,Path Traversal,CWE-22,1176,5.1,Medium,5.1,Detected,Fixed
+V0516,login.php,Java,Database,Sensitive Data Exposure,CWE-200,639,6.8,Medium,6.8,Detected,Pending
+V0517,search.js,PHP,Payment,Command Injection,CWE-78,954,6,Medium,6,Detected,Pending
+V0518,upload.java,PHP,API,Insecure API,CWE-639,257,2.9,Low,2.03,Detected,Pending
+V0519,admin.c,PHP,Configuration,Path Traversal,CWE-22,972,8.8,High,10.56,Detected,Fixed
+V0520,profile.c,Python,Session Management,Hardcoded Credentials,CWE-798,774,5.6,Medium,5.6,Detected,Fixed
+V0521,upload.py,C++,User Management,Sensitive Data Exposure,CWE-200,602,8,High,9.6,Detected,Fixed
+V0522,user.java,Java,Database,SQL Injection,CWE-89,422,8.4,High,10.08,Detected,Fixed
+V0523,login.py,JavaScript,Database,Buffer Overflow,CWE-120,918,5.1,Medium,5.1,Detected,Fixed
+V0524,payment.php,Java,Session Management,Weak Authentication,CWE-287,1253,2.1,Low,1.47,Detected,Pending
+V0525,api.java,Python,Configuration,Command Injection,CWE-78,44,7.9,High,9.48,Detected,Pending
+V0526,checkout.php,JavaScript,Database,Weak Authentication,CWE-287,442,2.5,Low,1.75,Detected,Pending
+V0527,search.js,C,File Upload,Weak Authentication,CWE-287,371,6.3,Medium,6.3,Detected,Pending
+V0528,config.c,PHP,User Management,Insecure API,CWE-639,1335,3,Low,2.1,Detected,Pending
+V0529,payment.php,C++,Configuration,Insecure Cryptography,CWE-327,758,7.4,High,8.88,Detected,Fixed
+V0530,profile.py,JavaScript,Authentication,SQL Injection,CWE-89,88,2.4,Low,1.68,Detected,Pending
+V0531,auth.cpp,JavaScript,Session Management,Hardcoded Credentials,CWE-798,753,8.4,High,10.08,Detected,Pending
+V0532,config.js,C,Session Management,Command Injection,CWE-78,1194,7.3,High,8.76,Detected,Fixed
+V0533,admin.py,PHP,API,Weak Authentication,CWE-287,78,4,Medium,4,Detected,Fixed
+V0534,upload.php,Java,Database,Cross-Site Scripting,CWE-79,467,3.3,Low,2.31,Detected,Pending
+V0535,admin.php,Java,User Management,SQL Injection,CWE-89,243,2.5,Low,1.75,Detected,Pending
+V0536,profile.java,PHP,User Management,Hardcoded Credentials,CWE-798,913,2.1,Low,1.47,Detected,Pending
+V0537,auth.py,C,User Management,Hardcoded Credentials,CWE-798,1110,8.7,High,10.44,Detected,Pending
+V0538,checkout.c,JavaScript,Session Management,Sensitive Data Exposure,CWE-200,1041,4.1,Medium,4.1,Detected,Fixed
+V0539,admin.js,C,Authentication,Sensitive Data Exposure,CWE-200,1132,2.4,Low,1.68,Detected,Fixed
+V0540,login.java,JavaScript,Database,Weak Authentication,CWE-287,758,4.8,Medium,4.8,Detected,Pending
+V0541,checkout.cpp,C,File Upload,Insecure API,CWE-639,1033,6.6,Medium,6.6,Detected,Pending
+V0542,checkout.java,PHP,Authentication,Hardcoded Credentials,CWE-798,959,8.4,High,10.08,Detected,Pending
+V0543,api.c,Java,Configuration,Command Injection,CWE-78,1111,4.7,Medium,4.7,Detected,Fixed
+V0544,database.cpp,PHP,Configuration,Command Injection,CWE-78,366,3.1,Low,2.17,Detected,Fixed
+V0545,payment.c,Python,Session Management,SQL Injection,CWE-89,785,8.2,High,9.84,Detected,Pending
+V0546,api.php,C++,File Upload,Path Traversal,CWE-22,390,9,Critical,13.5,Detected,Pending
+V0547,auth.cpp,PHP,File Upload,Weak Authentication,CWE-287,27,9.9,Critical,14.85,Detected,Fixed
+V0548,server.c,Python,User Management,Path Traversal,CWE-22,1208,7.2,High,8.64,Missed,Fixed
+V0549,api.cpp,Java,Session Management,Insecure Cryptography,CWE-327,262,4,Medium,4,Detected,Pending
+V0550,auth.php,C++,Session Management,Insecure Cryptography,CWE-327,1209,7.1,High,8.52,Detected,Pending
+V0551,admin.cpp,Python,Payment,Buffer Overflow,CWE-120,203,5.6,Medium,5.6,Missed,Pending
+V0552,login.java,Java,Payment,SQL Injection,CWE-89,1125,3.6,Low,2.52,Detected,Pending
+V0553,server.java,JavaScript,Session Management,Weak Authentication,CWE-287,1184,6.8,Medium,6.8,Missed,Pending
+V0554,profile.java,C,API,Weak Authentication,CWE-287,475,9.8,Critical,14.7,Detected,Fixed
+V0555,payment.java,Python,User Management,Buffer Overflow,CWE-120,1060,3.6,Low,2.52,Detected,Pending
+V0556,api.php,C,Database,Cross-Site Scripting,CWE-79,253,5.5,Medium,5.5,Detected,Fixed
+V0557,session.java,PHP,Authentication,Insecure API,CWE-639,553,4.7,Medium,4.7,Detected,Fixed
+V0558,search.c,JavaScript,Session Management,Cross-Site Scripting,CWE-79,1429,2.3,Low,1.61,Detected,Fixed
+V0559,upload.c,C++,Database,Hardcoded Credentials,CWE-798,255,2.8,Low,1.96,Detected,Pending
+V0560,auth.java,PHP,Session Management,Sensitive Data Exposure,CWE-200,274,5.4,Medium,5.4,Missed,Pending
+V0561,server.c,C,API,Path Traversal,CWE-22,1222,2.4,Low,1.68,Missed,Pending
+V0562,session.cpp,C++,Payment,Insecure API,CWE-639,219,2.2,Low,1.54,Detected,Pending
+V0563,login.java,PHP,Configuration,Buffer Overflow,CWE-120,56,3.4,Low,2.38,Missed,Pending
+V0564,user.cpp,JavaScript,Configuration,SQL Injection,CWE-89,1127,5,Medium,5,Missed,Fixed
+V0565,auth.c,JavaScript,User Management,Buffer Overflow,CWE-120,338,6.7,Medium,6.7,Detected,Pending
+V0566,profile.cpp,Java,User Management,Weak Authentication,CWE-287,634,4.7,Medium,4.7,Detected,Pending
+V0567,login.py,PHP,User Management,Insecure Cryptography,CWE-327,894,6,Medium,6,Detected,Pending
+V0568,config.php,C,Session Management,Buffer Overflow,CWE-120,275,8,High,9.6,Missed,Pending
+V0569,user.php,Java,Configuration,Sensitive Data Exposure,CWE-200,631,3.4,Low,2.38,Detected,Pending
+V0570,checkout.php,C++,User Management,Hardcoded Credentials,CWE-798,1048,8.7,High,10.44,Detected,Fixed
+V0571,config.java,Python,Database,Insecure Cryptography,CWE-327,886,4.6,Medium,4.6,Detected,Fixed
+V0572,profile.php,Python,Authentication,Insecure Cryptography,CWE-327,462,3.9,Low,2.73,Detected,Pending
+V0573,login.c,Python,Payment,Hardcoded Credentials,CWE-798,122,4.5,Medium,4.5,Detected,Pending
+V0574,server.js,PHP,Session Management,Command Injection,CWE-78,94,8.3,High,9.96,Detected,Fixed
+V0575,server.java,PHP,Payment,Path Traversal,CWE-22,798,4,Medium,4,Detected,Pending
+V0576,auth.cpp,C,Database,Hardcoded Credentials,CWE-798,198,9.4,Critical,14.1,Detected,Fixed
+V0577,admin.py,C++,Session Management,Buffer Overflow,CWE-120,470,3.2,Low,2.24,Detected,Fixed
+V0578,checkout.py,JavaScript,Payment,Buffer Overflow,CWE-120,1406,3.7,Low,2.59,Detected,Pending
+V0579,api.c,C,API,Weak Authentication,CWE-287,500,7,High,8.4,Missed,Pending
+V0580,auth.java,Java,Database,Weak Authentication,CWE-287,119,4.1,Medium,4.1,Missed,Pending
+V0581,config.js,PHP,User Management,Buffer Overflow,CWE-120,1246,7.7,High,9.24,Missed,Fixed
+V0582,login.php,PHP,Payment,Insecure API,CWE-639,499,7.9,High,9.48,Detected,Fixed
+V0583,search.php,Python,Database,Hardcoded Credentials,CWE-798,392,4.1,Medium,4.1,Missed,Fixed
+V0584,login.java,C,File Upload,Command Injection,CWE-78,758,6.6,Medium,6.6,Detected,Fixed
+V0585,upload.java,Java,File Upload,Sensitive Data Exposure,CWE-200,665,9.3,Critical,13.95,Missed,Fixed
+V0586,user.java,C++,Payment,Path Traversal,CWE-22,1243,7.7,High,9.24,Detected,Fixed
+V0587,upload.py,Python,Session Management,Weak Authentication,CWE-287,332,8.8,High,10.56,Detected,Fixed
+V0588,session.php,C,API,Buffer Overflow,CWE-120,69,9.4,Critical,14.1,Detected,Fixed
+V0589,checkout.js,C,Payment,Insecure Cryptography,CWE-327,679,4.4,Medium,4.4,Detected,Pending
+V0590,api.py,Python,Database,Sensitive Data Exposure,CWE-200,883,7.2,High,8.64,Detected,Fixed
+V0591,login.c,Python,Authentication,Command Injection,CWE-78,979,3.1,Low,2.17,Detected,Fixed
+V0592,config.cpp,PHP,API,Sensitive Data Exposure,CWE-200,144,8.8,High,10.56,Detected,Fixed
+V0593,api.py,C,Database,Buffer Overflow,CWE-120,1087,7.3,High,8.76,Detected,Fixed
+V0594,upload.c,Python,File Upload,Command Injection,CWE-78,1348,7.9,High,9.48,Detected,Pending
+V0595,database.py,Python,Payment,Cross-Site Scripting,CWE-79,255,4.5,Medium,4.5,Missed,Fixed
+V0596,api.c,JavaScript,Configuration,Sensitive Data Exposure,CWE-200,251,7.3,High,8.76,Missed,Pending
+V0597,database.js,Python,Configuration,Buffer Overflow,CWE-120,767,5.7,Medium,5.7,Detected,Pending
+V0598,checkout.js,C++,File Upload,Sensitive Data Exposure,CWE-200,1255,7.2,High,8.64,Detected,Fixed
+V0599,download.java,JavaScript,Authentication,Path Traversal,CWE-22,1322,8.3,High,9.96,Detected,Fixed
+V0600,server.py,PHP,File Upload,Path Traversal,CWE-22,1212,9.2,Critical,13.8,Detected,Pending
+V0601,search.java,JavaScript,File Upload,Insecure API,CWE-639,1126,6.2,Medium,6.2,Detected,Pending
+V0602,config.js,JavaScript,Session Management,SQL Injection,CWE-89,701,3.3,Low,2.31,Detected,Pending
+V0603,checkout.cpp,Java,Payment,Hardcoded Credentials,CWE-798,400,4.2,Medium,4.2,Missed,Fixed
+V0604,payment.php,PHP,User Management,SQL Injection,CWE-89,747,3.1,Low,2.17,Missed,Pending
+V0605,admin.java,C++,Session Management,Weak Authentication,CWE-287,866,3.9,Low,2.73,Detected,Pending
+V0606,profile.py,PHP,API,Sensitive Data Exposure,CWE-200,99,7.8,High,9.36,Missed,Pending
+V0607,session.cpp,Python,File Upload,Sensitive Data Exposure,CWE-200,154,7,High,8.4,Detected,Fixed
+V0608,session.php,JavaScript,Session Management,Cross-Site Scripting,CWE-79,1241,5.6,Medium,5.6,Missed,Pending
+V0609,database.java,JavaScript,File Upload,Path Traversal,CWE-22,858,7.1,High,8.52,Detected,Pending
+V0610,session.cpp,Java,Configuration,Buffer Overflow,CWE-120,1371,6.2,Medium,6.2,Detected,Fixed
+V0611,payment.c,JavaScript,Payment,Command Injection,CWE-78,674,4.6,Medium,4.6,Missed,Pending
+V0612,api.cpp,Python,Session Management,Cross-Site Scripting,CWE-79,1397,8.2,High,9.84,Detected,Pending
+V0613,server.c,C,Configuration,Insecure API,CWE-639,227,7.1,High,8.52,Missed,Fixed
+V0614,search.c,C++,File Upload,Command Injection,CWE-78,1178,8.2,High,9.84,Detected,Fixed
+V0615,config.c,PHP,API,Insecure Cryptography,CWE-327,1056,3.4,Low,2.38,Missed,Pending
+V0616,user.c,Python,User Management,Path Traversal,CWE-22,225,5.2,Medium,5.2,Detected,Fixed
+V0617,download.cpp,PHP,Payment,Insecure Cryptography,CWE-327,960,9.7,Critical,14.55,Detected,Fixed
+V0618,session.js,Python,API,Insecure API,CWE-639,259,5,Medium,5,Detected,Fixed
+V0619,login.java,Python,Payment,Buffer Overflow,CWE-120,1076,2.6,Low,1.82,Detected,Fixed
+V0620,auth.py,PHP,Authentication,Insecure Cryptography,CWE-327,973,6.2,Medium,6.2,Detected,Fixed
+V0621,config.cpp,Python,Session Management,Weak Authentication,CWE-287,547,9.6,Critical,14.4,Missed,Fixed
+V0622,login.py,C,Database,Path Traversal,CWE-22,711,8.8,High,10.56,Detected,Pending
+V0623,config.py,C,Configuration,Insecure Cryptography,CWE-327,779,6.4,Medium,6.4,Detected,Pending
+V0624,admin.js,JavaScript,Authentication,Cross-Site Scripting,CWE-79,1148,7.3,High,8.76,Detected,Fixed
+V0625,auth.java,JavaScript,API,Buffer Overflow,CWE-120,872,6,Medium,6,Detected,Fixed
+V0626,database.php,Java,Database,Insecure Cryptography,CWE-327,1041,9.4,Critical,14.1,Detected,Fixed
+V0627,download.c,Java,Database,Buffer Overflow,CWE-120,153,2.7,Low,1.89,Missed,Pending
+V0628,profile.cpp,C,Payment,Hardcoded Credentials,CWE-798,1198,6,Medium,6,Detected,Pending
+V0629,profile.py,C++,API,Path Traversal,CWE-22,19,8.3,High,9.96,Detected,Fixed
+V0630,admin.java,PHP,Payment,Buffer Overflow,CWE-120,592,9,Critical,13.5,Detected,Pending
+V0631,api.js,PHP,Database,Cross-Site Scripting,CWE-79,1331,9.2,Critical,13.8,Missed,Fixed
+V0632,checkout.cpp,C,Session Management,Insecure API,CWE-639,1484,8.5,High,10.2,Detected,Pending
+V0633,database.py,Python,Payment,SQL Injection,CWE-89,1088,3.2,Low,2.24,Detected,Fixed
+V0634,upload.cpp,Python,Configuration,Sensitive Data Exposure,CWE-200,1305,7.8,High,9.36,Detected,Pending
+V0635,database.php,JavaScript,Configuration,Insecure API,CWE-639,460,8.1,High,9.72,Detected,Fixed
+V0636,download.c,C++,Session Management,Weak Authentication,CWE-287,447,7.3,High,8.76,Detected,Fixed
+V0637,user.java,JavaScript,Authentication,Sensitive Data Exposure,CWE-200,285,9.3,Critical,13.95,Detected,Fixed
+V0638,database.java,C++,Payment,Insecure Cryptography,CWE-327,129,5.1,Medium,5.1,Detected,Fixed
+V0639,download.js,C++,Configuration,Cross-Site Scripting,CWE-79,1038,9.7,Critical,14.55,Detected,Fixed
+V0640,upload.c,Python,Configuration,Command Injection,CWE-78,1240,5.7,Medium,5.7,Missed,Pending
+V0641,user.php,Java,Authentication,Command Injection,CWE-78,395,3.6,Low,2.52,Missed,Pending
+V0642,config.py,Python,Database,Cross-Site Scripting,CWE-79,690,6.7,Medium,6.7,Detected,Pending
+V0643,auth.cpp,C++,Authentication,Sensitive Data Exposure,CWE-200,426,3.2,Low,2.24,Detected,Pending
+V0644,admin.cpp,Python,API,Buffer Overflow,CWE-120,706,6.2,Medium,6.2,Detected,Pending
+V0645,search.php,Java,API,Buffer Overflow,CWE-120,1389,5.3,Medium,5.3,Detected,Fixed
+V0646,session.php,PHP,User Management,Cross-Site Scripting,CWE-79,628,8.6,High,10.32,Detected,Fixed
+V0647,server.py,Java,Authentication,Insecure API,CWE-639,730,6.5,Medium,6.5,Detected,Pending
+V0648,auth.py,JavaScript,API,Path Traversal,CWE-22,1499,5.7,Medium,5.7,Detected,Pending
+V0649,api.cpp,PHP,Database,SQL Injection,CWE-89,811,3.5,Low,2.45,Detected,Fixed
+V0650,search.c,PHP,Payment,Path Traversal,CWE-22,811,5.8,Medium,5.8,Detected,Pending
+V0651,session.cpp,Java,Database,Buffer Overflow,CWE-120,367,3.9,Low,2.73,Detected,Fixed
+V0652,database.php,C++,User Management,Insecure API,CWE-639,34,4.5,Medium,4.5,Detected,Pending
+V0653,database.c,JavaScript,API,Sensitive Data Exposure,CWE-200,38,8.9,High,10.68,Detected,Pending
+V0654,download.js,Java,Configuration,SQL Injection,CWE-89,1208,5.6,Medium,5.6,Detected,Fixed
+V0655,config.cpp,C,Authentication,Path Traversal,CWE-22,1010,5.5,Medium,5.5,Missed,Pending
+V0656,server.php,C++,API,Path Traversal,CWE-22,260,5.8,Medium,5.8,Missed,Pending
+V0657,download.py,PHP,Session Management,Command Injection,CWE-78,850,8.7,High,10.44,Detected,Pending
+V0658,user.js,JavaScript,Authentication,SQL Injection,CWE-89,1352,2.1,Low,1.47,Detected,Fixed
+V0659,auth.py,JavaScript,Authentication,Buffer Overflow,CWE-120,984,4.5,Medium,4.5,Detected,Pending
+V0660,server.java,JavaScript,Database,Sensitive Data Exposure,CWE-200,1417,2.7,Low,1.89,Detected,Pending
+V0661,checkout.php,PHP,API,SQL Injection,CWE-89,270,8.6,High,10.32,Detected,Fixed
+V0662,upload.php,Python,API,SQL Injection,CWE-89,849,5.8,Medium,5.8,Missed,Pending
+V0663,payment.java,Java,Database,Cross-Site Scripting,CWE-79,701,6.3,Medium,6.3,Missed,Pending
+V0664,payment.py,JavaScript,Authentication,Cross-Site Scripting,CWE-79,1150,5.2,Medium,5.2,Missed,Pending
+V0665,api.py,JavaScript,Configuration,Hardcoded Credentials,CWE-798,1388,5.6,Medium,5.6,Missed,Fixed
+V0666,auth.cpp,JavaScript,File Upload,Sensitive Data Exposure,CWE-200,444,2.9,Low,2.03,Detected,Fixed
+V0667,checkout.js,JavaScript,Session Management,Sensitive Data Exposure,CWE-200,1180,2.2,Low,1.54,Detected,Pending
+V0668,login.js,C,Database,Weak Authentication,CWE-287,122,2.2,Low,1.54,Missed,Pending
+V0669,admin.py,JavaScript,User Management,Insecure Cryptography,CWE-327,1487,2.6,Low,1.82,Detected,Fixed
+V0670,search.cpp,Java,File Upload,Command Injection,CWE-78,128,4.9,Medium,4.9,Detected,Fixed
+V0671,config.php,PHP,User Management,Path Traversal,CWE-22,461,8.1,High,9.72,Missed,Pending
+V0672,checkout.php,Java,Payment,Path Traversal,CWE-22,887,7.9,High,9.48,Detected,Fixed
+V0673,admin.js,Python,User Management,Cross-Site Scripting,CWE-79,906,2.8,Low,1.96,Missed,Fixed
+V0674,auth.cpp,Java,Authentication,Cross-Site Scripting,CWE-79,1219,9.7,Critical,14.55,Detected,Pending
+V0675,payment.c,C++,Session Management,Weak Authentication,CWE-287,237,3.1,Low,2.17,Detected,Fixed
+V0676,database.js,JavaScript,Configuration,Buffer Overflow,CWE-120,330,5.9,Medium,5.9,Detected,Pending
+V0677,search.js,PHP,Session Management,Hardcoded Credentials,CWE-798,659,6.5,Medium,6.5,Detected,Fixed
+V0678,session.cpp,PHP,Payment,Hardcoded Credentials,CWE-798,705,9.5,Critical,14.25,Detected,Fixed
+V0679,profile.php,JavaScript,Session Management,Path Traversal,CWE-22,615,8.6,High,10.32,Detected,Fixed
+V0680,profile.py,JavaScript,Session Management,Sensitive Data Exposure,CWE-200,1084,6.3,Medium,6.3,Detected,Pending
+V0681,api.py,JavaScript,Authentication,Weak Authentication,CWE-287,618,5.1,Medium,5.1,Missed,Pending
+V0682,profile.c,Java,Database,Cross-Site Scripting,CWE-79,447,6.4,Medium,6.4,Missed,Fixed
+V0683,search.py,C,File Upload,Cross-Site Scripting,CWE-79,462,8.4,High,10.08,Detected,Fixed
+V0684,search.py,Python,Database,Command Injection,CWE-78,292,7,High,8.4,Detected,Fixed
+V0685,api.cpp,C,File Upload,Insecure API,CWE-639,659,2.8,Low,1.96,Detected,Pending
+V0686,api.java,Java,Authentication,Cross-Site Scripting,CWE-79,148,3.5,Low,2.45,Detected,Pending
+V0687,api.php,Python,File Upload,Sensitive Data Exposure,CWE-200,989,8.7,High,10.44,Missed,Pending
+V0688,api.php,PHP,Authentication,Insecure Cryptography,CWE-327,603,5.8,Medium,5.8,Missed,Fixed
+V0689,user.py,C,Configuration,Command Injection,CWE-78,1222,8.2,High,9.84,Detected,Pending
+V0690,database.c,PHP,API,Insecure API,CWE-639,244,8.5,High,10.2,Detected,Pending
+V0691,server.js,C++,API,Command Injection,CWE-78,882,4.4,Medium,4.4,Detected,Fixed
+V0692,config.java,Python,Configuration,Buffer Overflow,CWE-120,1435,3.8,Low,2.66,Detected,Pending
+V0693,checkout.py,JavaScript,Configuration,SQL Injection,CWE-89,1010,7,High,8.4,Detected,Fixed
+V0694,profile.php,C++,Configuration,Cross-Site Scripting,CWE-79,1370,5,Medium,5,Detected,Fixed
+V0695,database.py,PHP,Database,Weak Authentication,CWE-287,613,9.1,Critical,13.65,Detected,Fixed
+V0696,session.c,C,Authentication,Weak Authentication,CWE-287,1185,3,Low,2.1,Detected,Pending
+V0697,search.c,C,Authentication,Hardcoded Credentials,CWE-798,1290,3.3,Low,2.31,Detected,Pending
+V0698,login.js,Java,Session Management,Path Traversal,CWE-22,254,7.1,High,8.52,Detected,Pending
+V0699,session.java,C++,API,Command Injection,CWE-78,1017,3.5,Low,2.45,Missed,Pending
+V0700,session.c,C,Payment,Sensitive Data Exposure,CWE-200,814,7.3,High,8.76,Detected,Fixed
+V0701,login.cpp,JavaScript,Database,Path Traversal,CWE-22,398,6.1,Medium,6.1,Detected,Fixed
+V0702,admin.cpp,C,Payment,Sensitive Data Exposure,CWE-200,1460,7.9,High,9.48,Detected,Fixed
+V0703,payment.c,C,Configuration,Path Traversal,CWE-22,343,4.7,Medium,4.7,Detected,Pending
+V0704,login.py,PHP,Session Management,Cross-Site Scripting,CWE-79,1142,2.9,Low,2.03,Detected,Pending
+V0705,login.c,Python,User Management,Cross-Site Scripting,CWE-79,541,5.2,Medium,5.2,Missed,Fixed
+V0706,user.java,C++,Database,Cross-Site Scripting,CWE-79,176,6.3,Medium,6.3,Detected,Fixed
+V0707,auth.py,Java,Payment,Command Injection,CWE-78,473,7.9,High,9.48,Missed,Fixed
+V0708,download.cpp,JavaScript,Session Management,Buffer Overflow,CWE-120,187,3.4,Low,2.38,Detected,Fixed
+V0709,login.py,C++,Session Management,Insecure Cryptography,CWE-327,365,6.7,Medium,6.7,Detected,Fixed
+V0710,server.java,Java,Session Management,SQL Injection,CWE-89,664,6,Medium,6,Missed,Pending
+V0711,download.js,Java,API,Path Traversal,CWE-22,762,9.5,Critical,14.25,Missed,Fixed
+V0712,server.java,PHP,File Upload,Buffer Overflow,CWE-120,104,9.3,Critical,13.95,Detected,Pending
+V0713,auth.php,C++,Configuration,SQL Injection,CWE-89,563,3.2,Low,2.24,Detected,Pending
+V0714,download.cpp,Python,Payment,Insecure Cryptography,CWE-327,1036,4.5,Medium,4.5,Detected,Fixed
+V0715,checkout.java,C,Configuration,Command Injection,CWE-78,1336,7.6,High,9.12,Detected,Fixed
+V0716,config.c,Python,Session Management,Insecure Cryptography,CWE-327,922,8.1,High,9.72,Detected,Pending
+V0717,search.java,JavaScript,Configuration,Cross-Site Scripting,CWE-79,708,6.1,Medium,6.1,Detected,Pending
+V0718,admin.py,JavaScript,User Management,Hardcoded Credentials,CWE-798,250,3.8,Low,2.66,Detected,Pending
+V0719,auth.js,C,Session Management,Buffer Overflow,CWE-120,1190,3.3,Low,2.31,Missed,Pending
+V0720,config.py,Python,Database,Hardcoded Credentials,CWE-798,1474,4.5,Medium,4.5,Missed,Pending
+V0721,admin.php,Python,Configuration,Cross-Site Scripting,CWE-79,459,2.4,Low,1.68,Detected,Fixed
+V0722,api.java,C++,API,Insecure API,CWE-639,276,7.4,High,8.88,Detected,Pending
+V0723,checkout.php,Python,Configuration,Command Injection,CWE-78,429,8,High,9.6,Detected,Fixed
+V0724,admin.php,Java,Payment,Path Traversal,CWE-22,93,4,Medium,4,Missed,Pending
+V0725,search.php,Python,API,Command Injection,CWE-78,835,5.7,Medium,5.7,Detected,Pending
+V0726,search.js,C,API,Path Traversal,CWE-22,1368,2.4,Low,1.68,Detected,Fixed
+V0727,profile.php,Java,Database,Path Traversal,CWE-22,834,2.8,Low,1.96,Detected,Pending
+V0728,server.java,Python,API,Path Traversal,CWE-22,1106,9.2,Critical,13.8,Detected,Fixed
+V0729,search.php,C++,Configuration,Path Traversal,CWE-22,1097,6.9,Medium,6.9,Detected,Fixed
+V0730,download.js,C++,Payment,Buffer Overflow,CWE-120,1102,7.1,High,8.52,Detected,Pending
+V0731,session.js,Java,Configuration,Buffer Overflow,CWE-120,506,5.7,Medium,5.7,Detected,Pending
+V0732,user.c,JavaScript,Configuration,SQL Injection,CWE-89,412,4.2,Medium,4.2,Detected,Fixed
+V0733,database.py,C,File Upload,Weak Authentication,CWE-287,1224,9.6,Critical,14.4,Detected,Fixed
+V0734,search.cpp,JavaScript,Configuration,Insecure Cryptography,CWE-327,968,2.2,Low,1.54,Detected,Pending
+V0735,session.cpp,PHP,API,SQL Injection,CWE-89,42,3.4,Low,2.38,Detected,Fixed
+V0736,checkout.js,JavaScript,Session Management,Insecure API,CWE-639,1443,9.8,Critical,14.7,Detected,Fixed
+V0737,server.py,Java,Session Management,Insecure Cryptography,CWE-327,955,8.4,High,10.08,Missed,Pending
+V0738,checkout.c,Java,File Upload,Sensitive Data Exposure,CWE-200,1062,10,Critical,15,Detected,Fixed
+V0739,api.java,Java,Payment,Sensitive Data Exposure,CWE-200,535,4.1,Medium,4.1,Detected,Fixed
+V0740,user.php,C++,File Upload,Buffer Overflow,CWE-120,982,6.7,Medium,6.7,Detected,Fixed
+V0741,database.py,C,Payment,Buffer Overflow,CWE-120,582,2.6,Low,1.82,Detected,Pending
+V0742,checkout.php,JavaScript,Database,Path Traversal,CWE-22,1136,8.4,High,10.08,Missed,Pending
+V0743,api.py,Java,Payment,Path Traversal,CWE-22,596,9,Critical,13.5,Missed,Fixed
+V0744,checkout.py,JavaScript,Payment,SQL Injection,CWE-89,1346,9.1,Critical,13.65,Detected,Fixed
+V0745,database.js,Java,API,Sensitive Data Exposure,CWE-200,868,2.1,Low,1.47,Detected,Fixed
+V0746,checkout.php,C,Database,Insecure Cryptography,CWE-327,1123,3.9,Low,2.73,Detected,Pending
+V0747,login.java,Java,Authentication,Buffer Overflow,CWE-120,1211,6.9,Medium,6.9,Missed,Fixed
+V0748,download.c,JavaScript,Authentication,Command Injection,CWE-78,745,4.9,Medium,4.9,Missed,Pending
+V0749,user.cpp,C,Configuration,Buffer Overflow,CWE-120,1094,7.7,High,9.24,Detected,Fixed
+V0750,server.java,C++,Authentication,Insecure API,CWE-639,1243,2.3,Low,1.61,Detected,Fixed
+V0751,checkout.php,JavaScript,File Upload,SQL Injection,CWE-89,914,7.3,High,8.76,Missed,Pending
+V0752,session.py,JavaScript,API,Hardcoded Credentials,CWE-798,1475,3.8,Low,2.66,Detected,Pending
+V0753,payment.c,Python,API,Command Injection,CWE-78,573,4.2,Medium,4.2,Detected,Pending
+V0754,database.py,JavaScript,Authentication,Weak Authentication,CWE-287,600,7.9,High,9.48,Detected,Pending
+V0755,api.cpp,Java,Authentication,Path Traversal,CWE-22,481,3.4,Low,2.38,Detected,Pending
+V0756,payment.java,Java,File Upload,Cross-Site Scripting,CWE-79,641,5.1,Medium,5.1,Detected,Pending
+V0757,search.java,C,User Management,Buffer Overflow,CWE-120,1016,7.5,High,9,Detected,Pending
+V0758,admin.py,Java,User Management,Buffer Overflow,CWE-120,1156,5.3,Medium,5.3,Missed,Fixed
+V0759,checkout.c,PHP,Payment,Hardcoded Credentials,CWE-798,1004,6.3,Medium,6.3,Detected,Pending
+V0760,payment.js,Java,Configuration,Buffer Overflow,CWE-120,643,5.6,Medium,5.6,Detected,Pending
+V0761,session.php,Java,Configuration,Sensitive Data Exposure,CWE-200,1309,3,Low,2.1,Missed,Pending
+V0762,user.js,PHP,Database,Insecure API,CWE-639,1084,2.2,Low,1.54,Detected,Fixed
+V0763,checkout.c,Java,Configuration,Cross-Site Scripting,CWE-79,1023,3.3,Low,2.31,Detected,Pending
+V0764,database.py,PHP,Session Management,SQL Injection,CWE-89,714,8.4,High,10.08,Missed,Fixed
+V0765,database.py,Python,API,Insecure Cryptography,CWE-327,1158,3.1,Low,2.17,Detected,Pending
+V0766,search.js,JavaScript,Session Management,Command Injection,CWE-78,1060,2.6,Low,1.82,Detected,Pending
+V0767,checkout.js,C++,Authentication,Weak Authentication,CWE-287,1237,2.2,Low,1.54,Detected,Fixed
+V0768,checkout.cpp,C,Payment,Weak Authentication,CWE-287,1478,5.3,Medium,5.3,Missed,Fixed
+V0769,auth.cpp,C++,User Management,Insecure Cryptography,CWE-327,1411,8.8,High,10.56,Detected,Pending
+V0770,config.c,Python,Authentication,Hardcoded Credentials,CWE-798,616,4.6,Medium,4.6,Detected,Fixed
+V0771,admin.c,PHP,Session Management,Sensitive Data Exposure,CWE-200,1317,5.6,Medium,5.6,Missed,Pending
+V0772,upload.php,Java,User Management,Command Injection,CWE-78,747,5.3,Medium,5.3,Detected,Pending
+V0773,config.java,JavaScript,File Upload,Command Injection,CWE-78,764,4.8,Medium,4.8,Detected,Fixed
+V0774,checkout.java,C++,API,Insecure API,CWE-639,1339,9.4,Critical,14.1,Missed,Fixed
+V0775,auth.c,Java,Payment,Sensitive Data Exposure,CWE-200,860,9.4,Critical,14.1,Missed,Pending
+V0776,download.php,C,User Management,Hardcoded Credentials,CWE-798,1439,4.2,Medium,4.2,Missed,Pending
+V0777,search.java,Python,Authentication,Path Traversal,CWE-22,447,7.8,High,9.36,Detected,Fixed
+V0778,session.php,Python,API,Insecure Cryptography,CWE-327,928,3.7,Low,2.59,Detected,Pending
+V0779,config.php,JavaScript,Configuration,Command Injection,CWE-78,227,9.5,Critical,14.25,Detected,Fixed
+V0780,payment.cpp,C,Configuration,Insecure API,CWE-639,783,2.5,Low,1.75,Detected,Pending
+V0781,config.c,JavaScript,User Management,Weak Authentication,CWE-287,475,9.9,Critical,14.85,Detected,Fixed
+V0782,upload.js,Java,Configuration,Insecure Cryptography,CWE-327,496,3.7,Low,2.59,Missed,Pending
+V0783,server.php,JavaScript,Authentication,Hardcoded Credentials,CWE-798,956,4.5,Medium,4.5,Detected,Fixed
+V0784,download.cpp,C,Payment,Command Injection,CWE-78,697,3,Low,2.1,Detected,Fixed
+V0785,profile.cpp,Python,Payment,Path Traversal,CWE-22,101,6.7,Medium,6.7,Detected,Fixed
+V0786,config.py,Python,User Management,Hardcoded Credentials,CWE-798,1027,7.3,High,8.76,Detected,Fixed
+V0787,config.java,C,Configuration,Weak Authentication,CWE-287,455,10,Critical,15,Detected,Fixed
+V0788,admin.js,Python,API,Buffer Overflow,CWE-120,248,3.6,Low,2.52,Detected,Pending
+V0789,config.c,JavaScript,Payment,Path Traversal,CWE-22,1242,8.5,High,10.2,Detected,Fixed
+V0790,search.c,Java,User Management,Buffer Overflow,CWE-120,1441,7,High,8.4,Detected,Pending
+V0791,config.c,Java,Payment,Insecure API,CWE-639,875,9.9,Critical,14.85,Missed,Fixed
+V0792,auth.php,Java,Database,Buffer Overflow,CWE-120,1282,5.5,Medium,5.5,Detected,Pending
+V0793,database.py,Python,Session Management,Path Traversal,CWE-22,1360,7.8,High,9.36,Detected,Fixed
+V0794,session.php,C++,File Upload,SQL Injection,CWE-89,1217,2.6,Low,1.82,Detected,Pending
+V0795,download.java,C++,File Upload,Insecure API,CWE-639,1311,7,High,8.4,Detected,Fixed
+V0796,upload.cpp,Java,Authentication,Sensitive Data Exposure,CWE-200,1445,3.7,Low,2.59,Detected,Pending
+V0797,auth.js,JavaScript,API,Insecure API,CWE-639,908,9.4,Critical,14.1,Detected,Fixed
+V0798,search.js,Java,Payment,Sensitive Data Exposure,CWE-200,139,8.5,High,10.2,Detected,Fixed
+V0799,server.c,JavaScript,Database,Hardcoded Credentials,CWE-798,571,8.8,High,10.56,Detected,Pending
+V0800,auth.cpp,JavaScript,Database,Insecure Cryptography,CWE-327,1347,8.5,High,10.2,Detected,Pending
+V0801,auth.php,JavaScript,User Management,Insecure Cryptography,CWE-327,866,5.3,Medium,5.3,Detected,Pending
+V0802,profile.js,JavaScript,API,Sensitive Data Exposure,CWE-200,1169,9.8,Critical,14.7,Missed,Fixed
+V0803,api.php,PHP,Database,Hardcoded Credentials,CWE-798,921,6,Medium,6,Detected,Pending
+V0804,checkout.py,C,Configuration,Weak Authentication,CWE-287,256,6,Medium,6,Detected,Pending
+V0805,upload.php,C++,Authentication,Insecure Cryptography,CWE-327,855,4.7,Medium,4.7,Detected,Fixed
+V0806,auth.py,Python,Configuration,Command Injection,CWE-78,1486,2.5,Low,1.75,Missed,Pending
+V0807,database.js,PHP,Database,Command Injection,CWE-78,803,9.3,Critical,13.95,Detected,Fixed
+V0808,auth.js,C++,API,Cross-Site Scripting,CWE-79,1306,3.8,Low,2.66,Detected,Pending
+V0809,auth.py,Python,User Management,Path Traversal,CWE-22,287,4.4,Medium,4.4,Detected,Fixed
+V0810,checkout.py,PHP,User Management,SQL Injection,CWE-89,1160,7.3,High,8.76,Missed,Pending
+V0811,database.java,Python,File Upload,Command Injection,CWE-78,254,6.5,Medium,6.5,Detected,Pending
+V0812,upload.py,Java,API,Path Traversal,CWE-22,771,9.8,Critical,14.7,Detected,Fixed
+V0813,download.php,Python,Session Management,Cross-Site Scripting,CWE-79,800,2.8,Low,1.96,Missed,Pending
+V0814,download.cpp,C++,API,Insecure Cryptography,CWE-327,1143,6.4,Medium,6.4,Detected,Pending
+V0815,login.py,Java,Configuration,Weak Authentication,CWE-287,736,9.3,Critical,13.95,Detected,Fixed
+V0816,download.py,PHP,File Upload,SQL Injection,CWE-89,419,9,Critical,13.5,Detected,Fixed
+V0817,auth.php,C++,File Upload,Sensitive Data Exposure,CWE-200,616,9.2,Critical,13.8,Detected,Fixed
+V0818,auth.py,Java,File Upload,Insecure Cryptography,CWE-327,1205,8.2,High,9.84,Detected,Pending
+V0819,search.py,JavaScript,File Upload,Insecure Cryptography,CWE-327,1014,3.3,Low,2.31,Detected,Pending
+V0820,search.js,PHP,API,Path Traversal,CWE-22,109,3,Low,2.1,Detected,Fixed
+V0821,config.c,C++,Configuration,Cross-Site Scripting,CWE-79,37,2.9,Low,2.03,Detected,Pending
+V0822,database.java,PHP,File Upload,Buffer Overflow,CWE-120,1072,5.5,Medium,5.5,Detected,Pending
+V0823,auth.java,JavaScript,File Upload,Path Traversal,CWE-22,674,8.2,High,9.84,Detected,Pending
+V0824,user.java,C,Database,Insecure API,CWE-639,861,9.2,Critical,13.8,Detected,Pending
+V0825,login.php,JavaScript,File Upload,Path Traversal,CWE-22,409,5.4,Medium,5.4,Detected,Fixed
+V0826,auth.py,C,Database,Sensitive Data Exposure,CWE-200,634,8.5,High,10.2,Detected,Fixed
+V0827,auth.c,Python,Session Management,Cross-Site Scripting,CWE-79,725,5.7,Medium,5.7,Detected,Pending
+V0828,database.js,C,User Management,Cross-Site Scripting,CWE-79,481,7.4,High,8.88,Detected,Fixed
+V0829,database.py,Python,Session Management,Weak Authentication,CWE-287,1401,8.1,High,9.72,Missed,Fixed
+V0830,checkout.java,C++,API,Path Traversal,CWE-22,1021,7.5,High,9,Detected,Fixed
+V0831,profile.java,Python,Authentication,Sensitive Data Exposure,CWE-200,966,8.8,High,10.56,Detected,Pending
+V0832,login.js,C++,Authentication,Insecure Cryptography,CWE-327,278,4.5,Medium,4.5,Detected,Pending
+V0833,config.py,C++,Authentication,Path Traversal,CWE-22,369,3.5,Low,2.45,Detected,Fixed
+V0834,download.cpp,C++,Session Management,Insecure API,CWE-639,1075,2.7,Low,1.89,Detected,Fixed
+V0835,server.java,JavaScript,Payment,Hardcoded Credentials,CWE-798,740,2.1,Low,1.47,Detected,Pending
+V0836,search.cpp,PHP,Session Management,Command Injection,CWE-78,1095,9.2,Critical,13.8,Detected,Fixed
+V0837,admin.cpp,PHP,Configuration,Command Injection,CWE-78,111,8.4,High,10.08,Detected,Fixed
+V0838,config.py,Java,User Management,Sensitive Data Exposure,CWE-200,407,2.6,Low,1.82,Missed,Pending
+V0839,admin.cpp,C,API,Cross-Site Scripting,CWE-79,328,2.8,Low,1.96,Detected,Pending
+V0840,search.java,PHP,Authentication,Command Injection,CWE-78,1179,3.4,Low,2.38,Missed,Fixed
+V0841,server.py,C++,Database,SQL Injection,CWE-89,636,6.2,Medium,6.2,Detected,Fixed
+V0842,checkout.java,PHP,File Upload,SQL Injection,CWE-89,466,7.9,High,9.48,Missed,Pending
+V0843,profile.js,Python,Authentication,SQL Injection,CWE-89,794,2.9,Low,2.03,Detected,Pending
+V0844,api.php,PHP,API,Hardcoded Credentials,CWE-798,81,2.8,Low,1.96,Detected,Pending
+V0845,download.java,C,Payment,Command Injection,CWE-78,737,6.4,Medium,6.4,Detected,Fixed
+V0846,api.py,Python,Payment,Cross-Site Scripting,CWE-79,1097,4.3,Medium,4.3,Missed,Fixed
+V0847,session.java,Java,Database,Path Traversal,CWE-22,182,5.5,Medium,5.5,Detected,Fixed
+V0848,profile.js,JavaScript,User Management,Cross-Site Scripting,CWE-79,1370,2.9,Low,2.03,Missed,Fixed
+V0849,config.c,Python,Session Management,Cross-Site Scripting,CWE-79,1164,9.4,Critical,14.1,Detected,Fixed
+V0850,database.c,JavaScript,Database,Path Traversal,CWE-22,393,7.9,High,9.48,Missed,Pending
+V0851,session.php,PHP,Configuration,Sensitive Data Exposure,CWE-200,216,5.7,Medium,5.7,Missed,Fixed
+V0852,checkout.c,PHP,File Upload,Hardcoded Credentials,CWE-798,983,7.4,High,8.88,Detected,Fixed
+V0853,download.php,JavaScript,Database,Hardcoded Credentials,CWE-798,170,4.3,Medium,4.3,Detected,Pending
+V0854,admin.c,C++,User Management,Buffer Overflow,CWE-120,690,7.3,High,8.76,Detected,Pending
+V0855,user.c,C,File Upload,Insecure Cryptography,CWE-327,797,5,Medium,5,Missed,Pending
+V0856,login.py,Python,File Upload,Command Injection,CWE-78,531,7.4,High,8.88,Detected,Fixed
+V0857,database.php,Java,Payment,Insecure Cryptography,CWE-327,498,5.3,Medium,5.3,Detected,Fixed
+V0858,auth.cpp,Java,Configuration,Command Injection,CWE-78,21,7.7,High,9.24,Detected,Fixed
+V0859,search.py,C,API,Insecure API,CWE-639,257,4.2,Medium,4.2,Detected,Fixed
+V0860,server.cpp,JavaScript,Payment,Weak Authentication,CWE-287,869,7.9,High,9.48,Detected,Pending
+V0861,database.py,C,Payment,Cross-Site Scripting,CWE-79,332,6.6,Medium,6.6,Detected,Fixed
+V0862,server.cpp,PHP,Authentication,Insecure API,CWE-639,1384,2.2,Low,1.54,Detected,Fixed
+V0863,checkout.c,C,User Management,SQL Injection,CWE-89,1004,4.9,Medium,4.9,Detected,Pending
+V0864,upload.c,C++,Authentication,Weak Authentication,CWE-287,103,5.5,Medium,5.5,Detected,Pending
+V0865,user.php,JavaScript,Database,Command Injection,CWE-78,748,5.2,Medium,5.2,Detected,Pending
+V0866,api.java,PHP,Payment,Command Injection,CWE-78,544,6.4,Medium,6.4,Detected,Pending
+V0867,upload.php,JavaScript,Configuration,Command Injection,CWE-78,787,8.9,High,10.68,Detected,Pending
+V0868,upload.java,PHP,Authentication,Insecure API,CWE-639,108,8.1,High,9.72,Missed,Fixed
+V0869,database.c,Python,File Upload,Insecure Cryptography,CWE-327,1473,2.5,Low,1.75,Detected,Pending
+V0870,config.js,PHP,File Upload,Command Injection,CWE-78,734,2.9,Low,2.03,Detected,Pending
+V0871,admin.java,C,Session Management,Cross-Site Scripting,CWE-79,1434,4.5,Medium,4.5,Detected,Pending
+V0872,profile.py,PHP,Payment,Weak Authentication,CWE-287,608,4.5,Medium,4.5,Detected,Fixed
+V0873,database.py,C++,Session Management,Weak Authentication,CWE-287,753,7.9,High,9.48,Missed,Pending
+V0874,admin.py,C++,File Upload,Path Traversal,CWE-22,1223,3.1,Low,2.17,Missed,Pending
+V0875,profile.c,PHP,Configuration,Cross-Site Scripting,CWE-79,373,9.8,Critical,14.7,Detected,Fixed
+V0876,download.js,Python,Database,Buffer Overflow,CWE-120,967,8.8,High,10.56,Detected,Fixed
+V0877,admin.py,Python,API,Path Traversal,CWE-22,1286,6.7,Medium,6.7,Detected,Pending
+V0878,upload.py,JavaScript,Authentication,Path Traversal,CWE-22,407,9.2,Critical,13.8,Detected,Fixed
+V0879,api.js,JavaScript,Session Management,Buffer Overflow,CWE-120,974,2.1,Low,1.47,Detected,Pending
+V0880,config.c,PHP,File Upload,Weak Authentication,CWE-287,599,8.3,High,9.96,Missed,Fixed
+V0881,admin.cpp,Python,File Upload,Cross-Site Scripting,CWE-79,923,9.3,Critical,13.95,Detected,Fixed
+V0882,login.c,Python,Payment,Command Injection,CWE-78,1068,2.9,Low,2.03,Detected,Pending
+V0883,admin.java,C,Configuration,Insecure Cryptography,CWE-327,629,5.7,Medium,5.7,Detected,Fixed
+V0884,admin.cpp,Python,Session Management,Command Injection,CWE-78,181,7.4,High,8.88,Missed,Pending
+V0885,user.js,Python,Authentication,Command Injection,CWE-78,1120,5.7,Medium,5.7,Detected,Pending
+V0886,login.php,PHP,Payment,Weak Authentication,CWE-287,1332,9,Critical,13.5,Detected,Fixed
+V0887,server.c,C++,API,Path Traversal,CWE-22,504,5.2,Medium,5.2,Detected,Fixed
+V0888,auth.js,PHP,Payment,Buffer Overflow,CWE-120,1120,6.5,Medium,6.5,Detected,Pending
+V0889,auth.java,Python,Authentication,Sensitive Data Exposure,CWE-200,617,7.2,High,8.64,Detected,Pending
+V0890,search.py,C++,Payment,Hardcoded Credentials,CWE-798,1383,4.3,Medium,4.3,Detected,Fixed
+V0891,admin.php,PHP,User Management,Command Injection,CWE-78,1276,9.1,Critical,13.65,Detected,Fixed
+V0892,profile.c,Java,Configuration,Path Traversal,CWE-22,769,3.1,Low,2.17,Detected,Pending
+V0893,download.c,PHP,Authentication,Buffer Overflow,CWE-120,738,6.5,Medium,6.5,Detected,Pending
+V0894,login.js,C,Configuration,SQL Injection,CWE-89,1148,4,Medium,4,Detected,Pending
+V0895,search.php,Python,Configuration,Path Traversal,CWE-22,1099,2.6,Low,1.82,Detected,Pending
+V0896,login.php,C,User Management,Insecure Cryptography,CWE-327,1296,8.1,High,9.72,Missed,Fixed
+V0897,server.php,C,Payment,Command Injection,CWE-78,803,6.9,Medium,6.9,Detected,Fixed
+V0898,admin.js,Python,Configuration,Sensitive Data Exposure,CWE-200,1302,4.7,Medium,4.7,Detected,Pending
+V0899,config.js,Python,Payment,Insecure API,CWE-639,969,9.3,Critical,13.95,Detected,Fixed
+V0900,user.py,C++,Configuration,Hardcoded Credentials,CWE-798,422,6.7,Medium,6.7,Detected,Pending
+V0901,admin.c,C++,Session Management,Insecure Cryptography,CWE-327,1110,9.6,Critical,14.4,Detected,Pending
+V0902,session.cpp,PHP,User Management,Weak Authentication,CWE-287,380,9.2,Critical,13.8,Missed,Fixed
+V0903,login.py,C++,Configuration,Insecure Cryptography,CWE-327,1032,5.1,Medium,5.1,Detected,Pending
+V0904,api.js,C++,Authentication,Insecure Cryptography,CWE-327,1303,7.7,High,9.24,Detected,Fixed
+V0905,auth.py,Java,User Management,Weak Authentication,CWE-287,543,8.6,High,10.32,Detected,Fixed
+V0906,admin.cpp,Python,Payment,Insecure API,CWE-639,878,9.3,Critical,13.95,Detected,Fixed
+V0907,config.c,PHP,File Upload,Insecure API,CWE-639,273,3,Low,2.1,Detected,Pending
+V0908,database.cpp,JavaScript,Payment,Insecure API,CWE-639,1007,2.4,Low,1.68,Detected,Pending
+V0909,payment.java,Python,Database,Buffer Overflow,CWE-120,979,9.9,Critical,14.85,Detected,Fixed
+V0910,user.java,Java,Authentication,Hardcoded Credentials,CWE-798,83,5.1,Medium,5.1,Detected,Fixed
+V0911,server.js,JavaScript,Session Management,Buffer Overflow,CWE-120,138,7.7,High,9.24,Detected,Fixed
+V0912,user.java,C++,Database,Path Traversal,CWE-22,396,6.2,Medium,6.2,Detected,Fixed
+V0913,auth.java,Python,Session Management,Path Traversal,CWE-22,81,5.1,Medium,5.1,Missed,Pending
+V0914,upload.py,C,File Upload,Weak Authentication,CWE-287,115,7.7,High,9.24,Detected,Pending
+V0915,admin.js,JavaScript,Configuration,Buffer Overflow,CWE-120,451,9,Critical,13.5,Detected,Fixed
+V0916,config.java,Java,Session Management,SQL Injection,CWE-89,977,3,Low,2.1,Detected,Pending
+V0917,config.java,Java,Session Management,Path Traversal,CWE-22,260,4.9,Medium,4.9,Detected,Pending
+V0918,server.c,Python,API,Sensitive Data Exposure,CWE-200,762,8.3,High,9.96,Detected,Pending
+V0919,download.cpp,Java,API,Path Traversal,CWE-22,649,3.7,Low,2.59,Detected,Pending
+V0920,api.py,Python,File Upload,Weak Authentication,CWE-287,506,7,High,8.4,Detected,Fixed
+V0921,payment.js,JavaScript,Configuration,SQL Injection,CWE-89,1044,5,Medium,5,Detected,Pending
+V0922,user.cpp,JavaScript,Session Management,Path Traversal,CWE-22,1062,6.8,Medium,6.8,Detected,Pending
+V0923,payment.js,JavaScript,Session Management,Path Traversal,CWE-22,1278,6.5,Medium,6.5,Detected,Fixed
+V0924,database.java,Python,Authentication,Command Injection,CWE-78,1377,7.6,High,9.12,Detected,Fixed
+V0925,admin.cpp,PHP,API,Command Injection,CWE-78,1162,8.5,High,10.2,Missed,Pending
+V0926,server.cpp,C++,Configuration,Insecure Cryptography,CWE-327,1135,5.6,Medium,5.6,Detected,Pending
+V0927,user.cpp,C++,Session Management,SQL Injection,CWE-89,1478,5,Medium,5,Missed,Pending
+V0928,server.py,PHP,Database,Insecure Cryptography,CWE-327,363,8.6,High,10.32,Detected,Fixed
+V0929,api.py,C++,File Upload,Path Traversal,CWE-22,770,6.1,Medium,6.1,Detected,Pending
+V0930,server.cpp,Java,Payment,Insecure API,CWE-639,102,7.9,High,9.48,Missed,Pending
+V0931,download.cpp,Java,Payment,SQL Injection,CWE-89,179,8.8,High,10.56,Detected,Pending
+V0932,upload.js,PHP,Authentication,Buffer Overflow,CWE-120,1008,5.5,Medium,5.5,Detected,Pending
+V0933,database.cpp,Java,User Management,Weak Authentication,CWE-287,46,5.2,Medium,5.2,Detected,Pending
+V0934,auth.js,C++,Session Management,Sensitive Data Exposure,CWE-200,1109,8.8,High,10.56,Detected,Pending
+V0935,profile.js,C++,API,Insecure Cryptography,CWE-327,1354,7.8,High,9.36,Detected,Fixed
+V0936,upload.py,Python,File Upload,Weak Authentication,CWE-287,934,6.9,Medium,6.9,Detected,Pending
+V0937,admin.php,PHP,Authentication,Command Injection,CWE-78,644,7.6,High,9.12,Detected,Fixed
+V0938,auth.cpp,JavaScript,Configuration,SQL Injection,CWE-89,1011,8,High,9.6,Detected,Fixed
+V0939,auth.py,C,Database,Insecure API,CWE-639,850,4.1,Medium,4.1,Detected,Fixed
+V0940,database.js,JavaScript,User Management,Hardcoded Credentials,CWE-798,759,4.2,Medium,4.2,Detected,Fixed
+V0941,user.js,JavaScript,File Upload,Buffer Overflow,CWE-120,351,3.6,Low,2.52,Missed,Pending
+V0942,checkout.py,C++,Database,Insecure Cryptography,CWE-327,649,9.5,Critical,14.25,Detected,Fixed
+V0943,config.js,C,User Management,Insecure Cryptography,CWE-327,675,4.2,Medium,4.2,Detected,Pending
+V0944,user.c,Python,User Management,Buffer Overflow,CWE-120,183,6,Medium,6,Detected,Fixed
+V0945,auth.py,C++,Database,Path Traversal,CWE-22,1357,2.3,Low,1.61,Detected,Pending
+V0946,database.php,Python,File Upload,Hardcoded Credentials,CWE-798,1250,8.4,High,10.08,Detected,Fixed
+V0947,payment.js,C,Database,Buffer Overflow,CWE-120,1171,5.2,Medium,5.2,Missed,Pending
+V0948,profile.cpp,C++,User Management,Weak Authentication,CWE-287,1363,5.7,Medium,5.7,Detected,Pending
+V0949,server.c,C,Payment,SQL Injection,CWE-89,746,9.4,Critical,14.1,Detected,Fixed
+V0950,session.py,Python,Session Management,SQL Injection,CWE-89,108,5.1,Medium,5.1,Detected,Fixed
+V0951,auth.cpp,PHP,Configuration,Weak Authentication,CWE-287,485,8,High,9.6,Detected,Fixed
+V0952,checkout.py,Python,Session Management,Command Injection,CWE-78,449,8.3,High,9.96,Detected,Fixed
+V0953,api.cpp,C++,Configuration,Hardcoded Credentials,CWE-798,369,3.7,Low,2.59,Detected,Fixed
+V0954,search.php,C++,File Upload,Command Injection,CWE-78,300,2.5,Low,1.75,Missed,Pending
+V0955,search.py,JavaScript,Database,Cross-Site Scripting,CWE-79,984,4.7,Medium,4.7,Detected,Fixed
+V0956,profile.js,C,Authentication,Sensitive Data Exposure,CWE-200,800,7.5,High,9,Missed,Pending
+V0957,upload.java,Python,Payment,Command Injection,CWE-78,484,8.1,High,9.72,Detected,Pending
+V0958,search.py,Python,Payment,Sensitive Data Exposure,CWE-200,823,7.2,High,8.64,Missed,Pending
+V0959,payment.js,C++,Database,Weak Authentication,CWE-287,83,9.5,Critical,14.25,Detected,Fixed
+V0960,checkout.cpp,PHP,Authentication,Buffer Overflow,CWE-120,1023,2,Low,1.4,Detected,Fixed
+V0961,config.c,Python,Payment,SQL Injection,CWE-89,589,5,Medium,5,Detected,Pending
+V0962,search.js,PHP,User Management,Weak Authentication,CWE-287,425,7.1,High,8.52,Detected,Fixed
+V0963,payment.php,Java,Configuration,Command Injection,CWE-78,558,2.8,Low,1.96,Detected,Pending
+V0964,login.php,JavaScript,Payment,Insecure API,CWE-639,886,2.1,Low,1.47,Detected,Pending
+V0965,download.php,Python,Session Management,Cross-Site Scripting,CWE-79,391,3.2,Low,2.24,Detected,Fixed
+V0966,api.cpp,C++,Payment,SQL Injection,CWE-89,1452,8,High,9.6,Detected,Pending
+V0967,user.c,Java,API,Path Traversal,CWE-22,885,8.8,High,10.56,Missed,Pending
+V0968,checkout.java,C,Authentication,SQL Injection,CWE-89,1257,4.6,Medium,4.6,Detected,Pending
+V0969,config.c,C,Authentication,Buffer Overflow,CWE-120,182,4.1,Medium,4.1,Detected,Pending
+V0970,login.php,PHP,Session Management,Command Injection,CWE-78,132,3.9,Low,2.73,Detected,Pending
+V0971,login.php,Python,Payment,Cross-Site Scripting,CWE-79,1443,9.7,Critical,14.55,Missed,Fixed
+V0972,admin.py,PHP,Configuration,Sensitive Data Exposure,CWE-200,823,6,Medium,6,Detected,Pending
+V0973,session.js,JavaScript,Authentication,Command Injection,CWE-78,693,7.6,High,9.12,Detected,Fixed
+V0974,session.java,PHP,Payment,Weak Authentication,CWE-287,475,9.3,Critical,13.95,Detected,Fixed
+V0975,download.java,C++,Payment,Buffer Overflow,CWE-120,87,6.9,Medium,6.9,Detected,Pending
+V0976,config.php,C,File Upload,SQL Injection,CWE-89,1064,4.1,Medium,4.1,Detected,Fixed
+V0977,database.cpp,Python,Configuration,Cross-Site Scripting,CWE-79,888,9.4,Critical,14.1,Detected,Pending
+V0978,auth.cpp,C++,Authentication,Hardcoded Credentials,CWE-798,1121,7.7,High,9.24,Detected,Fixed
+V0979,auth.php,Python,File Upload,Path Traversal,CWE-22,574,2.4,Low,1.68,Detected,Pending
+V0980,payment.py,PHP,Configuration,Weak Authentication,CWE-287,572,7.1,High,8.52,Detected,Pending
+V0981,payment.py,C,API,Sensitive Data Exposure,CWE-200,491,8.8,High,10.56,Missed,Pending
+V0982,user.py,C++,Payment,Hardcoded Credentials,CWE-798,1219,3,Low,2.1,Detected,Pending
+V0983,database.cpp,C++,Authentication,Buffer Overflow,CWE-120,534,9.6,Critical,14.4,Detected,Fixed
+V0984,checkout.php,JavaScript,Database,SQL Injection,CWE-89,764,2.3,Low,1.61,Detected,Pending
+V0985,api.php,C++,Configuration,Weak Authentication,CWE-287,460,3.4,Low,2.38,Missed,Fixed
+V0986,auth.py,Python,Authentication,Path Traversal,CWE-22,27,2.2,Low,1.54,Detected,Pending
+V0987,checkout.cpp,JavaScript,User Management,Insecure API,CWE-639,338,5.1,Medium,5.1,Detected,Pending
+V0988,checkout.java,C++,Configuration,Sensitive Data Exposure,CWE-200,67,7.7,High,9.24,Missed,Fixed
+V0989,admin.cpp,JavaScript,Authentication,SQL Injection,CWE-89,478,7.2,High,8.64,Detected,Pending
+V0990,session.js,C++,Authentication,Sensitive Data Exposure,CWE-200,515,5.9,Medium,5.9,Missed,Fixed
+V0991,upload.c,PHP,File Upload,Path Traversal,CWE-22,531,2.6,Low,1.82,Detected,Pending
+V0992,session.js,JavaScript,Authentication,Cross-Site Scripting,CWE-79,223,9.7,Critical,14.55,Detected,Fixed
+V0993,user.php,Python,Database,Sensitive Data Exposure,CWE-200,1209,6.5,Medium,6.5,Missed,Fixed
+V0994,login.py,C,Database,Weak Authentication,CWE-287,537,7.7,High,9.24,Missed,Fixed
+V0995,search.java,Python,Configuration,Command Injection,CWE-78,1194,4.3,Medium,4.3,Detected,Pending
+V0996,admin.js,C++,API,Cross-Site Scripting,CWE-79,429,8.4,High,10.08,Detected,Pending
+V0997,database.js,C,File Upload,Insecure API,CWE-639,685,7,High,8.4,Detected,Fixed
+V0998,server.java,Python,File Upload,Cross-Site Scripting,CWE-79,638,9.3,Critical,13.95,Detected,Pending
+V0999,profile.cpp,PHP,Session Management,Command Injection,CWE-78,809,5.2,Medium,5.2,Detected,Pending
+V1000,auth.java,JavaScript,Session Management,Command Injection,CWE-78,1399,4.5,Medium,4.5,Detected,Pending
+V1001,login.py,JavaScript,Session Management,Hardcoded Credentials,CWE-798,423,7.9,High,9.48,Missed,Pending
+V1002,user.c,JavaScript,Authentication,Insecure Cryptography,CWE-327,1327,7.6,High,9.12,Detected,Pending
+V1003,search.c,C++,User Management,Weak Authentication,CWE-287,1122,5.5,Medium,5.5,Detected,Fixed
+V1004,upload.c,C,Authentication,Cross-Site Scripting,CWE-79,562,8.5,High,10.2,Detected,Fixed
+V1005,checkout.cpp,Java,API,Insecure Cryptography,CWE-327,379,4.4,Medium,4.4,Detected,Pending
+V1006,admin.c,Java,User Management,SQL Injection,CWE-89,1389,9.3,Critical,13.95,Detected,Fixed
+V1007,login.php,C,User Management,Path Traversal,CWE-22,627,7,High,8.4,Detected,Fixed
+V1008,search.py,C,Configuration,SQL Injection,CWE-89,752,8.2,High,9.84,Detected,Fixed
+V1009,login.js,PHP,Configuration,Insecure API,CWE-639,1257,7.7,High,9.24,Detected,Fixed
+V1010,payment.c,C,Payment,SQL Injection,CWE-89,1428,7.3,High,8.76,Missed,Fixed
+V1011,payment.java,PHP,Authentication,Insecure API,CWE-639,101,7.6,High,9.12,Missed,Pending
+V1012,upload.py,PHP,Session Management,Buffer Overflow,CWE-120,237,3.5,Low,2.45,Detected,Pending
+V1013,server.cpp,PHP,User Management,Sensitive Data Exposure,CWE-200,1066,6.8,Medium,6.8,Detected,Pending
+V1014,profile.c,JavaScript,Session Management,Cross-Site Scripting,CWE-79,1316,8.1,High,9.72,Detected,Fixed
+V1015,database.cpp,C,API,Weak Authentication,CWE-287,151,3.9,Low,2.73,Detected,Pending
+V1016,upload.cpp,Java,Authentication,Sensitive Data Exposure,CWE-200,1276,7.5,High,9,Detected,Pending
+V1017,api.java,C,Configuration,Cross-Site Scripting,CWE-79,145,2.7,Low,1.89,Missed,Pending
+V1018,api.js,Java,File Upload,Weak Authentication,CWE-287,548,7.9,High,9.48,Detected,Pending
+V1019,session.php,Java,Database,Command Injection,CWE-78,761,9.6,Critical,14.4,Missed,Pending
+V1020,server.php,C,API,Insecure API,CWE-639,1468,7.3,High,8.76,Detected,Fixed
+V1021,session.py,C,Authentication,Insecure API,CWE-639,916,7.3,High,8.76,Detected,Fixed
+V1022,database.cpp,C,Database,Insecure Cryptography,CWE-327,1087,5.4,Medium,5.4,Detected,Fixed
+V1023,server.py,Python,API,Insecure API,CWE-639,758,3.1,Low,2.17,Missed,Pending
+V1024,payment.js,PHP,Authentication,Hardcoded Credentials,CWE-798,1334,5.8,Medium,5.8,Detected,Fixed
+V1025,download.js,Python,File Upload,Cross-Site Scripting,CWE-79,1367,2.8,Low,1.96,Detected,Pending
+V1026,admin.c,Python,Database,Path Traversal,CWE-22,576,8,High,9.6,Detected,Pending
+V1027,checkout.php,Python,Database,Insecure Cryptography,CWE-327,523,4.9,Medium,4.9,Detected,Fixed
+V1028,server.py,JavaScript,File Upload,Hardcoded Credentials,CWE-798,1017,6.5,Medium,6.5,Detected,Fixed
+V1029,payment.c,Java,File Upload,SQL Injection,CWE-89,1219,5.1,Medium,5.1,Detected,Fixed
+V1030,server.c,PHP,Database,Buffer Overflow,CWE-120,12,3.6,Low,2.52,Detected,Fixed
+V1031,login.js,Java,Database,Command Injection,CWE-78,545,6.3,Medium,6.3,Detected,Pending
+V1032,config.php,C++,API,Insecure Cryptography,CWE-327,518,5.1,Medium,5.1,Detected,Pending
+V1033,server.py,Python,File Upload,Insecure API,CWE-639,1415,8.9,High,10.68,Detected,Pending
+V1034,upload.c,JavaScript,Configuration,Command Injection,CWE-78,761,2.7,Low,1.89,Detected,Pending
+V1035,search.php,C,File Upload,Command Injection,CWE-78,653,2.5,Low,1.75,Detected,Fixed
+V1036,user.cpp,C++,Payment,Hardcoded Credentials,CWE-798,110,3.3,Low,2.31,Detected,Fixed
+V1037,payment.py,C,User Management,Insecure API,CWE-639,1256,9.5,Critical,14.25,Missed,Fixed
+V1038,checkout.c,Python,File Upload,Cross-Site Scripting,CWE-79,1128,5.5,Medium,5.5,Detected,Fixed
+V1039,payment.cpp,C,Authentication,Path Traversal,CWE-22,390,7.4,High,8.88,Detected,Fixed
+V1040,admin.py,Python,API,Insecure API,CWE-639,941,2.3,Low,1.61,Missed,Pending
+V1041,server.php,C,Database,Path Traversal,CWE-22,286,5.7,Medium,5.7,Detected,Fixed
+V1042,payment.js,C,Database,Hardcoded Credentials,CWE-798,1313,2.4,Low,1.68,Missed,Fixed
+V1043,server.js,C++,Authentication,Path Traversal,CWE-22,1066,7,High,8.4,Detected,Fixed
+V1044,auth.cpp,Java,Database,Sensitive Data Exposure,CWE-200,410,8.9,High,10.68,Detected,Pending
+V1045,profile.php,Java,API,Hardcoded Credentials,CWE-798,818,3.6,Low,2.52,Detected,Pending
+V1046,download.cpp,C,Database,Insecure Cryptography,CWE-327,74,4.3,Medium,4.3,Detected,Fixed
+V1047,payment.c,C,API,Weak Authentication,CWE-287,1118,8.9,High,10.68,Detected,Fixed
+V1048,server.php,PHP,Configuration,Insecure Cryptography,CWE-327,594,2.3,Low,1.61,Missed,Pending
+V1049,login.php,Python,Authentication,Insecure Cryptography,CWE-327,92,8.3,High,9.96,Detected,Pending
+V1050,login.c,JavaScript,File Upload,Command Injection,CWE-78,1300,5.6,Medium,5.6,Detected,Fixed
+V1051,profile.js,JavaScript,User Management,SQL Injection,CWE-89,1335,2.6,Low,1.82,Missed,Pending
+V1052,upload.py,Java,Configuration,Insecure Cryptography,CWE-327,1437,9.3,Critical,13.95,Detected,Fixed
+V1053,payment.py,JavaScript,Payment,Insecure Cryptography,CWE-327,1229,3.5,Low,2.45,Missed,Fixed
+V1054,login.c,C,API,Command Injection,CWE-78,1256,8,High,9.6,Detected,Fixed
+V1055,user.c,JavaScript,User Management,Hardcoded Credentials,CWE-798,628,5.5,Medium,5.5,Detected,Fixed
+V1056,session.js,C++,Authentication,Path Traversal,CWE-22,307,7.4,High,8.88,Detected,Fixed
+V1057,auth.java,Python,Configuration,Insecure Cryptography,CWE-327,1479,3.5,Low,2.45,Missed,Fixed
+V1058,upload.c,C,File Upload,Sensitive Data Exposure,CWE-200,501,9.1,Critical,13.65,Detected,Fixed
+V1059,user.c,Java,User Management,Buffer Overflow,CWE-120,1084,2.4,Low,1.68,Detected,Pending
+V1060,database.java,PHP,Session Management,Command Injection,CWE-78,131,3.8,Low,2.66,Detected,Pending
+V1061,payment.js,PHP,Authentication,Insecure API,CWE-639,54,4.1,Medium,4.1,Missed,Pending
+V1062,admin.php,C,Authentication,SQL Injection,CWE-89,790,8.1,High,9.72,Detected,Fixed
+V1063,upload.c,C++,User Management,Insecure Cryptography,CWE-327,605,5.1,Medium,5.1,Detected,Pending
+V1064,checkout.py,C,User Management,Insecure Cryptography,CWE-327,1388,4.2,Medium,4.2,Detected,Fixed
+V1065,admin.js,Java,Authentication,Path Traversal,CWE-22,1107,2.6,Low,1.82,Missed,Fixed
+V1066,config.py,C++,Configuration,Buffer Overflow,CWE-120,76,6,Medium,6,Detected,Fixed
+V1067,search.py,C++,File Upload,SQL Injection,CWE-89,900,5.6,Medium,5.6,Detected,Pending
+V1068,download.js,Python,Authentication,Sensitive Data Exposure,CWE-200,452,9.9,Critical,14.85,Missed,Fixed
+V1069,payment.c,JavaScript,User Management,Buffer Overflow,CWE-120,1268,3.1,Low,2.17,Detected,Fixed
+V1070,user.java,C,File Upload,Cross-Site Scripting,CWE-79,453,8.7,High,10.44,Missed,Fixed
+V1071,payment.js,Python,Database,Buffer Overflow,CWE-120,1320,2.2,Low,1.54,Detected,Fixed
+V1072,api.js,PHP,API,Insecure API,CWE-639,923,8.2,High,9.84,Missed,Pending
+V1073,download.cpp,Python,Authentication,Insecure Cryptography,CWE-327,1130,3.8,Low,2.66,Missed,Pending
+V1074,upload.js,C,Session Management,Cross-Site Scripting,CWE-79,1432,3.1,Low,2.17,Detected,Pending
+V1075,database.cpp,C,Session Management,Path Traversal,CWE-22,515,3.5,Low,2.45,Detected,Pending
+V1076,download.js,C,Configuration,Path Traversal,CWE-22,569,3.7,Low,2.59,Detected,Fixed
+V1077,user.cpp,C,File Upload,Insecure Cryptography,CWE-327,1079,9.5,Critical,14.25,Detected,Fixed
+V1078,user.php,C++,User Management,Command Injection,CWE-78,558,9.9,Critical,14.85,Detected,Fixed
+V1079,upload.cpp,JavaScript,API,Command Injection,CWE-78,1000,4.5,Medium,4.5,Detected,Fixed
+V1080,auth.php,Java,API,Weak Authentication,CWE-287,827,3.1,Low,2.17,Detected,Pending
+V1081,checkout.java,PHP,Authentication,Cross-Site Scripting,CWE-79,344,7.3,High,8.76,Detected,Pending
+V1082,auth.c,C++,API,Hardcoded Credentials,CWE-798,471,6.7,Medium,6.7,Detected,Fixed
+V1083,config.java,Java,Authentication,Sensitive Data Exposure,CWE-200,886,4.8,Medium,4.8,Detected,Pending
+V1084,server.py,C++,Configuration,SQL Injection,CWE-89,473,8.5,High,10.2,Missed,Fixed
+V1085,session.php,Java,User Management,Sensitive Data Exposure,CWE-200,1346,4.3,Medium,4.3,Detected,Pending
+V1086,user.js,Python,Configuration,Weak Authentication,CWE-287,1314,8.8,High,10.56,Detected,Fixed
+V1087,session.cpp,PHP,User Management,Sensitive Data Exposure,CWE-200,1360,3.1,Low,2.17,Detected,Fixed
+V1088,server.java,C++,Payment,Buffer Overflow,CWE-120,84,8.9,High,10.68,Detected,Pending
+V1089,download.c,C,Configuration,Weak Authentication,CWE-287,561,2.5,Low,1.75,Detected,Pending
+V1090,session.c,Java,Payment,Insecure API,CWE-639,1206,5.5,Medium,5.5,Detected,Pending
+V1091,database.c,PHP,User Management,Insecure Cryptography,CWE-327,349,7.4,High,8.88,Detected,Pending
+V1092,session.php,Python,Authentication,Command Injection,CWE-78,285,3.6,Low,2.52,Detected,Pending
+V1093,auth.php,Java,Database,SQL Injection,CWE-89,1349,9.5,Critical,14.25,Detected,Fixed
+V1094,profile.js,PHP,API,Insecure Cryptography,CWE-327,203,5,Medium,5,Missed,Pending
+V1095,user.cpp,Python,API,Cross-Site Scripting,CWE-79,754,7,High,8.4,Detected,Fixed
+V1096,checkout.js,JavaScript,Database,SQL Injection,CWE-89,1107,3.5,Low,2.45,Detected,Pending
+V1097,session.java,JavaScript,Payment,Buffer Overflow,CWE-120,556,7.3,High,8.76,Detected,Fixed
+V1098,profile.js,C++,Session Management,Insecure Cryptography,CWE-327,101,7.9,High,9.48,Detected,Fixed
+V1099,auth.php,JavaScript,Authentication,Cross-Site Scripting,CWE-79,402,6,Medium,6,Detected,Pending
+V1100,auth.java,PHP,Database,Command Injection,CWE-78,329,8.9,High,10.68,Detected,Pending
+V1101,profile.c,PHP,Configuration,Insecure API,CWE-639,261,8.7,High,10.44,Detected,Fixed
+V1102,database.cpp,Python,Authentication,SQL Injection,CWE-89,1230,9.9,Critical,14.85,Detected,Fixed
+V1103,search.java,PHP,Authentication,Path Traversal,CWE-22,179,7.3,High,8.76,Missed,Pending
+V1104,login.cpp,Python,User Management,Cross-Site Scripting,CWE-79,582,7.1,High,8.52,Detected,Fixed
+V1105,upload.php,Java,Authentication,Weak Authentication,CWE-287,33,2.4,Low,1.68,Detected,Pending
+V1106,payment.php,JavaScript,Payment,Sensitive Data Exposure,CWE-200,941,3.5,Low,2.45,Detected,Pending
+V1107,download.php,Python,Database,Command Injection,CWE-78,305,2.3,Low,1.61,Detected,Pending
+V1108,user.java,Python,File Upload,Path Traversal,CWE-22,56,8.8,High,10.56,Detected,Fixed
+V1109,user.cpp,Python,Database,Cross-Site Scripting,CWE-79,527,5.4,Medium,5.4,Detected,Fixed
+V1110,auth.js,Python,Configuration,Buffer Overflow,CWE-120,699,8.5,High,10.2,Missed,Pending
+V1111,login.java,C++,Configuration,Command Injection,CWE-78,1400,3.2,Low,2.24,Detected,Pending
+V1112,profile.py,C++,Authentication,Hardcoded Credentials,CWE-798,243,5.2,Medium,5.2,Detected,Pending
+V1113,upload.cpp,Python,Payment,Command Injection,CWE-78,168,7.8,High,9.36,Detected,Fixed
+V1114,profile.py,PHP,Authentication,Command Injection,CWE-78,1478,2.5,Low,1.75,Missed,Fixed
+V1115,upload.cpp,Python,Configuration,Cross-Site Scripting,CWE-79,1455,4.6,Medium,4.6,Detected,Fixed
+V1116,server.cpp,C++,User Management,Hardcoded Credentials,CWE-798,888,8.2,High,9.84,Missed,Fixed
+V1117,server.py,C,API,Hardcoded Credentials,CWE-798,1457,8.7,High,10.44,Missed,Fixed
+V1118,api.java,PHP,File Upload,Insecure API,CWE-639,913,9,Critical,13.5,Detected,Fixed
+V1119,upload.php,JavaScript,Session Management,Insecure API,CWE-639,893,9.6,Critical,14.4,Detected,Fixed
+V1120,config.java,PHP,Payment,Command Injection,CWE-78,108,5.1,Medium,5.1,Missed,Pending
+V1121,login.c,C++,Authentication,Insecure Cryptography,CWE-327,857,9.6,Critical,14.4,Detected,Fixed
+V1122,download.js,C,Session Management,Weak Authentication,CWE-287,1217,7.6,High,9.12,Detected,Fixed
+V1123,api.cpp,C++,Authentication,Weak Authentication,CWE-287,131,5.4,Medium,5.4,Detected,Pending
+V1124,database.js,Java,Session Management,Buffer Overflow,CWE-120,568,5.1,Medium,5.1,Detected,Fixed
+V1125,session.c,C++,File Upload,Weak Authentication,CWE-287,1190,3.7,Low,2.59,Detected,Pending
+V1126,auth.py,JavaScript,User Management,Weak Authentication,CWE-287,585,8,High,9.6,Missed,Pending
+V1127,database.java,Java,Database,Command Injection,CWE-78,946,5.6,Medium,5.6,Detected,Fixed
+V1128,auth.java,C,Database,Path Traversal,CWE-22,752,5.6,Medium,5.6,Missed,Fixed
+V1129,admin.java,PHP,Payment,SQL Injection,CWE-89,177,2.7,Low,1.89,Detected,Fixed
+V1130,auth.cpp,Java,API,Cross-Site Scripting,CWE-79,389,4.9,Medium,4.9,Detected,Pending
+V1131,database.cpp,C,Authentication,SQL Injection,CWE-89,287,9.2,Critical,13.8,Detected,Fixed
+V1132,checkout.cpp,JavaScript,User Management,Buffer Overflow,CWE-120,659,6.4,Medium,6.4,Detected,Pending
+V1133,checkout.py,C,API,SQL Injection,CWE-89,357,2.2,Low,1.54,Detected,Pending
+V1134,database.php,JavaScript,API,Cross-Site Scripting,CWE-79,567,5.1,Medium,5.1,Detected,Fixed
+V1135,user.py,C,API,Sensitive Data Exposure,CWE-200,1072,2.9,Low,2.03,Detected,Fixed
+V1136,auth.php,C,User Management,Cross-Site Scripting,CWE-79,415,4.2,Medium,4.2,Detected,Pending
+V1137,upload.c,JavaScript,Configuration,Insecure API,CWE-639,1366,7.8,High,9.36,Detected,Fixed
+V1138,server.php,Python,Database,Command Injection,CWE-78,55,5,Medium,5,Missed,Pending
+V1139,session.c,JavaScript,Database,Buffer Overflow,CWE-120,1060,7.1,High,8.52,Detected,Fixed
+V1140,profile.js,JavaScript,API,SQL Injection,CWE-89,38,6,Medium,6,Missed,Pending
+V1141,admin.js,PHP,Database,Insecure API,CWE-639,164,8.5,High,10.2,Detected,Pending
+V1142,download.py,Python,Authentication,Buffer Overflow,CWE-120,415,6.7,Medium,6.7,Detected,Pending
+V1143,database.cpp,JavaScript,Payment,SQL Injection,CWE-89,1174,3.4,Low,2.38,Detected,Pending
+V1144,search.py,C++,File Upload,Hardcoded Credentials,CWE-798,743,9.5,Critical,14.25,Detected,Fixed
+V1145,session.cpp,Python,API,Buffer Overflow,CWE-120,1290,2.4,Low,1.68,Detected,Pending
+V1146,profile.java,Java,Payment,Command Injection,CWE-78,695,2.7,Low,1.89,Detected,Pending
+V1147,auth.java,Java,Authentication,SQL Injection,CWE-89,1298,8.7,High,10.44,Missed,Pending
+V1148,search.java,C,Payment,Insecure API,CWE-639,1123,5.4,Medium,5.4,Missed,Pending
+V1149,login.py,Python,User Management,Command Injection,CWE-78,1253,7.7,High,9.24,Detected,Fixed
+V1150,server.py,C,Database,Weak Authentication,CWE-287,431,7.9,High,9.48,Detected,Pending
+V1151,download.js,PHP,API,SQL Injection,CWE-89,671,9.9,Critical,14.85,Detected,Fixed
+V1152,upload.cpp,JavaScript,Payment,Insecure API,CWE-639,322,9.7,Critical,14.55,Detected,Fixed
+V1153,checkout.java,C++,Database,Weak Authentication,CWE-287,956,3.1,Low,2.17,Detected,Pending
+V1154,database.php,C++,API,SQL Injection,CWE-89,1234,7.3,High,8.76,Detected,Fixed
+V1155,server.py,JavaScript,Authentication,Buffer Overflow,CWE-120,979,2.3,Low,1.61,Missed,Pending
+V1156,upload.c,JavaScript,API,Insecure Cryptography,CWE-327,1242,6,Medium,6,Detected,Fixed
+V1157,admin.php,Java,User Management,Weak Authentication,CWE-287,399,8.3,High,9.96,Missed,Pending
+V1158,session.py,C++,Configuration,Weak Authentication,CWE-287,1371,5,Medium,5,Detected,Pending
+V1159,payment.c,Python,Configuration,Buffer Overflow,CWE-120,524,9.6,Critical,14.4,Missed,Fixed
+V1160,auth.php,C++,Session Management,Hardcoded Credentials,CWE-798,1054,7.3,High,8.76,Detected,Fixed
+V1161,config.cpp,C++,Database,Hardcoded Credentials,CWE-798,205,5.5,Medium,5.5,Detected,Pending
+V1162,payment.java,PHP,Payment,Hardcoded Credentials,CWE-798,966,8.7,High,10.44,Detected,Fixed
+V1163,payment.py,Python,Authentication,Weak Authentication,CWE-287,364,8.4,High,10.08,Detected,Pending
+V1164,search.php,PHP,Session Management,Hardcoded Credentials,CWE-798,1003,5.4,Medium,5.4,Detected,Pending
+V1165,download.cpp,Java,Database,Insecure API,CWE-639,599,4.6,Medium,4.6,Missed,Pending
+V1166,checkout.py,JavaScript,Authentication,Sensitive Data Exposure,CWE-200,758,6.5,Medium,6.5,Missed,Fixed
+V1167,search.c,Java,Payment,Hardcoded Credentials,CWE-798,66,8.9,High,10.68,Detected,Fixed
+V1168,checkout.java,JavaScript,File Upload,SQL Injection,CWE-89,1065,6.7,Medium,6.7,Detected,Pending
+V1169,api.cpp,PHP,Configuration,Buffer Overflow,CWE-120,743,7.2,High,8.64,Missed,Fixed
+V1170,auth.js,PHP,Authentication,Weak Authentication,CWE-287,911,8.1,High,9.72,Missed,Fixed
+V1171,session.py,JavaScript,API,Weak Authentication,CWE-287,1368,7.5,High,9,Detected,Fixed
+V1172,session.php,C++,User Management,Sensitive Data Exposure,CWE-200,958,8.9,High,10.68,Detected,Pending
+V1173,profile.php,JavaScript,File Upload,Command Injection,CWE-78,523,2.8,Low,1.96,Detected,Pending
+V1174,checkout.js,C,File Upload,SQL Injection,CWE-89,845,6.9,Medium,6.9,Detected,Fixed
+V1175,config.cpp,Python,Session Management,Cross-Site Scripting,CWE-79,505,3.9,Low,2.73,Detected,Pending
+V1176,download.php,PHP,Payment,Command Injection,CWE-78,1332,5.8,Medium,5.8,Detected,Fixed
+V1177,config.js,JavaScript,Session Management,Hardcoded Credentials,CWE-798,741,4.3,Medium,4.3,Detected,Pending
+V1178,config.js,PHP,API,Sensitive Data Exposure,CWE-200,833,9.3,Critical,13.95,Missed,Fixed
+V1179,checkout.cpp,C,File Upload,Hardcoded Credentials,CWE-798,723,5.2,Medium,5.2,Detected,Pending
+V1180,download.py,PHP,Configuration,Hardcoded Credentials,CWE-798,1112,6.5,Medium,6.5,Detected,Pending
+V1181,checkout.cpp,C,Database,Sensitive Data Exposure,CWE-200,876,2.6,Low,1.82,Missed,Pending
+V1182,config.java,C,API,SQL Injection,CWE-89,579,9.5,Critical,14.25,Detected,Fixed
+V1183,config.php,Java,File Upload,Insecure Cryptography,CWE-327,508,7.9,High,9.48,Detected,Fixed
+V1184,api.js,C++,Database,SQL Injection,CWE-89,778,5.8,Medium,5.8,Detected,Fixed
+V1185,login.js,C++,Database,Weak Authentication,CWE-287,22,3.5,Low,2.45,Missed,Fixed
+V1186,server.php,JavaScript,File Upload,Hardcoded Credentials,CWE-798,84,7.8,High,9.36,Detected,Pending
+V1187,search.js,PHP,Payment,SQL Injection,CWE-89,172,6.9,Medium,6.9,Detected,Fixed
+V1188,login.py,C,User Management,Path Traversal,CWE-22,680,2.5,Low,1.75,Missed,Fixed
+V1189,download.java,Java,API,Insecure Cryptography,CWE-327,623,2.4,Low,1.68,Detected,Pending
+V1190,server.c,C++,User Management,Weak Authentication,CWE-287,840,5.6,Medium,5.6,Missed,Pending
+V1191,search.java,C,Payment,Insecure Cryptography,CWE-327,263,3.4,Low,2.38,Detected,Pending
+V1192,api.py,C,Payment,Insecure API,CWE-639,1500,5.9,Medium,5.9,Detected,Pending
+V1193,database.java,C,Authentication,Insecure Cryptography,CWE-327,1041,9.9,Critical,14.85,Missed,Pending
+V1194,user.java,C++,Database,Command Injection,CWE-78,60,3.8,Low,2.66,Detected,Pending
+V1195,admin.php,C++,User Management,Insecure Cryptography,CWE-327,1097,7.7,High,9.24,Detected,Pending
+V1196,api.php,C,Payment,SQL Injection,CWE-89,1217,3.2,Low,2.24,Detected,Pending
+V1197,admin.java,C,Configuration,Command Injection,CWE-78,597,6.2,Medium,6.2,Detected,Pending
+V1198,admin.php,PHP,API,Insecure API,CWE-639,18,8.6,High,10.32,Detected,Pending
+V1199,api.php,PHP,User Management,Cross-Site Scripting,CWE-79,289,3,Low,2.1,Detected,Fixed
+V1200,search.c,JavaScript,Session Management,SQL Injection,CWE-89,1322,8.6,High,10.32,Missed,Pending
