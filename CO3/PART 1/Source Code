@@ -1,0 +1,346 @@
+
+# ============================================================
+# SAST Simulation & Modelling - Shiny GUI
+# ============================================================
+
+required <- c("shiny","shinydashboard","dplyr","ggplot2","DT","readr","plotly","scales")
+missing <- required[!sapply(required, requireNamespace, quietly=TRUE)]
+if(length(missing) > 0) {
+  stop(paste("Install required packages first:", paste(missing, collapse=", ")))
+}
+library(shiny)
+library(shinydashboard)
+library(dplyr)
+library(ggplot2)
+library(DT)
+library(readr)
+library(plotly)
+library(scales)
+
+generate_data <- function(n=1200, seed=123) {
+  set.seed(seed)
+  vulns <- c("SQL Injection","Cross-Site Scripting","Command Injection",
+             "Hardcoded Credentials","Weak Authentication","Insecure API",
+             "Path Traversal","Buffer Overflow","Insecure Cryptography",
+             "Sensitive Data Exposure")
+  cwes <- c("CWE-89","CWE-79","CWE-78","CWE-798","CWE-287",
+            "CWE-639","CWE-22","CWE-120","CWE-327","CWE-200")
+  languages <- c("Python","Java","JavaScript","C","C++","PHP")
+  components <- c("Authentication","Database","API","Payment","File Upload",
+                  "User Management","Session Management","Configuration")
+  files <- c("login","auth","user","admin","payment","database","api",
+             "upload","download","config","profile","session","search",
+             "checkout","server")
+  exts <- c(".py",".java",".js",".c",".cpp",".php")
+  idx <- sample(seq_along(vulns), n, TRUE)
+  cvss <- round(runif(n, 2, 10), 1)
+  severity <- case_when(cvss >= 9 ~ "Critical", cvss >= 7 ~ "High",
+                        cvss >= 4 ~ "Medium", TRUE ~ "Low")
+  weight <- case_when(severity=="Critical"~1.5, severity=="High"~1.2,
+                      severity=="Medium"~1.0, TRUE~0.7)
+  remediation <- sapply(severity, function(x) {
+    p <- switch(x, Critical=.75, High=.60, Medium=.45, Low=.30)
+    if(runif(1) < p) "Fixed" else "Pending"
+  })
+  data.frame(
+    ID=sprintf("V%04d",1:n),
+    File_Name=paste0(sample(files,n,TRUE),sample(exts,n,TRUE)),
+    Language=sample(languages,n,TRUE),
+    Component=sample(components,n,TRUE),
+    Vulnerability=vulns[idx],
+    CWE=cwes[idx],
+    Line_Number=sample(10:1500,n,TRUE),
+    CVSS=cvss,
+    Severity=factor(severity, levels=c("Low","Medium","High","Critical")),
+    Risk_Score=round(cvss*weight,2),
+    Detection_Status=sample(c("Detected","Missed"),n,TRUE,prob=c(.80,.20)),
+    Remediation=remediation,
+    stringsAsFactors=FALSE
+  )
+}
+
+ui <- dashboardPage(
+  dashboardHeader(title="SAST Simulation & Modelling"),
+  dashboardSidebar(
+    sidebarMenu(
+      menuItem("Dashboard", tabName="dashboard", icon=icon("dashboard")),
+      menuItem("Synthetic Dataset", tabName="dataset", icon=icon("table")),
+      menuItem("SAST Analysis", tabName="analysis", icon=icon("shield-halved")),
+      menuItem("Remediation Simulation", tabName="remediation", icon=icon("wrench")),
+      menuItem("Monte Carlo Model", tabName="monte", icon=icon("chart-line")),
+      menuItem("Reports & Downloads", tabName="reports", icon=icon("download"))
+    ),
+    hr(),
+    numericInput("n","Number of vulnerabilities",1200,min=100,max=10000,step=100),
+    numericInput("seed","Random seed",123,min=1,max=99999),
+    actionButton("regenerate","Generate / Regenerate Dataset",icon=icon("rotate")),
+    hr(),
+    sliderInput("rem_prob","Remediation probability",min=0.1,max=0.95,value=0.60,step=0.05),
+    numericInput("iterations","Monte Carlo iterations",1000,min=100,max=10000,step=100)
+  ),
+  dashboardBody(
+    tags$head(tags$style(HTML("
+      .content-wrapper { background:#f5f7fb; }
+      .small-box { border-radius:12px; }
+      .box { border-radius:12px; }
+      .main-header .logo { font-weight:bold; }
+    "))),
+    tabItems(
+      tabItem("dashboard",
+        fluidRow(
+          valueBoxOutput("totalBox",width=3),
+          valueBoxOutput("criticalBox",width=3),
+          valueBoxOutput("fixedBox",width=3),
+          valueBoxOutput("riskBox",width=3)
+        ),
+        fluidRow(
+          box(title="Severity Distribution",status="primary",solidHeader=TRUE,width=6,
+              plotlyOutput("severityPlot",height=350)),
+          box(title="Vulnerability Types",status="info",solidHeader=TRUE,width=6,
+              plotlyOutput("vulnPlot",height=350))
+        ),
+        fluidRow(
+          box(title="Project Workflow",status="success",solidHeader=TRUE,width=12,
+              HTML("<h4>Dataset Generation → SAST Detection → Severity/CVSS Analysis → Risk Scoring → Remediation → Monte Carlo Simulation → Reporting</h4>
+              <p>This GUI simulates SAST findings using synthetic application-security data. It does not scan real source code.</p>"))
+        )
+      ),
+      tabItem("dataset",
+        fluidRow(
+          box(title="Synthetic SAST Dataset",status="primary",solidHeader=TRUE,width=12,
+              DTOutput("dataTable"))
+        )
+      ),
+      tabItem("analysis",
+        fluidRow(
+          box(title="Analysis Summary",status="primary",solidHeader=TRUE,width=4,
+              tableOutput("summaryTable")),
+          box(title="CVSS Distribution",status="info",solidHeader=TRUE,width=8,
+              plotlyOutput("cvssPlot",height=330))
+        ),
+        fluidRow(
+          box(title="Risk by Application Component",status="warning",solidHeader=TRUE,width=12,
+              DTOutput("componentTable"))
+        )
+      ),
+      tabItem("remediation",
+        fluidRow(
+          valueBoxOutput("beforeBox",width=4),
+          valueBoxOutput("afterBox",width=4),
+          valueBoxOutput("reductionBox",width=4)
+        ),
+        fluidRow(
+          box(title="Before vs After Remediation",status="success",solidHeader=TRUE,width=8,
+              plotlyOutput("beforeAfterPlot",height=400)),
+          box(title="Remediation Controls",status="warning",solidHeader=TRUE,width=4,
+              sliderInput("critical_p","Critical fix probability",0,1,.75,.05),
+              sliderInput("high_p","High fix probability",0,1,.60,.05),
+              sliderInput("medium_p","Medium fix probability",0,1,.45,.05),
+              sliderInput("low_p","Low fix probability",0,1,.30,.05),
+              actionButton("runRem","Run Remediation Simulation",icon=icon("play")))
+        )
+      ),
+      tabItem("monte",
+        fluidRow(
+          valueBoxOutput("mcMeanBox",width=4),
+          valueBoxOutput("mcMinBox",width=4),
+          valueBoxOutput("mcMaxBox",width=4)
+        ),
+        fluidRow(
+          box(title="Monte Carlo Remaining-Risk Distribution",status="primary",solidHeader=TRUE,width=12,
+              plotlyOutput("mcPlot",height=450))
+        ),
+        fluidRow(
+          box(title="Monte Carlo Statistics",status="info",solidHeader=TRUE,width=12,
+              tableOutput("mcTable"))
+        )
+      ),
+      tabItem("reports",
+        fluidRow(
+          box(title="Download Project Outputs",status="success",solidHeader=TRUE,width=12,
+              p("Use these files for your assignment report and evidence."),
+              downloadButton("downloadCSV","Download Synthetic Dataset (CSV)"),
+              downloadButton("downloadResults","Download Final Results (CSV)"),
+              downloadButton("downloadMC","Download Monte Carlo Results (CSV)"),
+              br(),br(),
+              downloadButton("downloadReport","Download HTML Summary Report")))
+      )
+    )
+  )
+)
+
+server <- function(input, output, session) {
+  data_rv <- reactiveVal(generate_data())
+  rem_rv <- reactiveVal(NULL)
+  mc_rv <- reactiveVal(NULL)
+
+  observeEvent(input$regenerate, {
+    data_rv(generate_data(input$n,input$seed))
+    rem_rv(NULL); mc_rv(NULL)
+  })
+
+  d <- reactive(data_rv())
+
+  output$totalBox <- renderValueBox(valueBox(nrow(d()),"Total Vulnerabilities",icon=icon("bug"),color="blue"))
+  output$criticalBox <- renderValueBox(valueBox(sum(d()$Severity=="Critical"),"Critical Findings",icon=icon("triangle-exclamation"),color="red"))
+  output$fixedBox <- renderValueBox(sum(d()$Remediation=="Fixed") |> valueBox("Fixed Findings",icon=icon("check"),color="green"))
+
+  risk_initial <- reactive(sum(d()$Risk_Score))
+  output$riskBox <- renderValueBox(valueBox(round(risk_initial()),"Initial Risk Score",icon=icon("gauge-high"),color="yellow"))
+
+  output$dataTable <- renderDT(datatable(d(),filter="top",options=list(pageLength=15,scrollX=TRUE)),server=FALSE)
+
+  output$severityPlot <- renderPlotly({
+    x <- d() %>% count(Severity)
+    ggplotly(ggplot(x,aes(Severity,n,fill=Severity))+geom_col()+theme_minimal()+
+               labs(x=NULL,y="Count"))
+  })
+  output$vulnPlot <- renderPlotly({
+    x <- d() %>% count(Vulnerability,sort=TRUE)
+    ggplotly(ggplot(x,aes(reorder(Vulnerability,n),n))+geom_col()+
+               coord_flip()+theme_minimal()+labs(x=NULL,y="Count"))
+  })
+  output$cvssPlot <- renderPlotly({
+    ggplotly(ggplot(d(),aes(CVSS))+geom_histogram(bins=20)+theme_minimal()+
+               labs(x="CVSS",y="Frequency"))
+  })
+
+  output$summaryTable <- renderTable({
+    data.frame(
+      Metric=c("Records","Average CVSS","Average Risk","Detected %","Fixed %"),
+      Value=c(nrow(d()),round(mean(d()$CVSS),2),
+              round(mean(d()$Risk_Score),2),
+              round(mean(d()$Detection_Status=="Detected")*100,2),
+              round(mean(d()$Remediation=="Fixed")*100,2))
+    )
+  })
+
+  output$componentTable <- renderDT({
+    x <- d() %>% group_by(Component) %>%
+      summarise(Vulnerabilities=n(),Average_CVSS=round(mean(CVSS),2),
+                Average_Risk=round(mean(Risk_Score),2),
+                Critical=sum(Severity=="Critical"),
+                High=sum(Severity=="High"),.groups="drop") %>%
+      arrange(desc(Average_Risk))
+    datatable(x,options=list(pageLength=10))
+  })
+
+  observeEvent(input$runRem, {
+    set.seed(input$seed+99)
+    x <- d()
+    probs <- c(Critical=input$critical_p,High=input$high_p,
+               Medium=input$medium_p,Low=input$low_p)
+    fixed <- mapply(function(s) runif(1)<probs[as.character(s)], x$Severity)
+    x$Simulated_Remediation <- ifelse(fixed,"Fixed","Pending")
+    rem_rv(x)
+  }, ignoreInit=FALSE)
+
+  rem_data <- reactive({
+    if(!is.null(rem_rv())) rem_rv() else {
+      set.seed(input$seed+99)
+      x <- d()
+      probs <- c(Critical=input$critical_p,High=input$high_p,Medium=input$medium_p,Low=input$low_p)
+      fixed <- mapply(function(s) runif(1)<probs[as.character(s)], x$Severity)
+      x$Simulated_Remediation <- ifelse(fixed,"Fixed","Pending")
+      x
+    }
+  })
+
+  before <- reactive(sum(rem_data()$Risk_Score))
+  after <- reactive(sum(rem_data()$Risk_Score[rem_data()$Simulated_Remediation=="Pending"]))
+  reduction <- reactive((before()-after())/before()*100)
+
+  output$beforeBox <- renderValueBox(valueBox(round(before()),"Before Risk",icon=icon("shield"),color="red"))
+  output$afterBox <- renderValueBox(valueBox(round(after()),"After Risk",icon=icon("shield-halved"),color="orange"))
+  output$reductionBox <- renderValueBox(valueBox(paste0(round(reduction(),2),"%"),"Risk Reduction",icon=icon("arrow-down"),color="green"))
+
+  output$beforeAfterPlot <- renderPlotly({
+    b <- rem_data() %>% count(Severity) %>% mutate(Stage="Before")
+    a <- rem_data() %>% filter(Simulated_Remediation=="Pending") %>% count(Severity) %>% mutate(Stage="After")
+    x <- bind_rows(b,a)
+    ggplotly(ggplot(x,aes(Severity,n,fill=Stage))+geom_col(position="dodge")+
+               theme_minimal()+labs(x=NULL,y="Vulnerabilities"))
+  })
+
+  observeEvent(list(input$runRem,input$iterations,input$rem_prob,input$regenerate), {
+    set.seed(input$seed+777)
+    x <- d()
+    res <- numeric(input$iterations)
+    for(i in seq_len(input$iterations)) {
+      p <- input$rem_prob
+      fixed <- runif(nrow(x)) < p
+      res[i] <- sum(x$Risk_Score[!fixed])
+    }
+    mc_rv(data.frame(Simulation=seq_along(res),Remaining_Risk=res))
+  }, ignoreInit=FALSE)
+
+  output$mcMeanBox <- renderValueBox(valueBox(round(mean(mc_rv()$Remaining_Risk)),"Mean Remaining Risk",icon=icon("chart-line"),color="blue"))
+  output$mcMinBox <- renderValueBox(valueBox(round(min(mc_rv()$Remaining_Risk)),"Minimum Risk",icon=icon("arrow-down"),color="green"))
+  output$mcMaxBox <- renderValueBox(valueBox(round(max(mc_rv()$Remaining_Risk)),"Maximum Risk",icon=icon("arrow-up"),color="red"))
+
+  output$mcPlot <- renderPlotly({
+    ggplotly(ggplot(mc_rv(),aes(Remaining_Risk))+geom_histogram(bins=30)+theme_minimal()+
+               labs(x="Remaining Risk",y="Frequency"))
+  })
+
+  output$mcTable <- renderTable({
+    x <- mc_rv()$Remaining_Risk
+    data.frame(
+      Metric=c("Iterations","Mean","Minimum","Maximum","Standard Deviation"),
+      Value=c(length(x),round(mean(x),2),round(min(x),2),round(max(x),2),round(sd(x),2))
+    )
+  })
+
+  output$downloadCSV <- downloadHandler(
+    filename=function() paste0("sast_synthetic_dataset_",nrow(d()),".csv"),
+    content=function(file) write_csv(d(),file)
+  )
+  output$downloadResults <- downloadHandler(
+    filename=function() "sast_final_results.csv",
+    content=function(file) {
+      x <- data.frame(
+        Metric=c("Total Vulnerabilities","Critical","High","Medium","Low",
+                 "Initial Risk","Final Risk","Risk Reduction %",
+                 "Average CVSS","Detected %","Fixed %"),
+        Value=c(nrow(d()),sum(d()$Severity=="Critical"),sum(d()$Severity=="High"),
+                sum(d()$Severity=="Medium"),sum(d()$Severity=="Low"),
+                round(before(),2),round(after(),2),round(reduction(),2),
+                round(mean(d()$CVSS),2),
+                round(mean(d()$Detection_Status=="Detected")*100,2),
+                round(mean(d()$Remediation=="Fixed")*100,2))
+      )
+      write_csv(x,file)
+    }
+  )
+  output$downloadMC <- downloadHandler(
+    filename=function() "sast_monte_carlo_results.csv",
+    content=function(file) write_csv(mc_rv(),file)
+  )
+  output$downloadReport <- downloadHandler(
+    filename=function() "SAST_Simulation_Summary.html",
+    content=function(file) {
+      html <- paste0(
+        "<html><head><title>SAST Simulation Summary</title>",
+        "<style>body{font-family:Arial;margin:40px}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:8px}</style>",
+        "</head><body><h1>SAST Simulation & Modelling</h1>",
+        "<h2>Project Summary</h2>",
+        "<p>This project simulates Static Application Security Testing using a synthetic dataset of ",
+        nrow(d())," vulnerability findings. It classifies findings by CVSS/severity, estimates risk, ",
+        "simulates remediation, and evaluates residual risk using Monte Carlo simulation.</p>",
+        "<h2>Key Results</h2><table>",
+        "<tr><th>Metric</th><th>Value</th></tr>",
+        "<tr><td>Total vulnerabilities</td><td>",nrow(d()),"</td></tr>",
+        "<tr><td>Critical findings</td><td>",sum(d()$Severity=="Critical"),"</td></tr>",
+        "<tr><td>Initial risk</td><td>",round(before(),2),"</td></tr>",
+        "<tr><td>Final risk</td><td>",round(after(),2),"</td></tr>",
+        "<tr><td>Risk reduction</td><td>",round(reduction(),2),"%</td></tr>",
+        "<tr><td>Monte Carlo mean risk</td><td>",round(mean(mc_rv()$Remaining_Risk),2),"</td></tr>",
+        "</table><h2>Conclusion</h2><p>The simulation demonstrates how SAST-style findings can be prioritized using severity and CVSS, and how remediation can reduce residual application security risk. Monte Carlo modelling illustrates the range of possible remaining risk under different remediation probabilities.</p>",
+        "</body></html>"
+      )
+      writeLines(html,file)
+    }
+  )
+}
+
+shinyApp(ui, server)
