@@ -1,0 +1,1201 @@
+Scan_ID,URL,HTTP_Method,Vulnerability,Parameter,CVSS,Severity,Status
+DAST0001,/payment,DELETE,Security Misconfiguration,file,4.3,Medium,Open
+DAST0002,/upload,POST,Session Management Issue,redirect,8.3,High,Open
+DAST0003,/api/auth,GET,SQL Injection,username,5.3,Medium,Open
+DAST0004,/search,POST,Path Traversal,token,9.1,Critical,Open
+DAST0005,/api/users,POST,Broken Authentication,N/A,9.5,Critical,Open
+DAST0006,/profile,DELETE,Cross-Site Scripting,N/A,2.4,Low,Open
+DAST0007,/search,PUT,Open Redirect,search,6.2,Medium,Fixed
+DAST0008,/upload,POST,Session Management Issue,username,9.1,Critical,Fixed
+DAST0009,/checkout,GET,Open Redirect,redirect,6.4,Medium,Open
+DAST0010,/profile,PUT,Security Misconfiguration,redirect,5.7,Medium,Open
+DAST0011,/checkout,GET,Security Misconfiguration,id,9.7,Critical,Open
+DAST0012,/payment,PUT,Information Disclosure,username,5.6,Medium,Open
+DAST0013,/checkout,DELETE,Information Disclosure,file,7.4,High,Fixed
+DAST0014,/profile,GET,SQL Injection,search,6.6,Medium,Open
+DAST0015,/login,POST,Session Management Issue,id,2.8,Low,Open
+DAST0016,/payment,PUT,Security Misconfiguration,token,9.2,Critical,Open
+DAST0017,/download,DELETE,Missing Security Headers,N/A,4,Medium,Fixed
+DAST0018,/payment,POST,Path Traversal,id,2.3,Low,Open
+DAST0019,/download,PUT,SQL Injection,N/A,4.6,Medium,Fixed
+DAST0020,/search,DELETE,Open Redirect,N/A,9.6,Critical,Open
+DAST0021,/api/auth,DELETE,SQL Injection,file,9.1,Critical,Fixed
+DAST0022,/api/auth,POST,CSRF,token,7.5,High,Open
+DAST0023,/download,DELETE,Path Traversal,file,7.1,High,Fixed
+DAST0024,/search,POST,Missing Security Headers,N/A,10,Critical,Open
+DAST0025,/upload,POST,Cross-Site Scripting,redirect,7.2,High,Open
+DAST0026,/api/auth,PUT,Missing Security Headers,token,7.7,High,Open
+DAST0027,/api/users,DELETE,Cross-Site Scripting,file,6.4,Medium,Open
+DAST0028,/api/users,DELETE,Security Misconfiguration,token,6.8,Medium,Open
+DAST0029,/admin,POST,SQL Injection,N/A,4.3,Medium,Open
+DAST0030,/profile,POST,Path Traversal,redirect,3.2,Low,Open
+DAST0031,/login,DELETE,Security Misconfiguration,N/A,9.7,Critical,Open
+DAST0032,/api/users,PUT,Missing Security Headers,token,9.2,Critical,Fixed
+DAST0033,/profile,DELETE,Open Redirect,id,7.5,High,Fixed
+DAST0034,/admin,PUT,Information Disclosure,id,8.4,High,Open
+DAST0035,/api/auth,PUT,Information Disclosure,id,2.2,Low,Open
+DAST0036,/upload,DELETE,Cross-Site Scripting,id,5.8,Medium,Open
+DAST0037,/login,POST,Broken Authentication,N/A,8.1,High,Open
+DAST0038,/download,PUT,Cross-Site Scripting,redirect,3.7,Low,Fixed
+DAST0039,/api/auth,GET,Security Misconfiguration,id,4.5,Medium,Open
+DAST0040,/api/auth,POST,Missing Security Headers,file,3.9,Low,Open
+DAST0041,/profile,POST,SQL Injection,file,3.1,Low,Open
+DAST0042,/admin,POST,Path Traversal,id,5.3,Medium,Open
+DAST0043,/checkout,DELETE,Missing Security Headers,file,5.3,Medium,Open
+DAST0044,/profile,PUT,CSRF,token,5,Medium,Open
+DAST0045,/payment,GET,Path Traversal,id,3.2,Low,Open
+DAST0046,/profile,DELETE,Path Traversal,token,3.1,Low,Fixed
+DAST0047,/download,GET,Cross-Site Scripting,file,3.9,Low,Open
+DAST0048,/admin,DELETE,Path Traversal,N/A,5.7,Medium,Open
+DAST0049,/admin,PUT,Open Redirect,token,4.1,Medium,Open
+DAST0050,/upload,GET,Broken Authentication,username,8.9,High,Open
+DAST0051,/profile,POST,SQL Injection,redirect,2.4,Low,Open
+DAST0052,/download,GET,Path Traversal,redirect,5.5,Medium,Open
+DAST0053,/api/auth,DELETE,Security Misconfiguration,redirect,8.4,High,Open
+DAST0054,/profile,GET,Cross-Site Scripting,id,3,Low,Open
+DAST0055,/payment,PUT,Security Misconfiguration,redirect,6.5,Medium,Open
+DAST0056,/search,GET,Security Misconfiguration,N/A,3.7,Low,Open
+DAST0057,/api/users,GET,SQL Injection,file,3,Low,Open
+DAST0058,/api/users,POST,Information Disclosure,search,8,High,Open
+DAST0059,/download,DELETE,Path Traversal,N/A,9.2,Critical,Open
+DAST0060,/admin,POST,Session Management Issue,id,5,Medium,Fixed
+DAST0061,/api/users,PUT,SQL Injection,token,7.3,High,Fixed
+DAST0062,/login,PUT,Cross-Site Scripting,username,2.8,Low,Open
+DAST0063,/login,DELETE,Open Redirect,username,5.1,Medium,Fixed
+DAST0064,/login,PUT,Path Traversal,file,4.2,Medium,Fixed
+DAST0065,/search,DELETE,Open Redirect,id,8.5,High,Fixed
+DAST0066,/api/users,PUT,Cross-Site Scripting,search,5.6,Medium,Open
+DAST0067,/admin,PUT,Broken Authentication,redirect,8.5,High,Open
+DAST0068,/profile,POST,Path Traversal,redirect,8.5,High,Open
+DAST0069,/admin,GET,Information Disclosure,id,8.4,High,Fixed
+DAST0070,/admin,DELETE,Missing Security Headers,id,5.5,Medium,Fixed
+DAST0071,/profile,DELETE,Open Redirect,id,8,High,Open
+DAST0072,/download,DELETE,Path Traversal,username,7,High,Fixed
+DAST0073,/search,DELETE,Security Misconfiguration,redirect,7.7,High,Fixed
+DAST0074,/search,POST,SQL Injection,search,2,Low,Open
+DAST0075,/checkout,DELETE,Cross-Site Scripting,username,5.8,Medium,Open
+DAST0076,/api/auth,PUT,SQL Injection,file,3.8,Low,Open
+DAST0077,/api/users,PUT,Broken Authentication,token,5,Medium,Fixed
+DAST0078,/api/auth,POST,Missing Security Headers,N/A,6.9,Medium,Open
+DAST0079,/api/users,DELETE,Session Management Issue,username,4.8,Medium,Fixed
+DAST0080,/payment,POST,SQL Injection,file,2.9,Low,Fixed
+DAST0081,/upload,POST,SQL Injection,N/A,3.9,Low,Open
+DAST0082,/admin,POST,Information Disclosure,username,7.3,High,Open
+DAST0083,/payment,POST,Information Disclosure,N/A,5.3,Medium,Open
+DAST0084,/login,PUT,Cross-Site Scripting,file,8.3,High,Fixed
+DAST0085,/upload,PUT,Session Management Issue,search,2.8,Low,Open
+DAST0086,/api/users,POST,Security Misconfiguration,search,5.5,Medium,Open
+DAST0087,/api/users,PUT,Session Management Issue,N/A,9.9,Critical,Fixed
+DAST0088,/api/users,GET,SQL Injection,id,9.1,Critical,Fixed
+DAST0089,/payment,DELETE,Security Misconfiguration,N/A,9.1,Critical,Open
+DAST0090,/api/auth,GET,Session Management Issue,N/A,3.4,Low,Open
+DAST0091,/api/users,DELETE,Cross-Site Scripting,username,3,Low,Open
+DAST0092,/admin,PUT,SQL Injection,id,7.2,High,Open
+DAST0093,/upload,POST,Session Management Issue,search,4.7,Medium,Fixed
+DAST0094,/upload,GET,Open Redirect,N/A,7.3,High,Open
+DAST0095,/profile,DELETE,Path Traversal,token,4.6,Medium,Open
+DAST0096,/admin,PUT,CSRF,redirect,3.5,Low,Open
+DAST0097,/checkout,POST,Open Redirect,id,8.3,High,Open
+DAST0098,/profile,DELETE,Missing Security Headers,N/A,2.7,Low,Open
+DAST0099,/profile,PUT,Security Misconfiguration,username,5.7,Medium,Open
+DAST0100,/checkout,GET,SQL Injection,token,6.1,Medium,Open
+DAST0101,/upload,POST,SQL Injection,redirect,6.8,Medium,Fixed
+DAST0102,/admin,POST,Session Management Issue,id,4.7,Medium,Fixed
+DAST0103,/api/users,PUT,Security Misconfiguration,token,5.9,Medium,Fixed
+DAST0104,/api/auth,POST,Broken Authentication,file,9.6,Critical,Open
+DAST0105,/api/users,DELETE,CSRF,token,5.9,Medium,Open
+DAST0106,/api/users,PUT,Session Management Issue,file,9.1,Critical,Open
+DAST0107,/upload,PUT,Missing Security Headers,file,9.3,Critical,Open
+DAST0108,/profile,PUT,SQL Injection,file,6.9,Medium,Fixed
+DAST0109,/checkout,POST,Path Traversal,file,5.3,Medium,Open
+DAST0110,/download,DELETE,Broken Authentication,N/A,3.2,Low,Fixed
+DAST0111,/search,PUT,Session Management Issue,token,9.5,Critical,Open
+DAST0112,/api/users,POST,Information Disclosure,search,4.4,Medium,Open
+DAST0113,/profile,DELETE,Session Management Issue,id,2.5,Low,Open
+DAST0114,/checkout,PUT,Broken Authentication,username,9.6,Critical,Open
+DAST0115,/login,PUT,SQL Injection,token,7.8,High,Fixed
+DAST0116,/profile,DELETE,Security Misconfiguration,username,3.1,Low,Open
+DAST0117,/api/auth,GET,Security Misconfiguration,username,6.4,Medium,Open
+DAST0118,/api/users,DELETE,Cross-Site Scripting,search,9.6,Critical,Open
+DAST0119,/download,GET,Information Disclosure,id,6.7,Medium,Open
+DAST0120,/payment,DELETE,Broken Authentication,redirect,5.2,Medium,Fixed
+DAST0121,/search,POST,CSRF,file,7.2,High,Open
+DAST0122,/api/auth,POST,Broken Authentication,token,4.6,Medium,Open
+DAST0123,/upload,PUT,Path Traversal,username,4.5,Medium,Fixed
+DAST0124,/api/auth,DELETE,SQL Injection,id,3.8,Low,Open
+DAST0125,/api/auth,DELETE,Information Disclosure,search,5,Medium,Open
+DAST0126,/upload,POST,Open Redirect,token,9.9,Critical,Open
+DAST0127,/payment,DELETE,Cross-Site Scripting,username,3.2,Low,Open
+DAST0128,/payment,DELETE,Session Management Issue,token,2.7,Low,Open
+DAST0129,/payment,DELETE,Security Misconfiguration,redirect,3.1,Low,Open
+DAST0130,/checkout,POST,Cross-Site Scripting,file,7.5,High,Open
+DAST0131,/search,POST,Information Disclosure,N/A,7,High,Fixed
+DAST0132,/checkout,POST,Open Redirect,id,9.1,Critical,Open
+DAST0133,/profile,POST,CSRF,id,7.4,High,Open
+DAST0134,/profile,POST,Missing Security Headers,search,7.9,High,Open
+DAST0135,/upload,PUT,CSRF,file,6.2,Medium,Open
+DAST0136,/checkout,PUT,Broken Authentication,redirect,7.3,High,Open
+DAST0137,/login,GET,CSRF,username,8.6,High,Open
+DAST0138,/profile,DELETE,Path Traversal,token,8.3,High,Open
+DAST0139,/download,GET,Open Redirect,token,9.8,Critical,Open
+DAST0140,/profile,GET,Broken Authentication,redirect,5.5,Medium,Open
+DAST0141,/upload,PUT,Missing Security Headers,redirect,4.5,Medium,Fixed
+DAST0142,/login,GET,Missing Security Headers,username,5.3,Medium,Fixed
+DAST0143,/profile,PUT,CSRF,username,2.1,Low,Open
+DAST0144,/profile,GET,Information Disclosure,token,3.5,Low,Open
+DAST0145,/api/users,GET,SQL Injection,file,8.7,High,Fixed
+DAST0146,/api/users,GET,Security Misconfiguration,N/A,3.8,Low,Open
+DAST0147,/api/auth,GET,Security Misconfiguration,token,3.9,Low,Open
+DAST0148,/login,POST,Security Misconfiguration,redirect,2.6,Low,Open
+DAST0149,/api/auth,DELETE,Session Management Issue,file,4,Medium,Fixed
+DAST0150,/profile,POST,Broken Authentication,search,7.9,High,Open
+DAST0151,/payment,POST,Open Redirect,token,8.8,High,Fixed
+DAST0152,/login,POST,Broken Authentication,redirect,6,Medium,Fixed
+DAST0153,/checkout,DELETE,SQL Injection,username,5.1,Medium,Fixed
+DAST0154,/upload,GET,Security Misconfiguration,search,4,Medium,Open
+DAST0155,/download,PUT,Cross-Site Scripting,username,2.9,Low,Open
+DAST0156,/api/auth,PUT,SQL Injection,N/A,5.1,Medium,Open
+DAST0157,/upload,PUT,Information Disclosure,N/A,6.6,Medium,Open
+DAST0158,/api/users,POST,Cross-Site Scripting,id,3.7,Low,Fixed
+DAST0159,/login,DELETE,Security Misconfiguration,redirect,5.6,Medium,Fixed
+DAST0160,/payment,DELETE,Security Misconfiguration,redirect,3.7,Low,Open
+DAST0161,/search,PUT,Information Disclosure,id,6,Medium,Fixed
+DAST0162,/checkout,POST,Cross-Site Scripting,username,4.8,Medium,Open
+DAST0163,/api/auth,DELETE,Missing Security Headers,username,7.2,High,Open
+DAST0164,/api/auth,GET,Path Traversal,token,5,Medium,Fixed
+DAST0165,/checkout,GET,CSRF,N/A,4.8,Medium,Fixed
+DAST0166,/profile,POST,Security Misconfiguration,search,6.3,Medium,Fixed
+DAST0167,/search,POST,Cross-Site Scripting,search,7.9,High,Open
+DAST0168,/checkout,POST,SQL Injection,N/A,3.8,Low,Open
+DAST0169,/upload,GET,Cross-Site Scripting,username,5.3,Medium,Open
+DAST0170,/login,PUT,Missing Security Headers,token,4.1,Medium,Open
+DAST0171,/login,DELETE,Broken Authentication,redirect,7,High,Fixed
+DAST0172,/upload,GET,Open Redirect,N/A,3.5,Low,Open
+DAST0173,/api/users,PUT,Cross-Site Scripting,redirect,8.9,High,Open
+DAST0174,/search,GET,Broken Authentication,search,8,High,Open
+DAST0175,/api/users,DELETE,Session Management Issue,token,7.3,High,Open
+DAST0176,/admin,GET,Open Redirect,file,6.9,Medium,Fixed
+DAST0177,/download,PUT,Session Management Issue,search,5,Medium,Open
+DAST0178,/api/users,DELETE,Missing Security Headers,search,6.2,Medium,Fixed
+DAST0179,/download,POST,Session Management Issue,token,9,Critical,Open
+DAST0180,/upload,DELETE,Information Disclosure,redirect,6.7,Medium,Fixed
+DAST0181,/checkout,GET,SQL Injection,username,8.7,High,Fixed
+DAST0182,/login,DELETE,Information Disclosure,username,4.5,Medium,Open
+DAST0183,/upload,PUT,Open Redirect,file,7.7,High,Open
+DAST0184,/api/users,PUT,SQL Injection,username,4.1,Medium,Open
+DAST0185,/payment,DELETE,Broken Authentication,username,6.8,Medium,Open
+DAST0186,/admin,POST,CSRF,token,5.9,Medium,Fixed
+DAST0187,/login,DELETE,Cross-Site Scripting,id,4.1,Medium,Fixed
+DAST0188,/profile,POST,Open Redirect,N/A,6.5,Medium,Open
+DAST0189,/login,PUT,CSRF,redirect,9.3,Critical,Open
+DAST0190,/checkout,DELETE,Cross-Site Scripting,redirect,9.2,Critical,Open
+DAST0191,/api/users,DELETE,Session Management Issue,username,4.2,Medium,Open
+DAST0192,/admin,PUT,Information Disclosure,N/A,4.6,Medium,Open
+DAST0193,/download,GET,Session Management Issue,file,9.9,Critical,Open
+DAST0194,/api/users,POST,Session Management Issue,search,7,High,Open
+DAST0195,/upload,GET,Missing Security Headers,id,9.5,Critical,Open
+DAST0196,/checkout,GET,Security Misconfiguration,N/A,5.7,Medium,Fixed
+DAST0197,/login,PUT,Information Disclosure,username,5.3,Medium,Open
+DAST0198,/admin,DELETE,CSRF,redirect,7.3,High,Open
+DAST0199,/search,GET,Security Misconfiguration,N/A,3.2,Low,Open
+DAST0200,/profile,POST,Open Redirect,username,6.6,Medium,Open
+DAST0201,/upload,POST,Information Disclosure,file,3.9,Low,Open
+DAST0202,/download,PUT,Security Misconfiguration,file,9.7,Critical,Open
+DAST0203,/search,POST,SQL Injection,search,6.8,Medium,Fixed
+DAST0204,/checkout,PUT,Broken Authentication,id,6.1,Medium,Open
+DAST0205,/login,PUT,CSRF,file,5.2,Medium,Open
+DAST0206,/upload,DELETE,Security Misconfiguration,token,9,Critical,Fixed
+DAST0207,/profile,DELETE,SQL Injection,token,4.9,Medium,Open
+DAST0208,/payment,DELETE,Broken Authentication,file,4.3,Medium,Open
+DAST0209,/download,POST,CSRF,username,3.4,Low,Fixed
+DAST0210,/login,PUT,SQL Injection,N/A,3.4,Low,Open
+DAST0211,/download,DELETE,SQL Injection,N/A,5.9,Medium,Open
+DAST0212,/profile,PUT,Session Management Issue,file,4,Medium,Open
+DAST0213,/admin,DELETE,CSRF,id,3.7,Low,Open
+DAST0214,/download,POST,Security Misconfiguration,username,7.4,High,Fixed
+DAST0215,/upload,DELETE,Path Traversal,token,2.4,Low,Open
+DAST0216,/api/users,POST,Session Management Issue,username,7.6,High,Fixed
+DAST0217,/admin,PUT,Session Management Issue,id,4.8,Medium,Open
+DAST0218,/payment,DELETE,CSRF,search,5.3,Medium,Open
+DAST0219,/admin,PUT,Missing Security Headers,id,8.6,High,Fixed
+DAST0220,/api/users,POST,SQL Injection,N/A,9.4,Critical,Open
+DAST0221,/api/users,GET,Information Disclosure,redirect,4.3,Medium,Open
+DAST0222,/search,GET,SQL Injection,token,9.7,Critical,Open
+DAST0223,/api/auth,PUT,Open Redirect,id,7.8,High,Open
+DAST0224,/upload,PUT,Path Traversal,file,7.5,High,Open
+DAST0225,/admin,DELETE,Open Redirect,id,2.4,Low,Open
+DAST0226,/api/auth,GET,Broken Authentication,username,5.2,Medium,Open
+DAST0227,/login,DELETE,Missing Security Headers,search,5.8,Medium,Open
+DAST0228,/profile,POST,Information Disclosure,N/A,6.5,Medium,Open
+DAST0229,/login,DELETE,SQL Injection,username,7.6,High,Open
+DAST0230,/payment,POST,SQL Injection,redirect,9.3,Critical,Fixed
+DAST0231,/login,DELETE,Information Disclosure,id,6.9,Medium,Open
+DAST0232,/payment,PUT,Missing Security Headers,redirect,5.4,Medium,Fixed
+DAST0233,/checkout,POST,CSRF,N/A,6.3,Medium,Fixed
+DAST0234,/download,PUT,Security Misconfiguration,redirect,2.5,Low,Open
+DAST0235,/admin,GET,Missing Security Headers,redirect,4.1,Medium,Open
+DAST0236,/upload,POST,Broken Authentication,search,5.2,Medium,Open
+DAST0237,/download,DELETE,CSRF,redirect,3.6,Low,Fixed
+DAST0238,/admin,DELETE,Information Disclosure,id,8.7,High,Open
+DAST0239,/upload,POST,SQL Injection,redirect,3.2,Low,Open
+DAST0240,/api/users,DELETE,SQL Injection,search,8.4,High,Open
+DAST0241,/payment,GET,Security Misconfiguration,search,6.4,Medium,Open
+DAST0242,/payment,PUT,Cross-Site Scripting,N/A,7.3,High,Fixed
+DAST0243,/api/auth,POST,Broken Authentication,file,3.4,Low,Open
+DAST0244,/payment,PUT,Session Management Issue,username,7.1,High,Open
+DAST0245,/search,PUT,Missing Security Headers,token,4.5,Medium,Open
+DAST0246,/admin,DELETE,Broken Authentication,token,7.8,High,Open
+DAST0247,/profile,GET,Cross-Site Scripting,N/A,5.2,Medium,Open
+DAST0248,/api/auth,DELETE,Information Disclosure,search,9.8,Critical,Open
+DAST0249,/search,POST,Security Misconfiguration,username,9.7,Critical,Open
+DAST0250,/login,POST,Cross-Site Scripting,file,7.8,High,Open
+DAST0251,/checkout,GET,Cross-Site Scripting,id,4.1,Medium,Open
+DAST0252,/api/users,GET,Security Misconfiguration,redirect,3.8,Low,Open
+DAST0253,/api/auth,POST,Session Management Issue,username,6.7,Medium,Open
+DAST0254,/payment,DELETE,Cross-Site Scripting,redirect,4.1,Medium,Open
+DAST0255,/api/users,PUT,Security Misconfiguration,username,6.2,Medium,Open
+DAST0256,/api/users,PUT,Cross-Site Scripting,username,8.3,High,Open
+DAST0257,/search,PUT,Information Disclosure,search,3.3,Low,Fixed
+DAST0258,/payment,DELETE,Open Redirect,redirect,5.2,Medium,Fixed
+DAST0259,/admin,POST,Security Misconfiguration,id,5.8,Medium,Open
+DAST0260,/profile,POST,Information Disclosure,file,8.9,High,Open
+DAST0261,/payment,PUT,Open Redirect,token,9.4,Critical,Open
+DAST0262,/profile,DELETE,Cross-Site Scripting,id,9.1,Critical,Fixed
+DAST0263,/search,GET,Cross-Site Scripting,redirect,7.4,High,Open
+DAST0264,/profile,PUT,Path Traversal,username,9.6,Critical,Open
+DAST0265,/download,GET,Information Disclosure,file,6.1,Medium,Open
+DAST0266,/search,PUT,SQL Injection,username,6.6,Medium,Open
+DAST0267,/api/auth,PUT,Missing Security Headers,token,4.7,Medium,Open
+DAST0268,/upload,PUT,Missing Security Headers,id,4.8,Medium,Fixed
+DAST0269,/api/auth,DELETE,Open Redirect,id,2.2,Low,Open
+DAST0270,/api/auth,DELETE,Information Disclosure,N/A,6,Medium,Open
+DAST0271,/api/users,POST,Missing Security Headers,username,9,Critical,Fixed
+DAST0272,/login,DELETE,Information Disclosure,file,2.1,Low,Open
+DAST0273,/api/auth,GET,CSRF,search,2.6,Low,Open
+DAST0274,/api/auth,DELETE,Information Disclosure,redirect,3.3,Low,Open
+DAST0275,/api/users,GET,Cross-Site Scripting,N/A,8.2,High,Open
+DAST0276,/search,DELETE,SQL Injection,search,7.9,High,Open
+DAST0277,/profile,PUT,Open Redirect,file,9.8,Critical,Open
+DAST0278,/api/auth,GET,Path Traversal,username,5.7,Medium,Open
+DAST0279,/download,POST,Security Misconfiguration,N/A,2.6,Low,Fixed
+DAST0280,/checkout,DELETE,Open Redirect,username,7.2,High,Open
+DAST0281,/api/users,POST,SQL Injection,N/A,8.1,High,Fixed
+DAST0282,/payment,PUT,Session Management Issue,search,3.1,Low,Open
+DAST0283,/login,POST,Session Management Issue,search,5.2,Medium,Open
+DAST0284,/api/auth,GET,Open Redirect,N/A,3.8,Low,Open
+DAST0285,/api/auth,GET,Security Misconfiguration,token,2.5,Low,Open
+DAST0286,/profile,DELETE,Open Redirect,token,5.2,Medium,Fixed
+DAST0287,/checkout,POST,Cross-Site Scripting,file,2.5,Low,Open
+DAST0288,/login,PUT,Information Disclosure,file,3.8,Low,Open
+DAST0289,/download,GET,Security Misconfiguration,redirect,2.4,Low,Open
+DAST0290,/checkout,GET,Security Misconfiguration,id,7.4,High,Open
+DAST0291,/admin,GET,SQL Injection,id,4.4,Medium,Fixed
+DAST0292,/checkout,DELETE,Open Redirect,file,2.8,Low,Open
+DAST0293,/payment,DELETE,Cross-Site Scripting,redirect,2.6,Low,Open
+DAST0294,/api/auth,GET,Path Traversal,id,9,Critical,Fixed
+DAST0295,/admin,DELETE,Open Redirect,redirect,8,High,Open
+DAST0296,/profile,GET,Missing Security Headers,redirect,8.5,High,Open
+DAST0297,/profile,GET,Security Misconfiguration,token,9.9,Critical,Fixed
+DAST0298,/api/auth,PUT,CSRF,file,2.8,Low,Open
+DAST0299,/api/users,GET,SQL Injection,search,2.8,Low,Open
+DAST0300,/api/users,POST,Missing Security Headers,redirect,8.4,High,Fixed
+DAST0301,/upload,DELETE,Security Misconfiguration,token,8.3,High,Open
+DAST0302,/admin,PUT,Missing Security Headers,token,2.1,Low,Open
+DAST0303,/search,PUT,CSRF,username,8.2,High,Open
+DAST0304,/download,PUT,SQL Injection,id,7.8,High,Open
+DAST0305,/login,DELETE,Broken Authentication,search,7,High,Open
+DAST0306,/download,POST,Open Redirect,file,5.8,Medium,Open
+DAST0307,/upload,DELETE,Information Disclosure,file,3.3,Low,Open
+DAST0308,/download,POST,Broken Authentication,file,2.1,Low,Open
+DAST0309,/checkout,GET,Cross-Site Scripting,redirect,5.6,Medium,Open
+DAST0310,/upload,PUT,Information Disclosure,N/A,5.9,Medium,Open
+DAST0311,/payment,POST,Security Misconfiguration,username,5.1,Medium,Open
+DAST0312,/api/auth,GET,Missing Security Headers,N/A,5.7,Medium,Fixed
+DAST0313,/api/users,GET,Security Misconfiguration,redirect,7.7,High,Open
+DAST0314,/login,PUT,Cross-Site Scripting,id,2.4,Low,Fixed
+DAST0315,/api/auth,DELETE,Security Misconfiguration,token,4.8,Medium,Fixed
+DAST0316,/admin,POST,SQL Injection,N/A,8.4,High,Open
+DAST0317,/login,POST,Open Redirect,search,8.7,High,Fixed
+DAST0318,/checkout,GET,Path Traversal,N/A,3.9,Low,Open
+DAST0319,/api/auth,GET,Broken Authentication,search,4.8,Medium,Open
+DAST0320,/admin,PUT,Open Redirect,file,8.9,High,Open
+DAST0321,/api/users,PUT,Cross-Site Scripting,N/A,8.8,High,Open
+DAST0322,/payment,GET,Open Redirect,token,4.4,Medium,Fixed
+DAST0323,/login,POST,Cross-Site Scripting,redirect,3.2,Low,Open
+DAST0324,/profile,DELETE,Security Misconfiguration,N/A,7.6,High,Fixed
+DAST0325,/admin,DELETE,SQL Injection,search,2.8,Low,Open
+DAST0326,/upload,GET,Broken Authentication,redirect,2.3,Low,Open
+DAST0327,/download,DELETE,Open Redirect,username,10,Critical,Open
+DAST0328,/api/users,POST,Missing Security Headers,N/A,2.3,Low,Open
+DAST0329,/profile,DELETE,Cross-Site Scripting,redirect,4.7,Medium,Open
+DAST0330,/admin,GET,SQL Injection,username,9.3,Critical,Open
+DAST0331,/checkout,PUT,CSRF,search,6.9,Medium,Fixed
+DAST0332,/api/users,PUT,Cross-Site Scripting,search,4.3,Medium,Open
+DAST0333,/search,DELETE,SQL Injection,N/A,7.9,High,Open
+DAST0334,/api/users,DELETE,Information Disclosure,username,8.7,High,Open
+DAST0335,/api/users,POST,CSRF,username,4.5,Medium,Fixed
+DAST0336,/admin,POST,Information Disclosure,id,5.9,Medium,Open
+DAST0337,/search,PUT,SQL Injection,username,7.6,High,Open
+DAST0338,/search,GET,Cross-Site Scripting,redirect,7.1,High,Open
+DAST0339,/payment,POST,Security Misconfiguration,N/A,7.2,High,Open
+DAST0340,/payment,POST,Open Redirect,token,9.8,Critical,Fixed
+DAST0341,/api/users,POST,Cross-Site Scripting,username,5.3,Medium,Open
+DAST0342,/api/auth,GET,Information Disclosure,N/A,3,Low,Open
+DAST0343,/upload,POST,SQL Injection,username,6.2,Medium,Open
+DAST0344,/upload,GET,SQL Injection,redirect,3.8,Low,Fixed
+DAST0345,/checkout,PUT,Missing Security Headers,username,5.9,Medium,Open
+DAST0346,/upload,PUT,CSRF,username,5,Medium,Open
+DAST0347,/upload,DELETE,Missing Security Headers,N/A,9.9,Critical,Open
+DAST0348,/api/users,PUT,Open Redirect,search,5.1,Medium,Open
+DAST0349,/profile,POST,SQL Injection,file,3.8,Low,Fixed
+DAST0350,/login,POST,Information Disclosure,id,7,High,Open
+DAST0351,/admin,DELETE,Open Redirect,id,3.1,Low,Open
+DAST0352,/login,PUT,Missing Security Headers,id,9.7,Critical,Open
+DAST0353,/checkout,PUT,Path Traversal,redirect,6.1,Medium,Open
+DAST0354,/login,DELETE,Open Redirect,N/A,3.3,Low,Fixed
+DAST0355,/admin,DELETE,Path Traversal,username,7,High,Fixed
+DAST0356,/download,DELETE,Session Management Issue,file,9.9,Critical,Fixed
+DAST0357,/admin,GET,Information Disclosure,search,7.4,High,Fixed
+DAST0358,/payment,POST,Broken Authentication,username,5.4,Medium,Fixed
+DAST0359,/api/users,DELETE,Security Misconfiguration,id,4.6,Medium,Open
+DAST0360,/checkout,DELETE,Path Traversal,id,8.7,High,Open
+DAST0361,/login,POST,Broken Authentication,search,3.2,Low,Fixed
+DAST0362,/payment,PUT,Open Redirect,username,3.5,Low,Open
+DAST0363,/checkout,POST,Information Disclosure,N/A,9.2,Critical,Fixed
+DAST0364,/login,GET,CSRF,N/A,4.5,Medium,Open
+DAST0365,/search,PUT,Session Management Issue,token,4.9,Medium,Open
+DAST0366,/checkout,POST,SQL Injection,id,8.3,High,Open
+DAST0367,/api/users,DELETE,Cross-Site Scripting,token,3.5,Low,Open
+DAST0368,/login,DELETE,Information Disclosure,token,2.1,Low,Open
+DAST0369,/payment,GET,SQL Injection,N/A,5.3,Medium,Open
+DAST0370,/api/users,GET,Information Disclosure,username,5.9,Medium,Open
+DAST0371,/upload,POST,Security Misconfiguration,token,5.4,Medium,Open
+DAST0372,/login,POST,Cross-Site Scripting,id,4.7,Medium,Open
+DAST0373,/payment,GET,Path Traversal,username,8.9,High,Open
+DAST0374,/upload,GET,Session Management Issue,id,5.6,Medium,Open
+DAST0375,/login,PUT,Security Misconfiguration,search,6.3,Medium,Open
+DAST0376,/checkout,PUT,Open Redirect,redirect,9.7,Critical,Open
+DAST0377,/api/auth,GET,Path Traversal,N/A,8.2,High,Open
+DAST0378,/upload,POST,Missing Security Headers,id,3.7,Low,Open
+DAST0379,/upload,PUT,Path Traversal,username,4.5,Medium,Open
+DAST0380,/checkout,POST,Session Management Issue,id,9.8,Critical,Open
+DAST0381,/search,PUT,CSRF,search,6.7,Medium,Open
+DAST0382,/search,GET,Path Traversal,file,8.1,High,Fixed
+DAST0383,/search,DELETE,Session Management Issue,file,5,Medium,Open
+DAST0384,/upload,POST,Missing Security Headers,N/A,8.2,High,Open
+DAST0385,/search,PUT,CSRF,redirect,6.3,Medium,Open
+DAST0386,/payment,PUT,Information Disclosure,file,9.3,Critical,Open
+DAST0387,/download,DELETE,Cross-Site Scripting,redirect,3.5,Low,Open
+DAST0388,/search,POST,Security Misconfiguration,file,4.3,Medium,Open
+DAST0389,/login,PUT,Cross-Site Scripting,file,2.8,Low,Open
+DAST0390,/checkout,POST,Open Redirect,username,3.7,Low,Open
+DAST0391,/upload,PUT,Path Traversal,redirect,9.8,Critical,Fixed
+DAST0392,/upload,POST,Path Traversal,N/A,4.4,Medium,Open
+DAST0393,/download,DELETE,Session Management Issue,token,7.8,High,Open
+DAST0394,/api/users,DELETE,Information Disclosure,N/A,8.3,High,Open
+DAST0395,/login,GET,Session Management Issue,username,2.8,Low,Open
+DAST0396,/admin,GET,CSRF,N/A,3.9,Low,Open
+DAST0397,/api/users,PUT,Cross-Site Scripting,token,4.2,Medium,Fixed
+DAST0398,/search,PUT,Missing Security Headers,username,2.8,Low,Open
+DAST0399,/download,DELETE,Broken Authentication,token,2.9,Low,Open
+DAST0400,/search,POST,Broken Authentication,file,9.9,Critical,Open
+DAST0401,/search,POST,Open Redirect,N/A,9.9,Critical,Open
+DAST0402,/download,POST,Cross-Site Scripting,file,3.1,Low,Open
+DAST0403,/login,DELETE,SQL Injection,redirect,9.2,Critical,Open
+DAST0404,/api/auth,POST,Security Misconfiguration,id,6.6,Medium,Fixed
+DAST0405,/login,POST,Information Disclosure,redirect,5.2,Medium,Fixed
+DAST0406,/upload,GET,Security Misconfiguration,id,5.6,Medium,Open
+DAST0407,/search,DELETE,Cross-Site Scripting,file,7.7,High,Fixed
+DAST0408,/login,GET,Broken Authentication,search,2.7,Low,Open
+DAST0409,/profile,PUT,Path Traversal,id,4.7,Medium,Open
+DAST0410,/api/auth,DELETE,Open Redirect,N/A,7.4,High,Open
+DAST0411,/upload,PUT,Open Redirect,username,4.5,Medium,Fixed
+DAST0412,/api/auth,POST,Open Redirect,username,8.7,High,Open
+DAST0413,/payment,POST,Open Redirect,username,3.7,Low,Open
+DAST0414,/api/auth,DELETE,Open Redirect,file,6,Medium,Open
+DAST0415,/api/users,PUT,CSRF,search,4.2,Medium,Fixed
+DAST0416,/api/auth,GET,Path Traversal,username,3.5,Low,Open
+DAST0417,/login,PUT,Information Disclosure,username,9.6,Critical,Open
+DAST0418,/api/users,POST,Path Traversal,N/A,4.6,Medium,Fixed
+DAST0419,/payment,DELETE,SQL Injection,search,5.8,Medium,Open
+DAST0420,/admin,DELETE,SQL Injection,N/A,2.2,Low,Open
+DAST0421,/login,GET,Security Misconfiguration,file,6.4,Medium,Open
+DAST0422,/download,PUT,Broken Authentication,token,7.2,High,Open
+DAST0423,/upload,POST,SQL Injection,file,6.8,Medium,Open
+DAST0424,/login,POST,SQL Injection,id,4.6,Medium,Open
+DAST0425,/payment,PUT,CSRF,token,9.1,Critical,Open
+DAST0426,/payment,DELETE,Cross-Site Scripting,N/A,7,High,Open
+DAST0427,/checkout,GET,Session Management Issue,search,4.4,Medium,Open
+DAST0428,/login,PUT,SQL Injection,redirect,5.1,Medium,Open
+DAST0429,/payment,GET,Session Management Issue,file,3.3,Low,Open
+DAST0430,/login,POST,Cross-Site Scripting,search,8.9,High,Open
+DAST0431,/payment,GET,Session Management Issue,id,9.6,Critical,Open
+DAST0432,/payment,GET,Information Disclosure,username,6.5,Medium,Open
+DAST0433,/upload,DELETE,Security Misconfiguration,redirect,4.6,Medium,Open
+DAST0434,/download,DELETE,Cross-Site Scripting,file,10,Critical,Open
+DAST0435,/api/auth,GET,Information Disclosure,file,3.9,Low,Open
+DAST0436,/download,DELETE,Security Misconfiguration,search,6.9,Medium,Open
+DAST0437,/api/users,DELETE,Open Redirect,redirect,2.9,Low,Open
+DAST0438,/api/auth,GET,Security Misconfiguration,N/A,5.9,Medium,Open
+DAST0439,/upload,GET,Session Management Issue,N/A,2.8,Low,Open
+DAST0440,/profile,POST,CSRF,redirect,3.3,Low,Open
+DAST0441,/admin,DELETE,Path Traversal,redirect,4.3,Medium,Open
+DAST0442,/payment,DELETE,Open Redirect,search,6.7,Medium,Open
+DAST0443,/download,DELETE,CSRF,search,7.9,High,Open
+DAST0444,/profile,PUT,Path Traversal,username,3.3,Low,Open
+DAST0445,/api/auth,POST,Open Redirect,N/A,8.9,High,Fixed
+DAST0446,/api/users,POST,Path Traversal,file,7.7,High,Open
+DAST0447,/api/auth,DELETE,SQL Injection,token,8.1,High,Fixed
+DAST0448,/payment,DELETE,Session Management Issue,username,3.2,Low,Open
+DAST0449,/payment,POST,CSRF,search,4.9,Medium,Open
+DAST0450,/checkout,GET,Broken Authentication,username,7.4,High,Open
+DAST0451,/search,GET,Path Traversal,token,6.2,Medium,Open
+DAST0452,/payment,DELETE,Open Redirect,file,4.8,Medium,Open
+DAST0453,/login,PUT,Broken Authentication,N/A,3.9,Low,Open
+DAST0454,/search,POST,Security Misconfiguration,token,2.5,Low,Open
+DAST0455,/payment,DELETE,Broken Authentication,id,3.9,Low,Open
+DAST0456,/download,PUT,CSRF,id,9.1,Critical,Open
+DAST0457,/profile,PUT,Path Traversal,search,8.5,High,Open
+DAST0458,/profile,POST,Path Traversal,id,8,High,Open
+DAST0459,/upload,GET,Cross-Site Scripting,id,3.2,Low,Open
+DAST0460,/login,GET,Information Disclosure,username,3,Low,Open
+DAST0461,/api/users,POST,Security Misconfiguration,N/A,9.8,Critical,Open
+DAST0462,/checkout,POST,Missing Security Headers,N/A,5.5,Medium,Open
+DAST0463,/login,PUT,Information Disclosure,search,5.7,Medium,Open
+DAST0464,/checkout,GET,Cross-Site Scripting,id,3.3,Low,Fixed
+DAST0465,/profile,POST,Session Management Issue,N/A,6.7,Medium,Open
+DAST0466,/api/users,GET,Information Disclosure,id,4.2,Medium,Open
+DAST0467,/login,DELETE,Broken Authentication,file,3.8,Low,Open
+DAST0468,/checkout,DELETE,Information Disclosure,token,7.5,High,Open
+DAST0469,/checkout,POST,Missing Security Headers,N/A,4.3,Medium,Open
+DAST0470,/profile,PUT,Session Management Issue,username,8.5,High,Open
+DAST0471,/api/auth,DELETE,Information Disclosure,search,2.8,Low,Open
+DAST0472,/login,GET,Information Disclosure,token,8.6,High,Open
+DAST0473,/checkout,PUT,Security Misconfiguration,search,5.4,Medium,Open
+DAST0474,/login,DELETE,Information Disclosure,N/A,8,High,Open
+DAST0475,/payment,POST,Information Disclosure,id,7.3,High,Open
+DAST0476,/admin,DELETE,Cross-Site Scripting,token,5.6,Medium,Open
+DAST0477,/upload,POST,Path Traversal,token,7,High,Open
+DAST0478,/download,DELETE,Session Management Issue,N/A,2,Low,Open
+DAST0479,/api/users,DELETE,Missing Security Headers,token,3.7,Low,Open
+DAST0480,/download,DELETE,Cross-Site Scripting,N/A,7.6,High,Open
+DAST0481,/search,DELETE,Cross-Site Scripting,username,3.7,Low,Open
+DAST0482,/checkout,DELETE,Cross-Site Scripting,username,8.5,High,Open
+DAST0483,/payment,PUT,Open Redirect,token,4.5,Medium,Fixed
+DAST0484,/api/auth,GET,Missing Security Headers,token,7.5,High,Fixed
+DAST0485,/upload,DELETE,Cross-Site Scripting,search,9.5,Critical,Fixed
+DAST0486,/login,POST,Path Traversal,token,2.9,Low,Open
+DAST0487,/login,GET,Cross-Site Scripting,search,3,Low,Fixed
+DAST0488,/admin,POST,Cross-Site Scripting,search,7.4,High,Open
+DAST0489,/download,DELETE,Path Traversal,username,5.4,Medium,Open
+DAST0490,/api/auth,POST,Missing Security Headers,redirect,8.7,High,Fixed
+DAST0491,/login,PUT,Session Management Issue,token,9.8,Critical,Open
+DAST0492,/admin,POST,Session Management Issue,username,2.6,Low,Open
+DAST0493,/api/auth,PUT,SQL Injection,search,5.7,Medium,Fixed
+DAST0494,/login,DELETE,Session Management Issue,N/A,7.6,High,Fixed
+DAST0495,/admin,PUT,Cross-Site Scripting,search,2.7,Low,Open
+DAST0496,/search,DELETE,Cross-Site Scripting,username,9.9,Critical,Open
+DAST0497,/checkout,POST,Information Disclosure,search,4,Medium,Open
+DAST0498,/checkout,PUT,Path Traversal,N/A,2.4,Low,Open
+DAST0499,/upload,DELETE,Cross-Site Scripting,N/A,7.5,High,Open
+DAST0500,/api/auth,GET,CSRF,file,8.3,High,Open
+DAST0501,/download,GET,SQL Injection,username,4.8,Medium,Fixed
+DAST0502,/login,DELETE,Cross-Site Scripting,redirect,4.9,Medium,Fixed
+DAST0503,/search,POST,Cross-Site Scripting,N/A,4.3,Medium,Open
+DAST0504,/profile,POST,Path Traversal,search,2.6,Low,Open
+DAST0505,/payment,DELETE,Path Traversal,token,4.9,Medium,Fixed
+DAST0506,/admin,PUT,SQL Injection,file,3.4,Low,Fixed
+DAST0507,/profile,PUT,Information Disclosure,username,6.3,Medium,Open
+DAST0508,/api/users,PUT,Session Management Issue,token,6,Medium,Fixed
+DAST0509,/admin,POST,Security Misconfiguration,username,9.6,Critical,Open
+DAST0510,/login,DELETE,Information Disclosure,token,4.7,Medium,Open
+DAST0511,/payment,POST,Security Misconfiguration,redirect,5.7,Medium,Fixed
+DAST0512,/payment,GET,Open Redirect,username,2.7,Low,Open
+DAST0513,/search,POST,Session Management Issue,search,8.9,High,Open
+DAST0514,/upload,POST,Open Redirect,id,5.2,Medium,Open
+DAST0515,/upload,GET,Information Disclosure,username,7.9,High,Open
+DAST0516,/download,POST,Path Traversal,search,3.4,Low,Open
+DAST0517,/checkout,POST,Session Management Issue,N/A,5.6,Medium,Open
+DAST0518,/payment,DELETE,Security Misconfiguration,token,8.2,High,Open
+DAST0519,/download,PUT,CSRF,file,2.5,Low,Open
+DAST0520,/profile,GET,SQL Injection,search,8.5,High,Open
+DAST0521,/api/users,GET,Path Traversal,redirect,4.4,Medium,Open
+DAST0522,/login,GET,Cross-Site Scripting,N/A,4.9,Medium,Open
+DAST0523,/admin,DELETE,Path Traversal,redirect,4.5,Medium,Open
+DAST0524,/download,POST,Missing Security Headers,redirect,2.3,Low,Open
+DAST0525,/upload,PUT,CSRF,N/A,6.2,Medium,Open
+DAST0526,/upload,DELETE,Open Redirect,token,7.4,High,Fixed
+DAST0527,/profile,POST,Missing Security Headers,file,9.2,Critical,Open
+DAST0528,/login,POST,Missing Security Headers,id,2.2,Low,Open
+DAST0529,/login,POST,Path Traversal,file,9.9,Critical,Open
+DAST0530,/download,GET,Information Disclosure,redirect,4.4,Medium,Fixed
+DAST0531,/admin,DELETE,Security Misconfiguration,redirect,9.5,Critical,Open
+DAST0532,/admin,POST,Path Traversal,username,7.5,High,Open
+DAST0533,/upload,DELETE,Security Misconfiguration,search,5.6,Medium,Open
+DAST0534,/login,DELETE,Session Management Issue,N/A,8.5,High,Open
+DAST0535,/api/users,DELETE,Security Misconfiguration,N/A,2.3,Low,Open
+DAST0536,/download,DELETE,Missing Security Headers,id,7.9,High,Open
+DAST0537,/api/auth,GET,Open Redirect,N/A,4.8,Medium,Fixed
+DAST0538,/api/users,PUT,Information Disclosure,id,8.6,High,Fixed
+DAST0539,/admin,DELETE,Security Misconfiguration,redirect,6.3,Medium,Open
+DAST0540,/login,PUT,SQL Injection,token,4.2,Medium,Open
+DAST0541,/api/auth,DELETE,Security Misconfiguration,token,8.4,High,Open
+DAST0542,/api/users,POST,Security Misconfiguration,redirect,2.7,Low,Open
+DAST0543,/admin,DELETE,CSRF,username,8.7,High,Open
+DAST0544,/api/auth,GET,SQL Injection,username,4.2,Medium,Open
+DAST0545,/download,PUT,Cross-Site Scripting,username,8,High,Fixed
+DAST0546,/download,POST,Cross-Site Scripting,token,9.7,Critical,Open
+DAST0547,/payment,DELETE,Security Misconfiguration,redirect,2.7,Low,Open
+DAST0548,/payment,POST,Session Management Issue,N/A,8.8,High,Open
+DAST0549,/checkout,PUT,SQL Injection,redirect,8.4,High,Open
+DAST0550,/search,GET,SQL Injection,N/A,5.1,Medium,Open
+DAST0551,/admin,POST,Security Misconfiguration,username,4.6,Medium,Open
+DAST0552,/login,POST,Information Disclosure,token,3.6,Low,Open
+DAST0553,/admin,GET,CSRF,id,6.6,Medium,Fixed
+DAST0554,/profile,PUT,Security Misconfiguration,token,9.1,Critical,Open
+DAST0555,/profile,PUT,SQL Injection,search,6.2,Medium,Open
+DAST0556,/search,DELETE,Open Redirect,file,6.7,Medium,Fixed
+DAST0557,/upload,DELETE,Cross-Site Scripting,search,7.3,High,Open
+DAST0558,/download,GET,Security Misconfiguration,redirect,6.2,Medium,Open
+DAST0559,/login,PUT,Information Disclosure,username,6.1,Medium,Open
+DAST0560,/download,DELETE,Path Traversal,id,2.1,Low,Open
+DAST0561,/api/auth,GET,Broken Authentication,search,2.4,Low,Open
+DAST0562,/profile,PUT,CSRF,search,9.4,Critical,Fixed
+DAST0563,/upload,PUT,CSRF,id,8.2,High,Fixed
+DAST0564,/profile,PUT,Cross-Site Scripting,token,3.6,Low,Open
+DAST0565,/upload,POST,Missing Security Headers,id,7.2,High,Open
+DAST0566,/admin,DELETE,Security Misconfiguration,username,7.2,High,Fixed
+DAST0567,/checkout,DELETE,Information Disclosure,N/A,5.2,Medium,Fixed
+DAST0568,/profile,POST,Information Disclosure,file,8.5,High,Open
+DAST0569,/download,DELETE,Session Management Issue,N/A,6.4,Medium,Open
+DAST0570,/checkout,GET,Open Redirect,file,9.1,Critical,Fixed
+DAST0571,/api/auth,PUT,Broken Authentication,file,6.4,Medium,Open
+DAST0572,/api/users,POST,CSRF,token,9.2,Critical,Open
+DAST0573,/payment,PUT,Broken Authentication,file,6.7,Medium,Open
+DAST0574,/profile,PUT,Path Traversal,redirect,5.4,Medium,Open
+DAST0575,/api/users,DELETE,Security Misconfiguration,N/A,9.6,Critical,Open
+DAST0576,/checkout,PUT,CSRF,username,7.7,High,Open
+DAST0577,/login,DELETE,Open Redirect,search,5.3,Medium,Open
+DAST0578,/api/auth,PUT,Session Management Issue,file,2.1,Low,Open
+DAST0579,/payment,DELETE,Missing Security Headers,id,6.5,Medium,Fixed
+DAST0580,/api/auth,POST,Path Traversal,username,5.9,Medium,Open
+DAST0581,/api/users,POST,Cross-Site Scripting,token,9,Critical,Open
+DAST0582,/api/users,POST,Missing Security Headers,file,8.5,High,Open
+DAST0583,/payment,GET,Security Misconfiguration,N/A,8.8,High,Open
+DAST0584,/api/auth,POST,Cross-Site Scripting,token,4.9,Medium,Open
+DAST0585,/api/auth,DELETE,Cross-Site Scripting,token,9,Critical,Open
+DAST0586,/api/users,DELETE,Path Traversal,id,3.2,Low,Open
+DAST0587,/upload,GET,CSRF,search,4.3,Medium,Open
+DAST0588,/profile,POST,Information Disclosure,redirect,7.3,High,Open
+DAST0589,/admin,PUT,CSRF,N/A,9.8,Critical,Open
+DAST0590,/payment,POST,Cross-Site Scripting,redirect,6.7,Medium,Fixed
+DAST0591,/checkout,GET,Path Traversal,username,6.2,Medium,Open
+DAST0592,/upload,GET,Broken Authentication,token,2.5,Low,Open
+DAST0593,/api/users,PUT,Cross-Site Scripting,username,9.8,Critical,Fixed
+DAST0594,/download,GET,Open Redirect,search,3,Low,Open
+DAST0595,/upload,GET,Missing Security Headers,N/A,2.7,Low,Open
+DAST0596,/search,DELETE,Broken Authentication,search,9,Critical,Open
+DAST0597,/search,POST,Information Disclosure,file,6.1,Medium,Fixed
+DAST0598,/profile,PUT,Broken Authentication,redirect,4.7,Medium,Open
+DAST0599,/login,PUT,SQL Injection,username,9.2,Critical,Open
+DAST0600,/admin,PUT,Session Management Issue,N/A,2.3,Low,Open
+DAST0601,/upload,GET,Open Redirect,file,3.9,Low,Fixed
+DAST0602,/api/users,POST,CSRF,file,7.5,High,Open
+DAST0603,/profile,DELETE,Information Disclosure,search,3.8,Low,Open
+DAST0604,/checkout,POST,SQL Injection,redirect,4.5,Medium,Open
+DAST0605,/upload,GET,SQL Injection,username,3.4,Low,Open
+DAST0606,/profile,POST,Security Misconfiguration,N/A,8.4,High,Fixed
+DAST0607,/api/users,DELETE,Session Management Issue,file,3.2,Low,Open
+DAST0608,/payment,GET,Information Disclosure,redirect,8.6,High,Open
+DAST0609,/checkout,DELETE,Path Traversal,token,4.6,Medium,Open
+DAST0610,/download,PUT,Cross-Site Scripting,username,5,Medium,Open
+DAST0611,/payment,PUT,Cross-Site Scripting,file,7,High,Open
+DAST0612,/download,GET,Broken Authentication,token,2.8,Low,Open
+DAST0613,/checkout,PUT,Broken Authentication,username,2.2,Low,Open
+DAST0614,/download,PUT,CSRF,redirect,9.9,Critical,Fixed
+DAST0615,/payment,POST,Path Traversal,search,6.7,Medium,Fixed
+DAST0616,/api/users,POST,Open Redirect,search,8.3,High,Open
+DAST0617,/profile,DELETE,Cross-Site Scripting,N/A,9.1,Critical,Open
+DAST0618,/login,POST,Security Misconfiguration,token,8,High,Fixed
+DAST0619,/payment,GET,Missing Security Headers,redirect,9.8,Critical,Fixed
+DAST0620,/upload,POST,CSRF,token,2.4,Low,Open
+DAST0621,/admin,POST,SQL Injection,N/A,9.2,Critical,Open
+DAST0622,/profile,DELETE,Security Misconfiguration,N/A,8.9,High,Open
+DAST0623,/api/users,DELETE,Path Traversal,file,8.2,High,Open
+DAST0624,/api/users,POST,Cross-Site Scripting,redirect,5,Medium,Open
+DAST0625,/search,PUT,SQL Injection,redirect,2.3,Low,Open
+DAST0626,/login,DELETE,CSRF,file,4.9,Medium,Open
+DAST0627,/payment,GET,Missing Security Headers,N/A,4.2,Medium,Open
+DAST0628,/upload,PUT,Security Misconfiguration,search,8.8,High,Open
+DAST0629,/admin,POST,SQL Injection,N/A,4.9,Medium,Open
+DAST0630,/profile,POST,SQL Injection,username,4.4,Medium,Fixed
+DAST0631,/download,POST,Broken Authentication,username,8.1,High,Open
+DAST0632,/login,POST,Broken Authentication,N/A,8.8,High,Open
+DAST0633,/upload,POST,Missing Security Headers,file,5.7,Medium,Open
+DAST0634,/upload,DELETE,Path Traversal,file,7.8,High,Open
+DAST0635,/checkout,DELETE,Missing Security Headers,search,2.8,Low,Open
+DAST0636,/api/users,DELETE,Open Redirect,id,3.8,Low,Open
+DAST0637,/login,GET,Open Redirect,file,9.6,Critical,Open
+DAST0638,/search,PUT,Path Traversal,file,8,High,Fixed
+DAST0639,/checkout,GET,Broken Authentication,id,8.6,High,Open
+DAST0640,/admin,GET,Session Management Issue,search,5.3,Medium,Fixed
+DAST0641,/search,POST,Security Misconfiguration,redirect,6.8,Medium,Open
+DAST0642,/checkout,POST,Broken Authentication,N/A,8.4,High,Open
+DAST0643,/checkout,DELETE,SQL Injection,file,9.1,Critical,Open
+DAST0644,/upload,PUT,Information Disclosure,username,5.1,Medium,Fixed
+DAST0645,/payment,PUT,Missing Security Headers,N/A,2.7,Low,Open
+DAST0646,/profile,DELETE,CSRF,search,7,High,Open
+DAST0647,/api/auth,PUT,Broken Authentication,username,8,High,Open
+DAST0648,/profile,PUT,Broken Authentication,username,2.7,Low,Open
+DAST0649,/search,DELETE,Security Misconfiguration,search,4.4,Medium,Open
+DAST0650,/admin,DELETE,Broken Authentication,file,6.9,Medium,Open
+DAST0651,/checkout,PUT,Cross-Site Scripting,id,8,High,Fixed
+DAST0652,/checkout,POST,Session Management Issue,search,9.3,Critical,Open
+DAST0653,/login,GET,Broken Authentication,N/A,5.8,Medium,Open
+DAST0654,/profile,PUT,SQL Injection,search,6.5,Medium,Open
+DAST0655,/admin,POST,SQL Injection,token,7.9,High,Open
+DAST0656,/download,PUT,Missing Security Headers,N/A,8.9,High,Open
+DAST0657,/payment,GET,Broken Authentication,search,9.3,Critical,Fixed
+DAST0658,/search,DELETE,SQL Injection,N/A,2.5,Low,Open
+DAST0659,/payment,POST,CSRF,token,6,Medium,Open
+DAST0660,/download,POST,Cross-Site Scripting,search,4.8,Medium,Open
+DAST0661,/api/users,PUT,Missing Security Headers,token,8.8,High,Open
+DAST0662,/payment,PUT,CSRF,redirect,8.5,High,Fixed
+DAST0663,/api/auth,GET,Path Traversal,N/A,2.9,Low,Open
+DAST0664,/checkout,PUT,Broken Authentication,token,7.7,High,Open
+DAST0665,/api/auth,GET,Security Misconfiguration,redirect,3.9,Low,Open
+DAST0666,/profile,DELETE,Missing Security Headers,id,2.6,Low,Open
+DAST0667,/api/users,POST,Security Misconfiguration,file,9.5,Critical,Open
+DAST0668,/checkout,PUT,Information Disclosure,id,3.3,Low,Open
+DAST0669,/download,GET,Session Management Issue,username,7.2,High,Open
+DAST0670,/admin,POST,Broken Authentication,redirect,3.4,Low,Fixed
+DAST0671,/checkout,POST,CSRF,search,2.2,Low,Open
+DAST0672,/checkout,DELETE,Broken Authentication,N/A,6.2,Medium,Open
+DAST0673,/checkout,GET,Open Redirect,N/A,2.7,Low,Fixed
+DAST0674,/admin,GET,Session Management Issue,token,4.3,Medium,Open
+DAST0675,/login,GET,Missing Security Headers,N/A,5.4,Medium,Fixed
+DAST0676,/api/auth,PUT,Path Traversal,id,6.7,Medium,Fixed
+DAST0677,/upload,GET,Session Management Issue,N/A,8.5,High,Open
+DAST0678,/profile,DELETE,CSRF,file,3.6,Low,Open
+DAST0679,/api/users,GET,CSRF,file,5.7,Medium,Open
+DAST0680,/payment,GET,Missing Security Headers,file,5.6,Medium,Open
+DAST0681,/checkout,PUT,Cross-Site Scripting,redirect,7.9,High,Open
+DAST0682,/api/auth,POST,Cross-Site Scripting,redirect,7.7,High,Open
+DAST0683,/api/users,POST,Information Disclosure,search,8.6,High,Open
+DAST0684,/login,POST,CSRF,token,9.1,Critical,Open
+DAST0685,/checkout,PUT,Session Management Issue,search,9.6,Critical,Open
+DAST0686,/profile,PUT,Path Traversal,id,6.4,Medium,Open
+DAST0687,/upload,DELETE,Cross-Site Scripting,search,6.2,Medium,Open
+DAST0688,/api/users,DELETE,CSRF,redirect,3.4,Low,Fixed
+DAST0689,/profile,POST,Cross-Site Scripting,N/A,5.8,Medium,Open
+DAST0690,/search,PUT,Cross-Site Scripting,id,4,Medium,Open
+DAST0691,/api/auth,DELETE,Path Traversal,file,2.3,Low,Open
+DAST0692,/upload,GET,SQL Injection,token,7.1,High,Open
+DAST0693,/api/auth,PUT,Missing Security Headers,id,6.3,Medium,Open
+DAST0694,/profile,DELETE,Broken Authentication,token,3.1,Low,Fixed
+DAST0695,/api/auth,GET,Session Management Issue,N/A,4.3,Medium,Open
+DAST0696,/api/auth,PUT,CSRF,redirect,6.7,Medium,Fixed
+DAST0697,/profile,PUT,CSRF,redirect,3.3,Low,Open
+DAST0698,/search,POST,Cross-Site Scripting,redirect,2.8,Low,Open
+DAST0699,/api/users,POST,SQL Injection,id,5.4,Medium,Open
+DAST0700,/api/auth,POST,Missing Security Headers,token,4.8,Medium,Fixed
+DAST0701,/admin,DELETE,Missing Security Headers,search,8.8,High,Open
+DAST0702,/checkout,GET,Open Redirect,id,4.1,Medium,Open
+DAST0703,/login,GET,Missing Security Headers,username,2.2,Low,Open
+DAST0704,/download,PUT,Information Disclosure,token,8.9,High,Fixed
+DAST0705,/profile,GET,SQL Injection,username,4.7,Medium,Open
+DAST0706,/admin,PUT,Session Management Issue,token,7.1,High,Open
+DAST0707,/download,POST,Open Redirect,token,6.4,Medium,Open
+DAST0708,/api/users,POST,Path Traversal,username,5,Medium,Open
+DAST0709,/admin,GET,Cross-Site Scripting,N/A,3.5,Low,Open
+DAST0710,/upload,POST,Path Traversal,id,5.4,Medium,Fixed
+DAST0711,/checkout,PUT,Cross-Site Scripting,redirect,7,High,Open
+DAST0712,/login,PUT,Security Misconfiguration,id,6.2,Medium,Open
+DAST0713,/login,GET,Cross-Site Scripting,file,7.3,High,Open
+DAST0714,/checkout,DELETE,Path Traversal,search,7.8,High,Fixed
+DAST0715,/admin,POST,Path Traversal,token,5.9,Medium,Fixed
+DAST0716,/checkout,GET,CSRF,search,5.1,Medium,Open
+DAST0717,/api/users,DELETE,Cross-Site Scripting,file,2.1,Low,Fixed
+DAST0718,/search,GET,Missing Security Headers,username,2,Low,Fixed
+DAST0719,/profile,GET,Security Misconfiguration,id,10,Critical,Open
+DAST0720,/admin,POST,Session Management Issue,id,2.9,Low,Fixed
+DAST0721,/search,POST,Path Traversal,id,5.3,Medium,Open
+DAST0722,/login,DELETE,Cross-Site Scripting,token,7.7,High,Fixed
+DAST0723,/api/users,DELETE,SQL Injection,token,7.9,High,Open
+DAST0724,/profile,PUT,Session Management Issue,token,9,Critical,Open
+DAST0725,/checkout,GET,Missing Security Headers,username,6.9,Medium,Open
+DAST0726,/api/users,POST,Path Traversal,redirect,8,High,Open
+DAST0727,/profile,DELETE,Missing Security Headers,username,8.8,High,Open
+DAST0728,/admin,DELETE,Security Misconfiguration,redirect,6.9,Medium,Open
+DAST0729,/admin,DELETE,Broken Authentication,file,8.3,High,Fixed
+DAST0730,/api/auth,PUT,Cross-Site Scripting,redirect,2.2,Low,Open
+DAST0731,/download,PUT,Information Disclosure,file,5.3,Medium,Open
+DAST0732,/profile,PUT,Broken Authentication,search,9,Critical,Open
+DAST0733,/login,PUT,Broken Authentication,N/A,7.2,High,Open
+DAST0734,/admin,POST,Session Management Issue,search,9.4,Critical,Open
+DAST0735,/api/auth,DELETE,Open Redirect,username,3.4,Low,Open
+DAST0736,/api/auth,POST,Cross-Site Scripting,token,4.5,Medium,Open
+DAST0737,/login,POST,Information Disclosure,username,8.4,High,Open
+DAST0738,/payment,PUT,Session Management Issue,N/A,9.9,Critical,Open
+DAST0739,/payment,PUT,Information Disclosure,token,4.6,Medium,Open
+DAST0740,/api/auth,GET,Information Disclosure,id,2,Low,Open
+DAST0741,/profile,PUT,Session Management Issue,id,9.9,Critical,Open
+DAST0742,/api/auth,PUT,Information Disclosure,id,3.2,Low,Fixed
+DAST0743,/api/users,GET,Information Disclosure,username,2.4,Low,Open
+DAST0744,/checkout,DELETE,Open Redirect,N/A,6.8,Medium,Open
+DAST0745,/download,POST,SQL Injection,N/A,4.6,Medium,Open
+DAST0746,/payment,GET,SQL Injection,N/A,6.2,Medium,Open
+DAST0747,/download,PUT,Session Management Issue,username,8.4,High,Open
+DAST0748,/api/auth,PUT,Open Redirect,search,2.6,Low,Fixed
+DAST0749,/api/auth,POST,Path Traversal,token,7.6,High,Open
+DAST0750,/search,GET,CSRF,id,9.6,Critical,Fixed
+DAST0751,/api/auth,PUT,Security Misconfiguration,redirect,4.2,Medium,Open
+DAST0752,/api/auth,PUT,Open Redirect,username,4,Medium,Open
+DAST0753,/upload,PUT,Security Misconfiguration,file,3.3,Low,Open
+DAST0754,/login,GET,Security Misconfiguration,redirect,2.6,Low,Open
+DAST0755,/admin,POST,Open Redirect,username,6.5,Medium,Open
+DAST0756,/api/users,DELETE,SQL Injection,file,5.9,Medium,Fixed
+DAST0757,/upload,POST,Open Redirect,N/A,6,Medium,Open
+DAST0758,/checkout,POST,Cross-Site Scripting,redirect,9.1,Critical,Fixed
+DAST0759,/login,GET,Missing Security Headers,token,2.3,Low,Fixed
+DAST0760,/profile,PUT,Broken Authentication,id,3.6,Low,Fixed
+DAST0761,/download,DELETE,SQL Injection,username,6.1,Medium,Open
+DAST0762,/upload,GET,CSRF,redirect,3.9,Low,Open
+DAST0763,/profile,PUT,Open Redirect,token,6.6,Medium,Open
+DAST0764,/api/auth,POST,SQL Injection,username,5.9,Medium,Open
+DAST0765,/download,GET,Open Redirect,file,6.6,Medium,Open
+DAST0766,/admin,PUT,Missing Security Headers,id,3.2,Low,Fixed
+DAST0767,/payment,DELETE,Cross-Site Scripting,token,3.2,Low,Open
+DAST0768,/api/users,DELETE,Path Traversal,search,5.3,Medium,Open
+DAST0769,/api/users,PUT,Information Disclosure,username,7.5,High,Open
+DAST0770,/checkout,PUT,Session Management Issue,redirect,7.2,High,Fixed
+DAST0771,/profile,GET,Open Redirect,N/A,9.3,Critical,Open
+DAST0772,/admin,DELETE,SQL Injection,N/A,8.5,High,Open
+DAST0773,/upload,PUT,Open Redirect,redirect,7.4,High,Open
+DAST0774,/payment,DELETE,Open Redirect,search,8.5,High,Open
+DAST0775,/api/users,GET,SQL Injection,token,3,Low,Open
+DAST0776,/login,POST,Cross-Site Scripting,redirect,4,Medium,Open
+DAST0777,/api/auth,PUT,CSRF,search,4.7,Medium,Open
+DAST0778,/checkout,POST,Missing Security Headers,N/A,5.3,Medium,Open
+DAST0779,/api/auth,GET,SQL Injection,N/A,7.1,High,Open
+DAST0780,/login,POST,CSRF,N/A,8.5,High,Open
+DAST0781,/checkout,PUT,Session Management Issue,search,4.1,Medium,Open
+DAST0782,/checkout,DELETE,Security Misconfiguration,token,8.6,High,Fixed
+DAST0783,/checkout,POST,Security Misconfiguration,username,2.1,Low,Open
+DAST0784,/download,PUT,Missing Security Headers,token,7.2,High,Open
+DAST0785,/download,PUT,CSRF,id,8.5,High,Open
+DAST0786,/checkout,POST,Security Misconfiguration,redirect,5.7,Medium,Open
+DAST0787,/checkout,GET,Broken Authentication,N/A,3.6,Low,Open
+DAST0788,/checkout,DELETE,Cross-Site Scripting,N/A,2.2,Low,Open
+DAST0789,/admin,PUT,Information Disclosure,search,4.3,Medium,Open
+DAST0790,/admin,GET,Security Misconfiguration,search,9.3,Critical,Open
+DAST0791,/admin,POST,Open Redirect,redirect,9.5,Critical,Fixed
+DAST0792,/api/users,POST,Path Traversal,search,6.3,Medium,Open
+DAST0793,/admin,PUT,Security Misconfiguration,username,3.8,Low,Open
+DAST0794,/api/auth,GET,Session Management Issue,id,5.9,Medium,Open
+DAST0795,/api/auth,PUT,Open Redirect,file,8.4,High,Open
+DAST0796,/profile,DELETE,Missing Security Headers,id,5.3,Medium,Open
+DAST0797,/upload,GET,CSRF,username,2.8,Low,Fixed
+DAST0798,/download,PUT,Missing Security Headers,id,4.2,Medium,Open
+DAST0799,/payment,PUT,Open Redirect,id,4.9,Medium,Open
+DAST0800,/admin,PUT,Open Redirect,N/A,4.1,Medium,Open
+DAST0801,/login,DELETE,Cross-Site Scripting,redirect,5.8,Medium,Open
+DAST0802,/admin,POST,SQL Injection,redirect,4.9,Medium,Open
+DAST0803,/admin,POST,Open Redirect,id,3,Low,Open
+DAST0804,/download,PUT,Broken Authentication,redirect,2.4,Low,Open
+DAST0805,/upload,DELETE,SQL Injection,redirect,4.1,Medium,Open
+DAST0806,/checkout,DELETE,Cross-Site Scripting,file,9.7,Critical,Open
+DAST0807,/api/users,PUT,Broken Authentication,redirect,5.9,Medium,Open
+DAST0808,/admin,GET,Path Traversal,id,5.8,Medium,Open
+DAST0809,/checkout,DELETE,Path Traversal,search,8,High,Open
+DAST0810,/api/auth,GET,SQL Injection,id,7.3,High,Open
+DAST0811,/api/auth,POST,Missing Security Headers,username,2.4,Low,Open
+DAST0812,/profile,PUT,Missing Security Headers,file,7.6,High,Open
+DAST0813,/admin,DELETE,Security Misconfiguration,username,4.9,Medium,Open
+DAST0814,/upload,PUT,Session Management Issue,token,9.1,Critical,Fixed
+DAST0815,/api/auth,POST,Session Management Issue,N/A,8.2,High,Open
+DAST0816,/api/users,DELETE,Security Misconfiguration,token,3.1,Low,Open
+DAST0817,/download,PUT,SQL Injection,token,4.4,Medium,Fixed
+DAST0818,/api/auth,PUT,CSRF,search,3,Low,Open
+DAST0819,/upload,GET,CSRF,file,6.7,Medium,Open
+DAST0820,/checkout,PUT,Path Traversal,username,6.5,Medium,Open
+DAST0821,/admin,POST,Path Traversal,id,7.5,High,Fixed
+DAST0822,/payment,DELETE,Broken Authentication,token,4.5,Medium,Open
+DAST0823,/checkout,POST,Open Redirect,username,6.8,Medium,Fixed
+DAST0824,/payment,GET,Information Disclosure,search,9.9,Critical,Open
+DAST0825,/download,PUT,Session Management Issue,id,7.9,High,Open
+DAST0826,/payment,PUT,Open Redirect,file,2.6,Low,Open
+DAST0827,/search,GET,Path Traversal,token,5.6,Medium,Fixed
+DAST0828,/login,PUT,Information Disclosure,file,2.4,Low,Open
+DAST0829,/checkout,POST,Information Disclosure,N/A,4.7,Medium,Open
+DAST0830,/api/auth,POST,Information Disclosure,username,7.9,High,Fixed
+DAST0831,/payment,POST,CSRF,redirect,2,Low,Open
+DAST0832,/payment,GET,CSRF,token,8.2,High,Open
+DAST0833,/admin,DELETE,Open Redirect,file,5.7,Medium,Open
+DAST0834,/api/auth,PUT,Missing Security Headers,search,7.8,High,Fixed
+DAST0835,/checkout,GET,Security Misconfiguration,N/A,7.3,High,Open
+DAST0836,/api/users,GET,Open Redirect,search,6.6,Medium,Open
+DAST0837,/download,GET,Broken Authentication,id,7.6,High,Open
+DAST0838,/api/users,GET,SQL Injection,file,7.3,High,Open
+DAST0839,/api/auth,GET,SQL Injection,file,4.3,Medium,Fixed
+DAST0840,/payment,POST,Security Misconfiguration,file,2.8,Low,Open
+DAST0841,/profile,PUT,SQL Injection,file,9.7,Critical,Open
+DAST0842,/download,DELETE,Cross-Site Scripting,file,7.9,High,Open
+DAST0843,/profile,GET,Security Misconfiguration,id,6.9,Medium,Open
+DAST0844,/upload,DELETE,Session Management Issue,id,3,Low,Open
+DAST0845,/api/auth,POST,Cross-Site Scripting,N/A,6.4,Medium,Open
+DAST0846,/upload,POST,Information Disclosure,file,4.1,Medium,Open
+DAST0847,/search,DELETE,CSRF,search,9.2,Critical,Open
+DAST0848,/download,GET,Broken Authentication,id,2.1,Low,Open
+DAST0849,/profile,GET,Path Traversal,file,3.9,Low,Open
+DAST0850,/api/users,PUT,Information Disclosure,search,3,Low,Fixed
+DAST0851,/api/users,GET,SQL Injection,username,4.6,Medium,Open
+DAST0852,/api/users,GET,Path Traversal,token,7.8,High,Open
+DAST0853,/profile,DELETE,Session Management Issue,redirect,9.9,Critical,Open
+DAST0854,/upload,DELETE,Broken Authentication,username,7.7,High,Fixed
+DAST0855,/payment,PUT,SQL Injection,token,6,Medium,Fixed
+DAST0856,/admin,GET,Path Traversal,token,5.5,Medium,Open
+DAST0857,/search,GET,Missing Security Headers,search,9.6,Critical,Open
+DAST0858,/payment,DELETE,Cross-Site Scripting,token,3,Low,Fixed
+DAST0859,/payment,PUT,Session Management Issue,search,2.6,Low,Open
+DAST0860,/download,POST,Security Misconfiguration,redirect,9.1,Critical,Fixed
+DAST0861,/upload,POST,Security Misconfiguration,file,5.4,Medium,Open
+DAST0862,/search,POST,Session Management Issue,token,2.3,Low,Open
+DAST0863,/api/users,PUT,Information Disclosure,file,7.2,High,Open
+DAST0864,/profile,PUT,Broken Authentication,token,5.7,Medium,Open
+DAST0865,/payment,GET,Information Disclosure,search,6.9,Medium,Fixed
+DAST0866,/admin,PUT,Security Misconfiguration,redirect,4.2,Medium,Open
+DAST0867,/api/auth,POST,Security Misconfiguration,file,3.3,Low,Open
+DAST0868,/profile,PUT,Cross-Site Scripting,username,2.9,Low,Fixed
+DAST0869,/checkout,GET,CSRF,token,6.1,Medium,Open
+DAST0870,/checkout,GET,Security Misconfiguration,username,6.4,Medium,Open
+DAST0871,/payment,POST,Broken Authentication,username,3.1,Low,Open
+DAST0872,/upload,POST,Missing Security Headers,id,3.4,Low,Fixed
+DAST0873,/api/auth,POST,CSRF,username,8.1,High,Open
+DAST0874,/api/auth,POST,SQL Injection,id,6.2,Medium,Open
+DAST0875,/upload,POST,Cross-Site Scripting,file,8.9,High,Fixed
+DAST0876,/download,POST,CSRF,id,7.4,High,Open
+DAST0877,/login,DELETE,Open Redirect,redirect,2.1,Low,Open
+DAST0878,/download,GET,CSRF,username,7.5,High,Open
+DAST0879,/admin,PUT,CSRF,search,9.1,Critical,Open
+DAST0880,/api/users,DELETE,Open Redirect,id,7.1,High,Open
+DAST0881,/profile,GET,Information Disclosure,token,2.9,Low,Open
+DAST0882,/payment,PUT,Security Misconfiguration,redirect,9.4,Critical,Open
+DAST0883,/payment,PUT,Missing Security Headers,search,7.4,High,Open
+DAST0884,/admin,PUT,SQL Injection,id,3.2,Low,Open
+DAST0885,/login,POST,Cross-Site Scripting,redirect,8,High,Open
+DAST0886,/api/users,DELETE,Security Misconfiguration,id,9.5,Critical,Open
+DAST0887,/api/auth,POST,Information Disclosure,token,5.4,Medium,Open
+DAST0888,/admin,DELETE,Cross-Site Scripting,username,4.4,Medium,Fixed
+DAST0889,/download,GET,CSRF,id,4.1,Medium,Open
+DAST0890,/checkout,POST,Path Traversal,N/A,3.8,Low,Open
+DAST0891,/checkout,GET,Path Traversal,id,6.5,Medium,Fixed
+DAST0892,/api/auth,PUT,Cross-Site Scripting,id,8.1,High,Open
+DAST0893,/search,PUT,Session Management Issue,N/A,7.4,High,Fixed
+DAST0894,/search,GET,Broken Authentication,username,6.4,Medium,Fixed
+DAST0895,/login,POST,Cross-Site Scripting,file,8.5,High,Fixed
+DAST0896,/admin,DELETE,Broken Authentication,id,8.1,High,Open
+DAST0897,/profile,POST,Cross-Site Scripting,N/A,2.2,Low,Open
+DAST0898,/checkout,POST,CSRF,N/A,5,Medium,Open
+DAST0899,/api/auth,PUT,Broken Authentication,id,2.4,Low,Open
+DAST0900,/upload,GET,Security Misconfiguration,redirect,8.4,High,Open
+DAST0901,/upload,PUT,SQL Injection,token,9.4,Critical,Open
+DAST0902,/payment,GET,Path Traversal,search,6.3,Medium,Open
+DAST0903,/download,DELETE,CSRF,file,8.8,High,Fixed
+DAST0904,/login,POST,SQL Injection,token,6.7,Medium,Open
+DAST0905,/download,PUT,SQL Injection,N/A,7.3,High,Fixed
+DAST0906,/upload,PUT,Path Traversal,token,6.1,Medium,Fixed
+DAST0907,/payment,GET,CSRF,N/A,8.1,High,Open
+DAST0908,/upload,GET,Information Disclosure,username,9.2,Critical,Open
+DAST0909,/login,POST,Session Management Issue,file,8.6,High,Fixed
+DAST0910,/download,POST,Cross-Site Scripting,file,2.6,Low,Open
+DAST0911,/upload,DELETE,Open Redirect,username,2,Low,Fixed
+DAST0912,/checkout,GET,Cross-Site Scripting,id,2.4,Low,Open
+DAST0913,/checkout,PUT,Information Disclosure,N/A,8.9,High,Open
+DAST0914,/login,POST,Information Disclosure,token,6.6,Medium,Fixed
+DAST0915,/profile,PUT,Missing Security Headers,N/A,4.5,Medium,Open
+DAST0916,/api/users,GET,Cross-Site Scripting,search,9.7,Critical,Open
+DAST0917,/download,POST,Broken Authentication,token,6.7,Medium,Open
+DAST0918,/search,PUT,Broken Authentication,search,6.3,Medium,Open
+DAST0919,/profile,POST,Session Management Issue,token,5.1,Medium,Fixed
+DAST0920,/profile,PUT,CSRF,search,4.6,Medium,Open
+DAST0921,/profile,POST,Information Disclosure,id,8.5,High,Fixed
+DAST0922,/payment,DELETE,Broken Authentication,file,2.3,Low,Fixed
+DAST0923,/api/auth,POST,SQL Injection,file,4.9,Medium,Fixed
+DAST0924,/search,GET,Broken Authentication,N/A,8.9,High,Fixed
+DAST0925,/api/auth,PUT,Information Disclosure,search,7.6,High,Open
+DAST0926,/api/users,DELETE,Broken Authentication,redirect,7.5,High,Open
+DAST0927,/api/users,POST,Broken Authentication,redirect,4.8,Medium,Fixed
+DAST0928,/checkout,GET,Missing Security Headers,N/A,6.4,Medium,Fixed
+DAST0929,/api/auth,GET,Cross-Site Scripting,N/A,3.1,Low,Fixed
+DAST0930,/login,DELETE,Information Disclosure,username,8.3,High,Fixed
+DAST0931,/search,POST,Path Traversal,file,9.1,Critical,Open
+DAST0932,/download,POST,Missing Security Headers,N/A,3.6,Low,Open
+DAST0933,/login,GET,Open Redirect,id,8.2,High,Open
+DAST0934,/download,POST,Session Management Issue,search,6.8,Medium,Open
+DAST0935,/upload,GET,Broken Authentication,username,9.7,Critical,Open
+DAST0936,/api/auth,PUT,Missing Security Headers,redirect,3.3,Low,Open
+DAST0937,/upload,DELETE,Information Disclosure,redirect,6.2,Medium,Open
+DAST0938,/checkout,GET,SQL Injection,username,9,Critical,Open
+DAST0939,/search,GET,Cross-Site Scripting,redirect,9,Critical,Open
+DAST0940,/admin,POST,Information Disclosure,search,2.2,Low,Fixed
+DAST0941,/login,GET,SQL Injection,id,9.8,Critical,Open
+DAST0942,/api/users,POST,CSRF,redirect,5.9,Medium,Fixed
+DAST0943,/profile,PUT,CSRF,redirect,5.1,Medium,Open
+DAST0944,/checkout,PUT,CSRF,N/A,5.3,Medium,Open
+DAST0945,/upload,POST,Information Disclosure,redirect,2.7,Low,Open
+DAST0946,/admin,DELETE,Path Traversal,N/A,3.3,Low,Open
+DAST0947,/api/auth,POST,Cross-Site Scripting,redirect,5.2,Medium,Open
+DAST0948,/download,GET,Information Disclosure,redirect,4.7,Medium,Open
+DAST0949,/upload,POST,Missing Security Headers,redirect,5.3,Medium,Fixed
+DAST0950,/payment,GET,Session Management Issue,token,4.4,Medium,Fixed
+DAST0951,/download,DELETE,Cross-Site Scripting,search,6.5,Medium,Open
+DAST0952,/payment,GET,CSRF,N/A,3.2,Low,Fixed
+DAST0953,/profile,PUT,Open Redirect,N/A,9.7,Critical,Open
+DAST0954,/search,PUT,Missing Security Headers,username,2.4,Low,Fixed
+DAST0955,/payment,DELETE,Broken Authentication,search,5,Medium,Fixed
+DAST0956,/payment,PUT,Broken Authentication,N/A,9.7,Critical,Open
+DAST0957,/api/auth,DELETE,Session Management Issue,N/A,7.2,High,Fixed
+DAST0958,/api/users,PUT,Missing Security Headers,token,2.5,Low,Fixed
+DAST0959,/upload,GET,Security Misconfiguration,redirect,5.3,Medium,Fixed
+DAST0960,/download,GET,Path Traversal,username,5.4,Medium,Open
+DAST0961,/upload,DELETE,Open Redirect,file,6.1,Medium,Open
+DAST0962,/api/auth,GET,Missing Security Headers,N/A,5.6,Medium,Open
+DAST0963,/payment,PUT,Information Disclosure,redirect,7,High,Fixed
+DAST0964,/login,PUT,CSRF,file,3.1,Low,Fixed
+DAST0965,/api/users,PUT,Path Traversal,username,9.3,Critical,Fixed
+DAST0966,/checkout,POST,Session Management Issue,N/A,6.6,Medium,Open
+DAST0967,/admin,PUT,CSRF,id,6.4,Medium,Open
+DAST0968,/api/users,POST,Cross-Site Scripting,search,2.9,Low,Open
+DAST0969,/download,DELETE,Path Traversal,id,8.1,High,Open
+DAST0970,/login,PUT,SQL Injection,file,5.8,Medium,Open
+DAST0971,/profile,POST,Cross-Site Scripting,search,8.3,High,Open
+DAST0972,/api/users,POST,SQL Injection,redirect,2.4,Low,Open
+DAST0973,/upload,POST,CSRF,search,8.6,High,Fixed
+DAST0974,/checkout,GET,Open Redirect,username,4.2,Medium,Open
+DAST0975,/api/auth,POST,Cross-Site Scripting,file,4.3,Medium,Open
+DAST0976,/login,POST,Cross-Site Scripting,search,7.1,High,Fixed
+DAST0977,/login,DELETE,Cross-Site Scripting,search,9.6,Critical,Open
+DAST0978,/login,PUT,Missing Security Headers,id,2.1,Low,Open
+DAST0979,/upload,GET,Session Management Issue,redirect,4.8,Medium,Fixed
+DAST0980,/checkout,DELETE,Session Management Issue,search,5.4,Medium,Open
+DAST0981,/upload,GET,Broken Authentication,username,5.7,Medium,Fixed
+DAST0982,/search,PUT,Path Traversal,N/A,7.7,High,Open
+DAST0983,/search,PUT,Security Misconfiguration,token,9.4,Critical,Open
+DAST0984,/upload,GET,CSRF,redirect,7,High,Open
+DAST0985,/checkout,PUT,Information Disclosure,N/A,9.2,Critical,Fixed
+DAST0986,/api/auth,DELETE,CSRF,file,8.1,High,Open
+DAST0987,/admin,DELETE,Missing Security Headers,username,3.1,Low,Fixed
+DAST0988,/checkout,GET,CSRF,username,3.2,Low,Open
+DAST0989,/api/users,DELETE,Open Redirect,id,3.5,Low,Open
+DAST0990,/api/users,POST,Session Management Issue,redirect,5.5,Medium,Open
+DAST0991,/upload,POST,CSRF,N/A,2.7,Low,Open
+DAST0992,/checkout,GET,Security Misconfiguration,search,3.8,Low,Open
+DAST0993,/upload,DELETE,CSRF,search,6.6,Medium,Open
+DAST0994,/profile,POST,Open Redirect,N/A,5.2,Medium,Open
+DAST0995,/download,GET,Open Redirect,search,6.5,Medium,Fixed
+DAST0996,/api/auth,POST,Open Redirect,redirect,8.6,High,Fixed
+DAST0997,/checkout,POST,Open Redirect,N/A,7.1,High,Open
+DAST0998,/download,POST,Path Traversal,username,5.1,Medium,Open
+DAST0999,/payment,POST,Missing Security Headers,username,7.7,High,Open
+DAST1000,/payment,POST,Broken Authentication,id,2.9,Low,Open
+DAST1001,/search,GET,Security Misconfiguration,id,4.2,Medium,Fixed
+DAST1002,/api/auth,POST,Security Misconfiguration,search,6.8,Medium,Fixed
+DAST1003,/api/auth,DELETE,Session Management Issue,search,3.3,Low,Fixed
+DAST1004,/upload,DELETE,Cross-Site Scripting,username,8.8,High,Fixed
+DAST1005,/login,POST,Cross-Site Scripting,search,8.8,High,Open
+DAST1006,/api/auth,POST,Open Redirect,token,5.8,Medium,Open
+DAST1007,/download,GET,CSRF,N/A,8.2,High,Open
+DAST1008,/checkout,POST,SQL Injection,N/A,4.4,Medium,Fixed
+DAST1009,/upload,PUT,Session Management Issue,redirect,2.5,Low,Open
+DAST1010,/api/auth,POST,Security Misconfiguration,id,5.5,Medium,Open
+DAST1011,/profile,DELETE,Session Management Issue,username,5.7,Medium,Open
+DAST1012,/download,GET,SQL Injection,id,4.7,Medium,Open
+DAST1013,/api/auth,POST,Cross-Site Scripting,id,3.5,Low,Open
+DAST1014,/upload,DELETE,SQL Injection,search,6.1,Medium,Open
+DAST1015,/download,PUT,Session Management Issue,search,2.2,Low,Open
+DAST1016,/checkout,GET,CSRF,file,8.2,High,Open
+DAST1017,/profile,POST,CSRF,id,6.5,Medium,Open
+DAST1018,/api/users,DELETE,Open Redirect,N/A,7.1,High,Open
+DAST1019,/api/auth,GET,Missing Security Headers,token,5.7,Medium,Open
+DAST1020,/api/auth,POST,Security Misconfiguration,redirect,4.2,Medium,Fixed
+DAST1021,/upload,POST,Cross-Site Scripting,redirect,5.7,Medium,Open
+DAST1022,/admin,DELETE,Path Traversal,N/A,8.3,High,Open
+DAST1023,/search,DELETE,SQL Injection,token,6.7,Medium,Open
+DAST1024,/search,GET,Path Traversal,file,5.2,Medium,Open
+DAST1025,/checkout,GET,CSRF,N/A,8.5,High,Open
+DAST1026,/checkout,POST,CSRF,N/A,4.5,Medium,Open
+DAST1027,/login,PUT,Session Management Issue,username,6.7,Medium,Open
+DAST1028,/upload,POST,Broken Authentication,token,5.6,Medium,Open
+DAST1029,/admin,GET,Security Misconfiguration,token,4.2,Medium,Open
+DAST1030,/api/auth,POST,CSRF,username,6.4,Medium,Open
+DAST1031,/login,GET,Broken Authentication,id,3.8,Low,Open
+DAST1032,/download,POST,CSRF,search,6.3,Medium,Open
+DAST1033,/login,GET,Open Redirect,file,5.6,Medium,Open
+DAST1034,/upload,GET,CSRF,search,3,Low,Fixed
+DAST1035,/profile,PUT,CSRF,username,7,High,Open
+DAST1036,/payment,DELETE,SQL Injection,token,6.4,Medium,Open
+DAST1037,/login,DELETE,Security Misconfiguration,token,3.2,Low,Open
+DAST1038,/payment,POST,Path Traversal,search,6.5,Medium,Open
+DAST1039,/search,DELETE,Broken Authentication,N/A,5.4,Medium,Open
+DAST1040,/download,DELETE,Information Disclosure,file,5.6,Medium,Open
+DAST1041,/profile,GET,Open Redirect,file,8.7,High,Open
+DAST1042,/admin,DELETE,Cross-Site Scripting,redirect,7.8,High,Open
+DAST1043,/profile,PUT,Missing Security Headers,N/A,5.7,Medium,Open
+DAST1044,/admin,GET,Information Disclosure,file,6.2,Medium,Open
+DAST1045,/api/auth,DELETE,SQL Injection,search,3.9,Low,Open
+DAST1046,/login,DELETE,Information Disclosure,file,2.6,Low,Open
+DAST1047,/checkout,GET,Broken Authentication,id,5.1,Medium,Open
+DAST1048,/admin,DELETE,Session Management Issue,redirect,2.1,Low,Fixed
+DAST1049,/checkout,DELETE,Cross-Site Scripting,file,8.9,High,Open
+DAST1050,/checkout,PUT,Session Management Issue,N/A,9.9,Critical,Open
+DAST1051,/profile,POST,Missing Security Headers,search,7.7,High,Open
+DAST1052,/search,DELETE,Information Disclosure,search,8.6,High,Fixed
+DAST1053,/admin,PUT,Information Disclosure,token,9.1,Critical,Open
+DAST1054,/checkout,DELETE,Security Misconfiguration,redirect,6.3,Medium,Open
+DAST1055,/api/auth,PUT,Path Traversal,username,6.4,Medium,Open
+DAST1056,/payment,POST,Open Redirect,token,4.2,Medium,Open
+DAST1057,/download,POST,Missing Security Headers,redirect,7.3,High,Fixed
+DAST1058,/upload,PUT,Session Management Issue,token,3.9,Low,Open
+DAST1059,/checkout,PUT,Session Management Issue,N/A,4.3,Medium,Open
+DAST1060,/search,GET,Open Redirect,id,7.7,High,Open
+DAST1061,/api/auth,GET,Cross-Site Scripting,N/A,7.8,High,Open
+DAST1062,/api/users,PUT,Path Traversal,N/A,3.4,Low,Open
+DAST1063,/admin,DELETE,SQL Injection,username,4.5,Medium,Open
+DAST1064,/api/users,POST,Broken Authentication,file,5,Medium,Open
+DAST1065,/login,POST,Missing Security Headers,N/A,2.6,Low,Open
+DAST1066,/checkout,POST,Missing Security Headers,id,7.7,High,Open
+DAST1067,/download,PUT,Security Misconfiguration,id,6.4,Medium,Fixed
+DAST1068,/api/users,POST,SQL Injection,token,3.1,Low,Open
+DAST1069,/payment,GET,Session Management Issue,id,9.8,Critical,Open
+DAST1070,/checkout,PUT,SQL Injection,redirect,6.5,Medium,Open
+DAST1071,/login,POST,Cross-Site Scripting,id,8.3,High,Open
+DAST1072,/search,POST,Cross-Site Scripting,id,8.8,High,Fixed
+DAST1073,/api/users,POST,Security Misconfiguration,token,9,Critical,Open
+DAST1074,/admin,POST,Information Disclosure,file,8.4,High,Fixed
+DAST1075,/api/users,PUT,SQL Injection,token,7.1,High,Open
+DAST1076,/profile,POST,Broken Authentication,id,7,High,Fixed
+DAST1077,/upload,GET,Missing Security Headers,username,4.2,Medium,Fixed
+DAST1078,/api/users,DELETE,Missing Security Headers,token,2.2,Low,Fixed
+DAST1079,/payment,POST,Cross-Site Scripting,redirect,5.4,Medium,Open
+DAST1080,/search,POST,Open Redirect,file,4.8,Medium,Fixed
+DAST1081,/profile,GET,Open Redirect,file,5.1,Medium,Open
+DAST1082,/upload,DELETE,SQL Injection,token,3.4,Low,Open
+DAST1083,/download,POST,SQL Injection,redirect,4.6,Medium,Open
+DAST1084,/search,POST,Security Misconfiguration,file,5.3,Medium,Open
+DAST1085,/api/auth,GET,SQL Injection,username,8.1,High,Open
+DAST1086,/download,PUT,Broken Authentication,id,4.2,Medium,Open
+DAST1087,/admin,GET,Cross-Site Scripting,N/A,2.9,Low,Open
+DAST1088,/admin,PUT,CSRF,N/A,2.2,Low,Open
+DAST1089,/admin,POST,Security Misconfiguration,N/A,8.5,High,Open
+DAST1090,/upload,GET,SQL Injection,username,5.8,Medium,Open
+DAST1091,/upload,DELETE,SQL Injection,file,8.4,High,Fixed
+DAST1092,/upload,GET,Security Misconfiguration,file,2.6,Low,Open
+DAST1093,/search,PUT,Path Traversal,N/A,2.9,Low,Fixed
+DAST1094,/download,DELETE,Security Misconfiguration,N/A,3,Low,Fixed
+DAST1095,/profile,GET,Path Traversal,search,7.9,High,Open
+DAST1096,/api/users,POST,Session Management Issue,N/A,8.1,High,Fixed
+DAST1097,/checkout,GET,Security Misconfiguration,redirect,9.9,Critical,Fixed
+DAST1098,/admin,POST,Security Misconfiguration,id,7,High,Open
+DAST1099,/download,DELETE,Path Traversal,username,4.3,Medium,Fixed
+DAST1100,/upload,GET,Information Disclosure,N/A,3.6,Low,Open
+DAST1101,/search,GET,Cross-Site Scripting,N/A,8.4,High,Fixed
+DAST1102,/payment,PUT,Missing Security Headers,file,7.8,High,Open
+DAST1103,/profile,POST,SQL Injection,id,3.7,Low,Open
+DAST1104,/upload,PUT,Information Disclosure,username,8,High,Open
+DAST1105,/admin,GET,Missing Security Headers,N/A,8.9,High,Open
+DAST1106,/api/auth,DELETE,Broken Authentication,username,6.2,Medium,Open
+DAST1107,/login,POST,Security Misconfiguration,file,6.8,Medium,Open
+DAST1108,/profile,GET,Missing Security Headers,redirect,9.5,Critical,Open
+DAST1109,/checkout,DELETE,Information Disclosure,token,9.6,Critical,Open
+DAST1110,/api/users,POST,Cross-Site Scripting,N/A,7.3,High,Open
+DAST1111,/login,POST,Path Traversal,id,2.6,Low,Open
+DAST1112,/login,POST,Cross-Site Scripting,file,8.6,High,Open
+DAST1113,/upload,POST,Information Disclosure,N/A,5.8,Medium,Open
+DAST1114,/login,GET,SQL Injection,N/A,5.1,Medium,Open
+DAST1115,/checkout,POST,Missing Security Headers,N/A,4.4,Medium,Open
+DAST1116,/api/users,POST,Security Misconfiguration,token,4,Medium,Open
+DAST1117,/search,DELETE,CSRF,N/A,5.4,Medium,Open
+DAST1118,/checkout,POST,Open Redirect,username,9.5,Critical,Open
+DAST1119,/download,PUT,Cross-Site Scripting,search,4.1,Medium,Open
+DAST1120,/api/users,DELETE,SQL Injection,search,6.5,Medium,Open
+DAST1121,/profile,DELETE,Missing Security Headers,username,3.6,Low,Open
+DAST1122,/upload,GET,SQL Injection,file,3.5,Low,Open
+DAST1123,/login,POST,Broken Authentication,file,7.7,High,Open
+DAST1124,/upload,DELETE,Open Redirect,username,4.5,Medium,Open
+DAST1125,/admin,DELETE,Cross-Site Scripting,N/A,3.1,Low,Open
+DAST1126,/api/auth,GET,Path Traversal,token,2.5,Low,Open
+DAST1127,/profile,POST,Missing Security Headers,search,9.4,Critical,Open
+DAST1128,/search,DELETE,Information Disclosure,username,6.5,Medium,Fixed
+DAST1129,/search,PUT,CSRF,token,2.9,Low,Open
+DAST1130,/api/users,POST,Broken Authentication,search,6.5,Medium,Open
+DAST1131,/download,DELETE,Session Management Issue,N/A,6.3,Medium,Open
+DAST1132,/search,DELETE,Missing Security Headers,id,8.6,High,Open
+DAST1133,/login,DELETE,Broken Authentication,username,7.6,High,Open
+DAST1134,/search,POST,Path Traversal,file,6.5,Medium,Open
+DAST1135,/api/users,GET,Open Redirect,id,7.8,High,Open
+DAST1136,/profile,GET,SQL Injection,search,8,High,Fixed
+DAST1137,/download,DELETE,SQL Injection,token,5.1,Medium,Open
+DAST1138,/profile,POST,Information Disclosure,file,4.3,Medium,Open
+DAST1139,/profile,GET,Session Management Issue,token,6.3,Medium,Fixed
+DAST1140,/upload,POST,Missing Security Headers,N/A,4.1,Medium,Fixed
+DAST1141,/download,DELETE,Information Disclosure,search,8.7,High,Open
+DAST1142,/payment,DELETE,CSRF,redirect,5.2,Medium,Open
+DAST1143,/upload,DELETE,Cross-Site Scripting,id,2.6,Low,Open
+DAST1144,/upload,GET,CSRF,N/A,9.6,Critical,Open
+DAST1145,/download,POST,Open Redirect,N/A,3.7,Low,Fixed
+DAST1146,/api/auth,POST,Path Traversal,redirect,5.2,Medium,Open
+DAST1147,/login,POST,Cross-Site Scripting,search,7,High,Open
+DAST1148,/upload,DELETE,Open Redirect,token,7,High,Fixed
+DAST1149,/search,POST,SQL Injection,token,4.6,Medium,Open
+DAST1150,/profile,DELETE,Information Disclosure,N/A,3.1,Low,Open
+DAST1151,/login,PUT,Missing Security Headers,redirect,9.3,Critical,Fixed
+DAST1152,/api/auth,DELETE,Path Traversal,N/A,6.8,Medium,Fixed
+DAST1153,/payment,DELETE,Information Disclosure,id,8,High,Fixed
+DAST1154,/profile,PUT,Path Traversal,N/A,9.4,Critical,Open
+DAST1155,/download,PUT,Cross-Site Scripting,redirect,6.2,Medium,Fixed
+DAST1156,/profile,PUT,Information Disclosure,username,5,Medium,Open
+DAST1157,/profile,DELETE,CSRF,username,2.5,Low,Fixed
+DAST1158,/api/auth,PUT,Cross-Site Scripting,file,8.8,High,Open
+DAST1159,/search,DELETE,CSRF,N/A,6.1,Medium,Fixed
+DAST1160,/download,POST,Open Redirect,file,3.7,Low,Open
+DAST1161,/api/users,PUT,Path Traversal,token,5,Medium,Fixed
+DAST1162,/api/auth,GET,Broken Authentication,file,3.7,Low,Open
+DAST1163,/profile,POST,SQL Injection,id,5.7,Medium,Open
+DAST1164,/login,GET,Session Management Issue,username,3.9,Low,Fixed
+DAST1165,/search,POST,Security Misconfiguration,redirect,2.9,Low,Open
+DAST1166,/api/auth,GET,Broken Authentication,search,2.6,Low,Open
+DAST1167,/login,PUT,Cross-Site Scripting,file,7.5,High,Open
+DAST1168,/upload,PUT,Cross-Site Scripting,N/A,4.3,Medium,Open
+DAST1169,/login,POST,Cross-Site Scripting,file,3.2,Low,Open
+DAST1170,/profile,DELETE,SQL Injection,redirect,9.8,Critical,Open
+DAST1171,/upload,POST,Open Redirect,redirect,5.3,Medium,Open
+DAST1172,/login,PUT,Session Management Issue,id,5.2,Medium,Fixed
+DAST1173,/checkout,POST,Open Redirect,username,7.2,High,Open
+DAST1174,/login,DELETE,SQL Injection,username,9.3,Critical,Open
+DAST1175,/search,GET,Open Redirect,N/A,3.7,Low,Open
+DAST1176,/profile,DELETE,Session Management Issue,N/A,6.4,Medium,Open
+DAST1177,/api/users,DELETE,CSRF,username,7.8,High,Open
+DAST1178,/profile,DELETE,SQL Injection,N/A,5.2,Medium,Open
+DAST1179,/upload,DELETE,SQL Injection,N/A,2.8,Low,Open
+DAST1180,/payment,PUT,Cross-Site Scripting,token,7.1,High,Open
+DAST1181,/payment,GET,Cross-Site Scripting,file,2,Low,Open
+DAST1182,/api/users,DELETE,CSRF,N/A,3.7,Low,Open
+DAST1183,/profile,POST,Path Traversal,id,7.4,High,Open
+DAST1184,/download,DELETE,Broken Authentication,username,8.9,High,Fixed
+DAST1185,/api/users,GET,Open Redirect,id,8.4,High,Open
+DAST1186,/upload,PUT,Open Redirect,N/A,3.1,Low,Open
+DAST1187,/search,DELETE,Broken Authentication,redirect,5.1,Medium,Open
+DAST1188,/api/users,GET,Cross-Site Scripting,username,8.3,High,Open
+DAST1189,/search,DELETE,Broken Authentication,token,7.5,High,Open
+DAST1190,/download,DELETE,Missing Security Headers,token,6.8,Medium,Open
+DAST1191,/checkout,GET,Broken Authentication,file,3,Low,Open
+DAST1192,/search,DELETE,Session Management Issue,username,6.4,Medium,Open
+DAST1193,/login,GET,Information Disclosure,id,5.6,Medium,Open
+DAST1194,/download,DELETE,Security Misconfiguration,file,8.1,High,Fixed
+DAST1195,/api/auth,PUT,Session Management Issue,file,2.2,Low,Open
+DAST1196,/api/auth,PUT,Information Disclosure,file,3.6,Low,Open
+DAST1197,/upload,DELETE,Session Management Issue,id,9,Critical,Open
+DAST1198,/upload,POST,Cross-Site Scripting,file,2.9,Low,Open
+DAST1199,/profile,DELETE,Path Traversal,id,9.7,Critical,Open
+DAST1200,/upload,GET,CSRF,token,5.1,Medium,Open
