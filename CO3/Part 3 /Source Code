@@ -1,0 +1,339 @@
+
+# ============================================================
+# Vulnerability Analysis & Performance Evaluation - Shiny GUI
+# ============================================================
+pkgs <- c("shiny","shinydashboard","dplyr","ggplot2","DT","readr","plotly")
+miss <- pkgs[!sapply(pkgs, requireNamespace, quietly=TRUE)]
+if(length(miss)) stop(paste("Install packages:", paste(miss,collapse=", ")))
+library(shiny); library(shinydashboard); library(dplyr)
+library(ggplot2); library(DT); library(readr); library(plotly)
+
+generate_data <- function(n=1500, seed=123){
+ set.seed(seed)
+ vul <- c("SQL Injection","Cross-Site Scripting","Command Injection",
+          "Hardcoded Credentials","Weak Authentication","Insecure API",
+          "Path Traversal","Buffer Overflow","Insecure Cryptography",
+          "Sensitive Data Exposure","Vulnerable Dependency","CSRF")
+ sources <- c("SAST","DAST","SCA")
+ comps <- c("Authentication","Database","API","Payment","File Upload",
+            "User Management","Session Management","Configuration")
+ cv <- round(runif(n,2,10),1)
+ sev <- case_when(cv>=9~"Critical",cv>=7~"High",cv>=4~"Medium",TRUE~"Low")
+ det <- sample(c("Detected","Missed"),n,TRUE,prob=c(.88,.12))
+ verified <- ifelse(det=="Detected",
+                    sample(c("Verified","Failed"),n,TRUE,prob=c(.90,.10)),
+                    "Not Verified")
+ fixed <- ifelse(verified=="Verified",
+                 sample(c("Fixed","Pending"),n,TRUE,prob=c(.72,.28)),
+                 "Pending")
+ retest <- ifelse(fixed=="Fixed",
+                  sample(c("Passed","Failed"),n,TRUE,prob=c(.94,.06)),
+                  "Not Tested")
+ data.frame(
+   ID=sprintf("V%04d",1:n),
+   Source=sample(sources,n,TRUE),
+   Component=sample(comps,n,TRUE),
+   Vulnerability=sample(vul,n,TRUE),
+   CVSS=cv,
+   Severity=factor(sev,levels=c("Low","Medium","High","Critical")),
+   Detection=det,
+   Verification=verified,
+   Remediation=fixed,
+   ReTest=retest,
+   Detection_Time=round(runif(n,.5,8),2),
+   Remediation_Time=round(runif(n,1,48),2),
+   stringsAsFactors=FALSE
+ )
+}
+
+ui <- dashboardPage(
+ dashboardHeader(title="Vulnerability Analysis & Performance"),
+ dashboardSidebar(
+  sidebarMenu(
+   menuItem("Dashboard",tabName="dash",icon=icon("dashboard")),
+   menuItem("Vulnerability Detection",tabName="detect",icon=icon("bug")),
+   menuItem("Severity Analysis",tabName="severity",icon=icon("triangle-exclamation")),
+   menuItem("Verification Workflow",tabName="workflow",icon=icon("diagram-project")),
+   menuItem("Remediation",tabName="rem",icon=icon("wrench")),
+   menuItem("Performance Evaluation",tabName="performance",icon=icon("gauge-high")),
+   menuItem("Monte Carlo",tabName="mc",icon=icon("chart-line")),
+   menuItem("Reports & Downloads",tabName="reports",icon=icon("download"))
+  ),
+  hr(),
+  numericInput("n","Number of findings",1500,min=100,max=10000,step=100),
+  numericInput("seed","Random seed",123,min=1,max=99999),
+  actionButton("regen","Generate / Regenerate",icon=icon("rotate")),
+  hr(),
+  sliderInput("remProb","Remediation probability",.1,.95,.72,.05),
+  numericInput("iters","Monte Carlo iterations",1000,100,10000,100)
+ ),
+ dashboardBody(
+  tags$head(tags$style(HTML("
+   .content-wrapper{background:#f5f7fb}
+   .small-box{border-radius:12px}
+   .box{border-radius:12px}
+   .main-header .logo{font-weight:bold}
+  "))),
+  tabItems(
+   tabItem("dash",
+    fluidRow(valueBoxOutput("total",3),valueBoxOutput("critical",3),
+             valueBoxOutput("verified",3),valueBoxOutput("score",3)),
+    fluidRow(
+     box(title="Findings by Security Test",status="primary",solidHeader=TRUE,width=6,plotlyOutput("sourcePlot",350)),
+     box(title="Severity Distribution",status="info",solidHeader=TRUE,width=6,plotlyOutput("sevPlot",350))),
+    fluidRow(
+     box(title="Security Verification Workflow",status="success",solidHeader=TRUE,width=12,
+       HTML("<h4>Detection → Verification → Severity Analysis → Remediation → Re-test → Performance Evaluation</h4>
+       <p>This GUI uses synthetic findings to simulate a security verification process. It does not scan real systems.</p>")))
+   ),
+   tabItem("detect",
+    fluidRow(box(title="Vulnerability Findings",status="primary",solidHeader=TRUE,width=12,DTOutput("dataTable"))),
+    fluidRow(
+     box(title="Detection by Source",status="info",solidHeader=TRUE,width=6,plotlyOutput("detectSource",350)),
+     box(title="Detection Rate",status="success",solidHeader=TRUE,width=6,tableOutput("detectTable")))
+   ),
+   tabItem("severity",
+    fluidRow(
+     box(title="Severity Summary",status="primary",solidHeader=TRUE,width=5,tableOutput("sevTable")),
+     box(title="CVSS Distribution",status="info",solidHeader=TRUE,width=7,plotlyOutput("cvssPlot",350))),
+    fluidRow(box(title="Vulnerability Types",status="warning",solidHeader=TRUE,width=12,plotlyOutput("vulnPlot",380)))
+   ),
+   tabItem("workflow",
+    fluidRow(
+     box(title="Workflow Counts",status="primary",solidHeader=TRUE,width=12,plotlyOutput("workflowPlot",400))),
+    fluidRow(
+     box(title="Verification Metrics",status="success",solidHeader=TRUE,width=12,tableOutput("workflowTable")))
+   ),
+   tabItem("rem",
+    fluidRow(valueBoxOutput("beforeRisk",4),valueBoxOutput("afterRisk",4),valueBoxOutput("riskReduction",4)),
+    fluidRow(
+     box(title="Before vs After Remediation",status="primary",solidHeader=TRUE,width=8,plotlyOutput("remPlot",400)),
+     box(title="Simulation Control",status="warning",solidHeader=TRUE,width=4,
+       sliderInput("criticalP","Critical fix probability",0,1,.80,.05),
+       sliderInput("highP","High fix probability",0,1,.70,.05),
+       sliderInput("mediumP","Medium fix probability",0,1,.55,.05),
+       sliderInput("lowP","Low fix probability",0,1,.35,.05),
+       actionButton("runRem","Run Remediation Simulation",icon=icon("play")))
+    )
+   ),
+   tabItem("performance",
+    fluidRow(valueBoxOutput("detectRate",3),valueBoxOutput("verifyRate",3),
+             valueBoxOutput("remRate",3),valueBoxOutput("retestRate",3)),
+    fluidRow(
+     box(title="Overall Security Performance",status="success",solidHeader=TRUE,width=5,
+       tableOutput("performanceTable")),
+     box(title="Performance Components",status="primary",solidHeader=TRUE,width=7,
+       plotlyOutput("performancePlot",350)))
+   ),
+   tabItem("mc",
+    fluidRow(valueBoxOutput("mcMean",4),valueBoxOutput("mcMin",4),valueBoxOutput("mcMax",4)),
+    fluidRow(box(title="Monte Carlo Security Score Distribution",status="primary",solidHeader=TRUE,width=12,
+                 plotlyOutput("mcPlot",450))),
+    fluidRow(box(title="Monte Carlo Statistics",status="info",solidHeader=TRUE,width=12,tableOutput("mcTable")))
+   ),
+   tabItem("reports",
+    fluidRow(box(title="Download Outputs",status="success",solidHeader=TRUE,width=12,
+      p("Download the synthetic dataset, performance results, Monte Carlo results and HTML report."),
+      downloadButton("dataDL","Dataset CSV"),
+      downloadButton("resultDL","Performance Results CSV"),
+      downloadButton("mcDL","Monte Carlo CSV"),
+      br(),br(),downloadButton("htmlDL","HTML Summary Report")))
+   )
+  )
+ )
+)
+
+server <- function(input,output,session){
+ rv <- reactiveValues(data=generate_data(), rem=NULL, mc=NULL)
+
+ observeEvent(input$regen,{
+   rv$data <- generate_data(input$n,input$seed)
+   rv$rem <- NULL; rv$mc <- NULL
+ })
+
+ d <- reactive(rv$data)
+
+ output$total <- renderValueBox(valueBox(nrow(d()),"Total Findings",icon=icon("bug"),color="blue"))
+ output$critical <- renderValueBox(valueBox(sum(d()$Severity=="Critical"),
+                    "Critical Findings",icon=icon("triangle-exclamation"),color="red"))
+ output$verified <- renderValueBox(valueBox(sum(d()$Verification=="Verified"),
+                    "Verified Findings",icon=icon("check"),color="green"))
+
+ metrics <- reactive({
+   x <- d()
+   detection <- mean(x$Detection=="Detected")*100
+   verification <- mean(x$Verification=="Verified")*100
+   remediation <- mean(x$Remediation=="Fixed")*100
+   retest <- mean(x$ReTest=="Passed")*100
+   riskred <- mean(x$CVSS[x$Remediation=="Fixed"])/mean(x$CVSS)*100
+   # A bounded risk-reduction proxy; performance combines workflow measures.
+   score <- .25*detection+.20*verification+.25*remediation+.15*retest+.15*min(riskred,100)
+   list(detection=detection,verification=verification,remediation=remediation,
+        retest=retest,score=score)
+ })
+ output$score <- renderValueBox(valueBox(paste0(round(metrics()$score,1),"/100"),
+                    "Security Score",icon=icon("gauge-high"),color="yellow"))
+
+ output$dataTable <- renderDT(datatable(d(),filter="top",
+                  options=list(pageLength=15,scrollX=TRUE)),server=FALSE)
+
+ output$sourcePlot <- renderPlotly({
+   x<-d()%>%count(Source)
+   ggplotly(ggplot(x,aes(Source,n,fill=Source))+geom_col()+theme_minimal()+labs(x=NULL,y="Findings"))
+ })
+ output$sevPlot <- renderPlotly({
+   x<-d()%>%count(Severity)
+   ggplotly(ggplot(x,aes(Severity,n,fill=Severity))+geom_col()+theme_minimal()+labs(x=NULL,y="Count"))
+ })
+ output$detectSource <- renderPlotly({
+   x<-d()%>%group_by(Source)%>%summarise(Detection_Rate=mean(Detection=="Detected")*100)
+   ggplotly(ggplot(x,aes(Source,Detection_Rate,fill=Source))+geom_col()+theme_minimal()+
+              labs(y="Detection Rate (%)",x=NULL))
+ })
+ output$detectTable <- renderTable({
+   data.frame(Metric=c("Detected","Missed","Detection Rate (%)"),
+              Value=c(sum(d()$Detection=="Detected"),sum(d()$Detection=="Missed"),
+                      round(metrics()$detection,2)))
+ })
+ output$sevTable <- renderTable({
+   x<-d()%>%count(Severity)%>%mutate(Percentage=round(n/sum(n)*100,2))
+   data.frame(Severity=x$Severity,Count=x$n,Percentage=x$Percentage)
+ })
+ output$cvssPlot <- renderPlotly({
+   ggplotly(ggplot(d(),aes(CVSS))+geom_histogram(bins=20)+theme_minimal()+
+              labs(x="CVSS Score",y="Frequency"))
+ })
+ output$vulnPlot <- renderPlotly({
+   x<-d()%>%count(Vulnerability,sort=TRUE)
+   ggplotly(ggplot(x,aes(reorder(Vulnerability,n),n))+geom_col()+coord_flip()+theme_minimal()+
+              labs(x=NULL,y="Count"))
+ })
+ output$workflowPlot <- renderPlotly({
+   x<-data.frame(Stage=c("Detected","Verified","Fixed","Re-tested"),
+                 Count=c(sum(d()$Detection=="Detected"),sum(d()$Verification=="Verified"),
+                         sum(d()$Remediation=="Fixed"),sum(d()$ReTest=="Passed")))
+   ggplotly(ggplot(x,aes(Stage,Count,fill=Stage))+geom_col()+theme_minimal())
+ })
+ output$workflowTable <- renderTable({
+   m<-metrics()
+   data.frame(Metric=c("Detection Rate","Verification Rate","Remediation Rate","Re-test Success"),
+              Percentage=round(c(m$detection,m$verification,m$remediation,m$retest),2))
+ })
+
+ make_rem <- function(){
+   set.seed(input$seed+55); x<-d()
+   p<-c(Critical=input$criticalP,High=input$highP,Medium=input$mediumP,Low=input$lowP)
+   fixed<-mapply(function(s)runif(1)<p[as.character(s)],x$Severity)
+   x$Simulated_Remediation<-ifelse(fixed,"Fixed","Pending")
+   x
+ }
+ observeEvent(input$runRem,{rv$rem<-make_rem()})
+ rem <- reactive(if(is.null(rv$rem)) make_rem() else rv$rem)
+ before <- reactive(sum(rem()$CVSS))
+ after <- reactive(sum(rem()$CVSS[rem()$Simulated_Remediation=="Pending"]))
+ reduction <- reactive((before()-after())/before()*100)
+ output$beforeRisk<-renderValueBox(valueBox(round(before()),"Initial Risk",icon=icon("shield"),color="red"))
+ output$afterRisk<-renderValueBox(valueBox(round(after()),"Residual Risk",icon=icon("shield-halved"),color="orange"))
+ output$riskReduction<-renderValueBox(valueBox(paste0(round(reduction(),2),"%"),
+                    "Risk Reduction",icon=icon("arrow-down"),color="green"))
+ output$remPlot<-renderPlotly({
+   x<-data.frame(Stage=c("Before","After"),Risk=c(before(),after()))
+   ggplotly(ggplot(x,aes(Stage,Risk,fill=Stage))+geom_col()+theme_minimal())
+ })
+
+ output$detectRate<-renderValueBox(valueBox(paste0(round(metrics()$detection,1),"%"),
+                    "Detection Rate",icon=icon("magnifying-glass"),color="blue"))
+ output$verifyRate<-renderValueBox(valueBox(paste0(round(metrics()$verification,1),"%"),
+                    "Verification Rate",icon=icon("check-double"),color="aqua"))
+ output$remRate<-renderValueBox(valueBox(paste0(round(metrics()$remediation,1),"%"),
+                    "Remediation Rate",icon=icon("wrench"),color="green"))
+ output$retestRate<-renderValueBox(valueBox(paste0(round(metrics()$retest,1),"%"),
+                    "Re-test Success",icon=icon("rotate"),color="yellow"))
+ output$performanceTable<-renderTable({
+   m<-metrics()
+   rating<-if(m$score>=90)"Excellent" else if(m$score>=75)"Good" else if(m$score>=60)"Moderate" else "Poor"
+   data.frame(Metric=c("Detection Rate","Verification Rate","Remediation Rate",
+                       "Re-test Success","Overall Security Score","Performance Rating"),
+              Value=c(paste0(round(m$detection,2),"%"),paste0(round(m$verification,2),"%"),
+                      paste0(round(m$remediation,2),"%"),paste0(round(m$retest,2),"%"),
+                      paste0(round(m$score,2),"/100"),rating))
+ })
+ output$performancePlot<-renderPlotly({
+   m<-metrics()
+   x<-data.frame(Metric=c("Detection","Verification","Remediation","Re-test"),
+                 Score=c(m$detection,m$verification,m$remediation,m$retest))
+   ggplotly(ggplot(x,aes(Metric,Score,fill=Metric))+geom_col()+coord_cartesian(ylim=c(0,100))+
+              theme_minimal()+labs(y="Performance (%)",x=NULL))
+ })
+
+ observeEvent(list(input$regen,input$iters,input$remProb),{
+   set.seed(input$seed+777)
+   base_score <- metrics()$score
+   r<-numeric(input$iters)
+   for(i in seq_len(input$iters)){
+     detection<-runif(1,.75,.98)*100
+     verification<-runif(1,.70,.97)*100
+     remediation<-runif(1,.35,.95)*100*input$remProb
+     retest<-runif(1,.75,.99)*100
+     r[i]<-.25*detection+.20*verification+.25*remediation+.15*retest+.15*runif(1,55,100)
+   }
+   rv$mc<-data.frame(Simulation=seq_along(r),Security_Score=r)
+ },ignoreInit=FALSE)
+
+ output$mcMean<-renderValueBox(valueBox(paste0(round(mean(rv$mc$Security_Score),2),"/100"),
+                   "Mean Security Score",icon=icon("chart-line"),color="blue"))
+ output$mcMin<-renderValueBox(valueBox(paste0(round(min(rv$mc$Security_Score),2),"/100"),
+                   "Minimum Score",icon=icon("arrow-down"),color="orange"))
+ output$mcMax<-renderValueBox(valueBox(paste0(round(max(rv$mc$Security_Score),2),"/100"),
+                   "Maximum Score",icon=icon("arrow-up"),color="green"))
+ output$mcPlot<-renderPlotly({
+   ggplotly(ggplot(rv$mc,aes(Security_Score))+geom_histogram(bins=30)+theme_minimal()+
+              labs(x="Security Performance Score",y="Frequency"))
+ })
+ output$mcTable<-renderTable({
+   x<-rv$mc$Security_Score
+   data.frame(Metric=c("Iterations","Mean","Minimum","Maximum","Standard Deviation",
+                       "Probability Score >= 75"),
+              Value=c(length(x),round(mean(x),2),round(min(x),2),round(max(x),2),
+                      round(sd(x),2),paste0(round(mean(x>=75)*100,2),"%")))
+ })
+
+ output$dataDL<-downloadHandler("vulnerability_analysis_dataset.csv",
+    function(f)write_csv(d(),f))
+ output$resultDL<-downloadHandler("security_performance_results.csv",function(f){
+   m<-metrics()
+   z<-data.frame(Metric=c("Total Findings","Critical Findings","Detection Rate",
+                          "Verification Rate","Remediation Rate","Re-test Success",
+                          "Overall Security Score","Risk Reduction"),
+                 Value=c(nrow(d()),sum(d()$Severity=="Critical"),round(m$detection,2),
+                         round(m$verification,2),round(m$remediation,2),round(m$retest,2),
+                         round(m$score,2),round(reduction(),2)))
+   write_csv(z,f)
+ })
+ output$mcDL<-downloadHandler("security_performance_monte_carlo.csv",
+    function(f)write_csv(rv$mc,f))
+ output$htmlDL<-downloadHandler("Vulnerability_Performance_Report.html",function(f){
+   m<-metrics()
+   rating<-if(m$score>=90)"Excellent" else if(m$score>=75)"Good" else if(m$score>=60)"Moderate" else "Poor"
+   html<-paste0("<html><head><title>Vulnerability Analysis Report</title><style>
+   body{font-family:Arial;margin:40px}table{border-collapse:collapse}td,th{border:1px solid #ccc;padding:8px}
+   </style></head><body><h1>Vulnerability Analysis and Performance Evaluation</h1>
+   <p>This report summarizes a synthetic security verification workflow simulation.</p><table>
+   <tr><th>Metric</th><th>Value</th></tr>
+   <tr><td>Total findings</td><td>",nrow(d()),"</td></tr>
+   <tr><td>Critical findings</td><td>",sum(d()$Severity=="Critical"),"</td></tr>
+   <tr><td>Detection rate</td><td>",round(m$detection,2),"%</td></tr>
+   <tr><td>Verification rate</td><td>",round(m$verification,2),"%</td></tr>
+   <tr><td>Remediation rate</td><td>",round(m$remediation,2),"%</td></tr>
+   <tr><td>Re-test success</td><td>",round(m$retest,2),"%</td></tr>
+   <tr><td>Overall security score</td><td>",round(m$score,2),"/100</td></tr>
+   <tr><td>Performance rating</td><td>",rating,"</td></tr>
+   <tr><td>Risk reduction</td><td>",round(reduction(),2),"%</td></tr></table>
+   <h2>Conclusion</h2><p>The simulated workflow demonstrates vulnerability detection, severity classification,
+   security verification, remediation, re-testing and overall performance evaluation. The performance score
+   combines detection, verification, remediation, re-test success and risk-reduction indicators.</p>
+   </body></html>")
+   writeLines(html,f)
+ })
+}
+shinyApp(ui,server)
