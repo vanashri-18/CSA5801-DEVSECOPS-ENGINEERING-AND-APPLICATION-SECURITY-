@@ -1,0 +1,64 @@
+# IaCGuardian - Module 3: Attack Graph & Blast-Radius Simulation
+pkgs <- c("shiny","shinydashboard","DT","ggplot2","plotly","dplyr","DiagrammeR")
+miss <- pkgs[!sapply(pkgs, requireNamespace, quietly=TRUE)]
+if(length(miss)) install.packages(miss, repos="https://cloud.r-project.org")
+lapply(pkgs, library, character.only=TRUE)
+
+make_data <- function(n=1000, seed=2608){
+ set.seed(seed)
+ d <- data.frame(
+  Asset_ID=sprintf("ASSET-%04d",1:n),
+  Resource_Type=sample(c("EC2","IAM","Lambda","RDS","S3","VPC"),n,TRUE),
+  Risk_Score=round(runif(n,10,100),2),
+  Open_Ports=sample(0:12,n,TRUE),
+  Dependency_Count=sample(1:10,n,TRUE),
+  Vulnerability_Count=sample(0:7,n,TRUE))
+ d$Risk_Level <- as.character(cut(d$Risk_Score,c(-Inf,30,50,75,Inf),
+   labels=c("Low","Medium","High","Critical"),right=FALSE)); d
+}
+data <- if(file.exists("final_iacguardian_dataset.csv"))
+ read.csv("final_iacguardian_dataset.csv",stringsAsFactors=FALSE) else make_data()
+
+ui <- dashboardPage(
+ dashboardHeader(title="IaCGuardian | Module 3"),
+ dashboardSidebar(sidebarMenu(
+  menuItem("Attack Simulation",tabName="sim",icon=icon("crosshairs")),
+  menuItem("Attack Graph",tabName="graph",icon=icon("diagram-project")),
+  menuItem("Blast Radius",tabName="blast",icon=icon("expand")),
+  menuItem("Results",tabName="results",icon=icon("table"))),
+  sliderInput("threshold","Risk Threshold",0,100,75,5),
+  actionButton("run","Run Simulation",icon=icon("play"))),
+ dashboardBody(
+  tags$head(tags$style(HTML("body{font-family:'Segoe UI',Arial}.content-wrapper{background:#eef6ff}.box,.small-box{border-radius:14px} .main-header .navbar,.main-sidebar{background:#071a35}"))),
+  tabItems(
+   tabItem("sim",h2("Attack Propagation Simulation"),
+    fluidRow(valueBoxOutput("start",4),valueBoxOutput("affected",4),valueBoxOutput("blast",4)),
+    fluidRow(box(width=7,title="Attack Propagation",status="danger",solidHeader=TRUE,plotlyOutput("simulation",height=420)),
+             box(width=5,title="Simulation Summary",status="info",solidHeader=TRUE,htmlOutput("summary")))),
+   tabItem("graph",h2("IaCGuardian Attack Graph"),
+    box(width=12,title="Threat Propagation Architecture",status="primary",solidHeader=TRUE,
+      DiagrammeR::grViz("digraph G{graph[rankdir=LR,bgcolor='transparent'];node[shape=box,style='rounded,filled',fontname='Arial',fontsize=14];A[label='Infrastructure / IaC',fillcolor='#dbeafe'];B[label='Entry Point',fillcolor='#fee2e2'];C[label='High-Risk Asset',fillcolor='#fef3c7'];D[label='Dependent Assets',fillcolor='#ffedd5'];E[label='Blast Radius',fillcolor='#fce7f3'];A->B->C->D->E;}"))),
+   tabItem("blast",h2("Blast-Radius Analysis"),box(width=12,title="Affected Assets",status="warning",solidHeader=TRUE,DTOutput("blasttable"))),
+   tabItem("results",h2("Module 3 Results"),box(width=12,title="Asset Risk and Threat Exposure",status="primary",solidHeader=TRUE,DTOutput("table")))
+  )
+ ))
+server <- function(input,output,session){
+ sim <- eventReactive(input$run,{
+  x<-data; cands<-x[x$Risk_Score>=input$threshold,]; if(!nrow(cands)) cands<-x[order(-x$Risk_Score),,drop=FALSE]
+  start<-cands$Asset_ID[1]; prop<-0.6*x$Risk_Score+4*x$Dependency_Count+2*x$Open_Ports+3*x$Vulnerability_Count
+  k<-min(30,max(1,ceiling(.10*nrow(x)))); ids<-unique(c(start,x$Asset_ID[order(-prop)][seq_len(k)]))
+  x$Compromised<-x$Asset_ID%in%ids; x$Attack_Stage<-0; x$Blast_Radius<-0
+  a<-which(x$Compromised); x$Attack_Stage[a]<-seq_along(a)
+  x$Blast_Radius[a]<-pmax(1,round(x$Dependency_Count[a]+x$Open_Ports[a]/2+x$Risk_Score[a]/25))
+  list(data=x,start=start,affected=sum(x$Compromised),blast=max(x$Blast_Radius))
+ },ignoreInit=TRUE)
+ cur<-reactive(if(is.null(sim())) list(data=data,start=data$Asset_ID[which.max(data$Risk_Score)],affected=0,blast=0) else sim())
+ output$start<-renderValueBox(valueBox(cur()$start,"Starting Asset",icon=icon("crosshairs"),color="red"))
+ output$affected<-renderValueBox(valueBox(cur()$affected,"Affected Assets",icon=icon("burst"),color="yellow"))
+ output$blast<-renderValueBox(valueBox(cur()$blast,"Maximum Blast Radius",icon=icon("expand"),color="purple"))
+ output$simulation<-renderPlotly({x<-cur()$data;x<-x[x$Compromised,];if(!nrow(x))return(plotly_empty());x<-x[order(x$Attack_Stage),];x$Sequence<-seq_len(nrow(x));ggplotly(ggplot(x,aes(Sequence,Risk_Score,size=Blast_Radius))+geom_line(aes(group=1))+geom_point()+theme_minimal()+labs(x="Attack propagation sequence",y="Risk score"))})
+ output$summary<-renderUI({s<-cur();tags$div(tags$p(tags$b("Starting asset: "),s$start),tags$p(tags$b("Affected assets: "),s$affected),tags$p(tags$b("Maximum blast radius: "),s$blast),tags$p("Decision-support simulation; not a live attack."))})
+ output$blasttable<-renderDT({x<-cur()$data;x<-x[x$Compromised,];datatable(x,rownames=FALSE,filter="top",extensions="Buttons",options=list(dom="Bfrtip",buttons=c("copy","csv","excel","print"),pageLength=15,scrollX=TRUE))})
+ output$table<-renderDT({datatable(data,rownames=FALSE,filter="top",extensions="Buttons",options=list(dom="Bfrtip",buttons=c("copy","csv","excel","print"),pageLength=15,scrollX=TRUE))})
+}
+shinyApp(ui,server)
