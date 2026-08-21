@@ -1,0 +1,35 @@
+# IaCGuardian - Module 4: Risk-Based Recommendations
+pkgs<-c("shiny","shinydashboard","DT","ggplot2","plotly","dplyr")
+miss<-pkgs[!sapply(pkgs,requireNamespace,quietly=TRUE)]
+if(length(miss)) install.packages(miss,repos="https://cloud.r-project.org")
+lapply(pkgs,library,character.only=TRUE)
+
+make_data<-function(n=1000,seed=2608){set.seed(seed);d<-data.frame(
+ Asset_ID=sprintf("ASSET-%04d",1:n),
+ Resource_Type=sample(c("EC2","IAM","Lambda","RDS","S3","VPC"),n,TRUE),
+ Public_Access=sample(c("Yes","No"),n,TRUE,c(.28,.72)),
+ Encryption=sample(c("Enabled","Disabled"),n,TRUE,c(.78,.22)),
+ Logging=sample(c("Enabled","Disabled"),n,TRUE,c(.72,.28)),
+ Backup=sample(c("Enabled","Disabled"),n,TRUE,c(.76,.24)),
+ Patch_Status=sample(c("Updated","Outdated"),n,TRUE,c(.73,.27)),
+ IAM_Risk=sample(c("Low","Medium","High"),n,TRUE,c(.48,.34,.18)),
+ Risk_Score=round(runif(n,10,100),2))
+ d$Risk_Level<-as.character(cut(d$Risk_Score,c(-Inf,30,50,75,Inf),labels=c("Low","Medium","High","Critical"),right=FALSE));d}
+data<-if(file.exists("final_iacguardian_dataset.csv"))read.csv("final_iacguardian_dataset.csv",stringsAsFactors=FALSE)else make_data()
+ui<-dashboardPage(dashboardHeader(title="IaCGuardian | Module 4"),dashboardSidebar(sidebarMenu(
+ menuItem("Recommendations",tabName="rec",icon=icon("shield")),menuItem("Risk Priorities",tabName="risk",icon=icon("ranking-star")),menuItem("Results",tabName="results",icon=icon("table")))),
+ dashboardBody(tags$head(tags$style(HTML("body{font-family:'Segoe UI',Arial}.content-wrapper{background:#eef6ff}.box,.small-box{border-radius:14px}.main-header .navbar,.main-sidebar{background:#071a35}"))),tabItems(
+ tabItem("rec",h2("Security Recommendations"),uiOutput("cards"),box(width=12,title="Recommendation Matrix",status="success",solidHeader=TRUE,DTOutput("rectable"))),
+ tabItem("risk",h2("Risk Prioritization"),fluidRow(valueBoxOutput("critical",4),valueBoxOutput("high",4),valueBoxOutput("average",4)),box(width=12,title="Top Risk Assets",status="danger",solidHeader=TRUE,plotlyOutput("riskplot",height=450))),
+ tabItem("results",h2("Module 4 Results"),box(width=12,title="Risk Assessment",status="primary",solidHeader=TRUE,DTOutput("table"))))))
+server<-function(input,output,session){
+ rec<-reactive(data.frame(Priority=c("P1","P1","P1","P2","P2","P2","P3"),Finding=c("Critical Risk","Public Exposure","High IAM Risk","Encryption Disabled","Outdated Patch","Logging Disabled","Backup Disabled"),Affected=c(sum(data$Risk_Level=="Critical"),sum(data$Public_Access=="Yes"),sum(data$IAM_Risk=="High"),sum(data$Encryption=="Disabled"),sum(data$Patch_Status=="Outdated"),sum(data$Logging=="Disabled"),sum(data$Backup=="Disabled")),Action=c("Investigate critical assets immediately.","Restrict unnecessary internet exposure.","Apply least privilege.","Enable encryption.","Update security patches.","Enable centralized logging.","Enable backup protection.")))
+ output$cards<-renderUI({r<-rec();tagList(lapply(seq_len(nrow(r)),function(i)div(style="padding:16px;margin:10px 0;background:white;border-left:5px solid #2563eb;border-radius:12px",h4(r$Priority[i]," | ",r$Finding[i]),p(tags$b(r$Affected[i])," affected assets"),p(r$Action[i]))) )})
+ output$rectable<-renderDT(datatable(rec(),rownames=FALSE,extensions="Buttons",options=list(dom="Bfrtip",buttons=c("copy","csv","excel","print"))))
+ output$critical<-renderValueBox(valueBox(sum(data$Risk_Level=="Critical"),"Critical Assets",icon=icon("skull-crossbones"),color="red"))
+ output$high<-renderValueBox(valueBox(sum(data$Risk_Level=="High"),"High-Risk Assets",icon=icon("triangle-exclamation"),color="yellow"))
+ output$average<-renderValueBox(valueBox(round(mean(data$Risk_Score,na.rm=TRUE),2),"Average Risk",icon=icon("gauge-high"),color="blue"))
+ output$riskplot<-renderPlotly({x<-data%>%arrange(desc(Risk_Score))%>%head(15);x$Asset_ID<-reorder(x$Asset_ID,x$Risk_Score);ggplotly(ggplot(x,aes(Asset_ID,Risk_Score,fill=Risk_Level))+geom_col()+coord_flip()+theme_minimal()+labs(x=NULL,y="Risk score"))})
+ output$table<-renderDT(datatable(data,rownames=FALSE,filter="top",extensions="Buttons",options=list(dom="Bfrtip",buttons=c("copy","csv","excel","print"),pageLength=15,scrollX=TRUE)))
+}
+shinyApp(ui,server)
