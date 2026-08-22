@@ -1,0 +1,10 @@
+# Install once:
+# install.packages("DiagrammeR")
+# install.packages("dygraphs")
+# install.packages("xts")
+grViz("
+digraph G {
+  rankdir=LR
+  Code -> Security_Check -> Test -> Build -> Deploy
+}
+")
