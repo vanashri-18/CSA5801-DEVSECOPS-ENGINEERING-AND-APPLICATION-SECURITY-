@@ -1,0 +1,9 @@
+# Install once:
+# install.packages("DiagrammeR")
+# install.packages("dygraphs")
+# install.packages("xts")
+grViz("
+digraph G {
+  User -> Role -> Permission -> Resource
+}
+")
